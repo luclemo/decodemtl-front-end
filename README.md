@@ -1,5 +1,5 @@
 <p style="text-align: center; margin-bottom: 80px;">
-  <img src="src/assets/toolkit/images/decode-logo.png">
+  <img src="src/assets/toolkit/images/decode-logo.png" width="600">
 </p>
 
 # DecodeMTL StyleGuide

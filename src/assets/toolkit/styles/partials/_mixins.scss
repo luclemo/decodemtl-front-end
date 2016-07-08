@@ -9,3 +9,22 @@
 	    clear:both;
 	}
 }
+
+// Buttons and CTA
+// -------------------------
+
+@mixin btn-color($bg:$red, $col:$white) {
+	color: $col;
+  background: $bg;
+  border: 0;
+  transition: $transition_all;
+  &:hover,
+  &:active {
+    background:darken($bg,5%);
+  }
+}
+@mixin btn-size($fz:1rem, $pd: 1em 3em) {
+	font-family: $font_medium;
+  font-size: $fz;
+  padding: $pd;
+}
