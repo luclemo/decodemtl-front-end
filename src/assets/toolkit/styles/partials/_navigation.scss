@@ -7,12 +7,14 @@
 	@include overlay;
 	background:transparentize($lightgrey, 0.1);
 	z-index: 10;
+	visibility: hidden;
 	opacity: 0;
 	@include transition-all();
 }
 .nav-container-active {
 	.nav-overlay {
 		opacity: 1;
+		visibility: visible;
 	}
 }
 
@@ -92,7 +94,7 @@
 }
 
 // Nav Content -------------------
-.logo {
+.logo-badge {
 	position: absolute;
 	top: 2.5em;
 	left: 2.5em;
@@ -104,4 +106,36 @@
 	@include transition-all;
 	padding: 0;
 	list-style-type: none;
+}
+
+// ===================
+// Header Nav
+// ===================
+.site-header {
+	margin-top: 3rem;
+	background:$lightgrey;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.home-link {
+	background:lightpink;
+	display: flex;
+	flex: 0 0 auto;
+}
+.site-header-nav {
+	background: red;
+	align-self: flex-end;
+	flex: 0 1 40%;
+	// display: flex;
+	// flex-direction: row;
+	// flex: 1;
+	// justify-content: flex-end;
+	// align-items: flex-end;
+}
+.site-header-nav-list {
+	background: palegoldenrod;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
 }
