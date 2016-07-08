@@ -1,0 +1,100 @@
+// ===================
+// Slideout Nav
+// ===================
+
+// Nav Overlay --------------------
+.nav-overlay {
+	@include overlay
+	background:transparentize($lightgrey, 0.1);
+	z-index: 10;
+}
+
+// Nav Trigger --------------------
+.nav-trigger-wrapper {
+	position: absolute;
+	top: 3em;
+	right: 1em;
+	height: 26px;
+	width: 26px;
+	cursor: pointer;
+	z-index: 30;
+}
+.nav-trigger-icon {
+	content: '';
+	position: absolute;
+	border-radius: 1em;
+	height: 2px;
+	width: 26px;
+	background: $black;
+	transition: all 0.2s ease;
+	top: 0.75em;
+	&:before {
+		content: '';
+		position: absolute;
+		border-radius: 1em;
+		height: 2px;
+		width: 26px;
+		background: $black;
+		transition: all 0.2s ease;
+		top: -0.4em;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		border-radius: 1em;
+		height: 2px;
+		width: 26px;
+		background: $black;
+		transition: all 0.2s ease;
+		top: 0.4em;
+	}
+}
+.nav-container-active {
+	.nav-trigger-icon {
+		background: transparent;
+		transform: rotate(-135deg);
+		&:before {
+			top: 0;
+			transform: rotate(90deg);
+		}
+		&:after {
+			top: 0;
+		}
+	}
+	.nav-container {
+		transform: translateX(0);
+		pointer-events: initial;
+	}
+}
+
+// Nav Container ------------------
+.nav-container {
+	transition: all 0.4s ease;
+	pointer-events: none;
+	position: absolute;
+	width: 19em;
+	top: 0;
+	transform: translateX(23.75em);
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+	padding: 7em 2.5em 0 2.5em;
+	background: $white;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.13);
+	color: $black;
+}
+
+// Nav Content -------------------
+.logo {
+	position: absolute;
+	top: 2.5em;
+	left: 2.5em;
+}
+.nav-content {
+	border: 1px solid grey;
+}
+.nav-menu-list {
+	transition: all 0.4s ease;
+	padding: 0;
+	list-style-type: none;
+}
