@@ -21,8 +21,8 @@
 // Nav Trigger --------------------
 .nav-trigger-wrapper {
 	position: absolute;
-	top: 3em;
-	right: 1em;
+	top: 27%;
+	right: 0;
 	height: 26px;
 	width: 26px;
 	cursor: pointer;
@@ -31,17 +31,15 @@
 .nav-trigger-icon {
 	content: '';
 	position: absolute;
-	border-radius: 1em;
-	height: 2px;
+	top: 0.6em;
+	height: 4px;
 	width: 26px;
 	background: $black;
 	@include transition-all;
-	top: 0.75em;
 	&:before {
 		content: '';
 		position: absolute;
-		border-radius: 1em;
-		height: 2px;
+		height: 4px;
 		width: 26px;
 		background: $black;
 		@include transition-all;
@@ -50,8 +48,7 @@
 	&:after {
 		content: '';
 		position: absolute;
-		border-radius: 1em;
-		height: 2px;
+		height: 4px;
 		width: 26px;
 		background: $black;
 		@include transition-all;
@@ -76,6 +73,7 @@
 	}
 }
 
+
 // Nav Container ------------------
 .nav-container {
 	@include transition-all(0.4s);
@@ -87,7 +85,7 @@
 	right: 0;
 	bottom: 0;
 	z-index: 20;
-	padding: 7em 2.5em 0 2.5em;
+	padding: 8.5em 2.5em 0 2.5em;
 	background: $white;
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.13);
 	color: $black;
@@ -96,7 +94,7 @@
 // Nav Content -------------------
 .logo-badge {
 	position: absolute;
-	top: 2.5em;
+	top: 3.5em;
 	left: 2.5em;
 }
 .nav-content {
@@ -113,29 +111,23 @@
 // ===================
 .site-header {
 	margin-top: 3rem;
-	background:$lightgrey;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 }
 .home-link {
-	background:lightpink;
 	display: flex;
 	flex: 0 0 auto;
 }
 .site-header-nav {
-	background: red;
 	align-self: flex-end;
-	flex: 0 1 40%;
-	// display: flex;
-	// flex-direction: row;
-	// flex: 1;
-	// justify-content: flex-end;
-	// align-items: flex-end;
+	flex: 0 1 50%;
 }
 .site-header-nav-list {
-	background: palegoldenrod;
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
+	position: relative;
+	margin-right: 15%;
 }
