@@ -4,9 +4,16 @@
 
 // Nav Overlay --------------------
 .nav-overlay {
-	@include overlay
+	@include overlay;
 	background:transparentize($lightgrey, 0.1);
 	z-index: 10;
+	opacity: 0;
+	@include transition-all();
+}
+.nav-container-active {
+	.nav-overlay {
+		opacity: 1;
+	}
 }
 
 // Nav Trigger --------------------
@@ -26,7 +33,7 @@
 	height: 2px;
 	width: 26px;
 	background: $black;
-	transition: all 0.2s ease;
+	@include transition-all;
 	top: 0.75em;
 	&:before {
 		content: '';
@@ -35,7 +42,7 @@
 		height: 2px;
 		width: 26px;
 		background: $black;
-		transition: all 0.2s ease;
+		@include transition-all;
 		top: -0.4em;
 	}
 	&:after {
@@ -45,7 +52,7 @@
 		height: 2px;
 		width: 26px;
 		background: $black;
-		transition: all 0.2s ease;
+		@include transition-all;
 		top: 0.4em;
 	}
 }
@@ -69,7 +76,7 @@
 
 // Nav Container ------------------
 .nav-container {
-	transition: all 0.4s ease;
+	@include transition-all(0.4s);
 	pointer-events: none;
 	position: absolute;
 	width: 19em;
@@ -94,7 +101,7 @@
 	border: 1px solid grey;
 }
 .nav-menu-list {
-	transition: all 0.4s ease;
+	@include transition-all;
 	padding: 0;
 	list-style-type: none;
 }
