@@ -1,0 +1,26 @@
+Primary:
+  Red:
+    hex: "#D6252C"
+    rgba: "rgba(214, 37, 44, 1.0)"
+  Black:
+    hex: "#212121"
+    rgba: "rgba(33, 33, 33, 1.0)"
+  White:
+    hex: "#FAFAFA"
+    rgba: "rgba(250, 250, 250, 1.0)"
+Secondary:
+  Blue:
+    hex: "#17BECF"
+    rgba: "rgba(23, 190, 207, 1.0)"
+  Lightgrey:
+    hex: "#F0F0F0"
+    rgba: "rgba(240, 240, 240, 1.0)"
+  Grey:
+    hex: "#D6D6D6"
+    rgba: "rgba(214, 214, 214, 1.0)"
+  Midgrey:
+    hex: "#999999"
+    rgba: "rgba(153, 153, 153, 1.0)"
+  Darkgrey:
+    hex: "#303030"
+    rgba: "rgba(48, 48, 48, 1.0)"

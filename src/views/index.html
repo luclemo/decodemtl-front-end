@@ -1,0 +1,47 @@
+---
+title: Overview | Fabricator
+fabricator: true
+---
+
+<h1>Overview</h1>
+
+<p>This UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.</p>
+
+<p>This guide contains real working examples, code snippets, documentation, and style guidelines.</p>
+
+<h4>Usage</h4>
+
+<p>Start by adding the following files to your page:</p>
+
+<pre class="language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code></pre>
+
+<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+
+<h2>Colors</h2>
+
+{{#each colors}}
+	<h4>{{@key}}</h4>
+	<div class="f-color-chips">
+	{{#each this}}
+		<div class="f-color-chip">
+			<div class="f-color-chip__name">{{@key}}</div>
+			<div class="f-color-chip__color">
+				{{#each this}}
+					<span>{{this}}</span>
+				{{/each}}
+			</div>
+		</div>
+	{{/each}}
+	</div>
+{{/each}}
+
+<h2>Typography</h2>
+
+<p>Type is <a href="https://www.fonts.com/font/linotype/din-next">Din Next</a> and is being served from <a href="fonts.com">fonts.com</a>. There are four fonts in use:</p>
+
+<div style="font-size: 1.2rem; font-family:'DIN Next W01 Regular';"> DIN Next™ W01 Regular</code> </div>
+<div style="font-size: 1.2rem; font-family:'DIN Next W01 Italic';"> DIN Next™ W01 Italic </div>
+<div style="font-size: 1.2rem; font-family:'DIN Next W01 Medium';"> DIN Next™ W01 Medium </div>
+<div style="font-size: 1.2rem; font-family:'DIN Next W01 Bold';"> DIN Next™ W01 Bold </div>
+<div style="font-size: 1.2rem; font-family:'DINNextW01-CondensedBol';"> DIN Next™ W01 Condensed Bold </div>

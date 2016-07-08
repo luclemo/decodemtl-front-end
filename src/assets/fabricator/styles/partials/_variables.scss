@@ -1,0 +1,69 @@
+$base-colors: (
+	dark: hsl(0, 0%, 12%),
+	medium: hsl(0, 0%, 46%),
+	light: hsl(0, 0%, 80%),
+	accent: map-get($settings, accent)
+);
+
+$theme-dark: (
+	menu-background: map-get($base-colors, dark),
+	menu-text: map-get($base-colors, light),
+	normal: map-get($base-colors, medium)
+);
+
+$theme-light: (
+	menu-background: hsl(0, 0%, 100%),
+	menu-text: map-get($base-colors, medium),
+	normal: map-get($base-colors, medium)
+);
+
+$theme: $theme-light !default;
+
+@if (map-get($settings, theme) == 'dark') {
+	$theme: $theme-dark;
+}
+
+$colors: map-merge($base-colors, $theme);
+
+$menu-width: map-get($settings, menu-width);
+
+// Decode Typography 
+$font_regular:'DIN Next W01 Regular';
+$font_medium:'DIN Next W01 Medium';
+$font_bold:'DIN Next W01 Bold';
+$font_cond_bold:'DINNextW01-CondensedBol';
+$font_italic:'DIN Next W01 Italic';
+
+// Decode colors
+$red: #D6252C;
+$black: #212121;
+$white: #FAFAFA;
+$blue: #17BECF;
+$lightgrey: #F0F0F0;
+$grey: #D6D6D6;
+$midgrey: #999999;
+$darkgrey: #303030;
+
+
+// functions
+@function color($color) {
+    @return map-get($colors, $color);
+}
+
+
+// mixins
+@mixin clearfix {
+	&:after {
+		clear: both;
+	}
+
+	&:before,
+	&:after {
+		display: table;
+		content: ' ';
+	}
+}
+
+@mixin border-box {
+	box-sizing: border-box;
+}

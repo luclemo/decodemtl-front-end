@@ -1,0 +1,9 @@
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+	
+	@media (min-width: 80em) {
+		// background:green;
+		max-width: 1200px;
+	}
+}

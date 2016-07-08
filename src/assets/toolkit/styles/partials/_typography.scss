@@ -1,0 +1,56 @@
+// ROOT font sizes (html)
+// medium - 125% (20px)
+// large - 138% (22px)
+// small - 
+
+// 16px = 0.8rem
+// 18px = 0.9rem
+// 20px = 1rem (base) -- 125%
+// 24px = 1.2rem
+// 28px = 1.4rem
+// 36px = 1.8rem
+// 60px = 3rem
+// 120px = 6rem
+
+html {
+	font-size: 125%; // 20px
+}
+body {
+  font-family: $font_regular, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+	width: 80%;
+}
+h1 {
+	font-family: $font_bold;
+	font-size: 6rem;
+	margin-bottom: 0.25em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h2,
+h3 {
+	font-family: $font_cond_bold;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+h2 {
+	font-size: 3rem;
+	margin-bottom: 0.3em;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.8rem;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+h4 {
+	font-family: $font_medium;
+	font-weight: normal;
+	font-size: 1.2rem;
+	margin-bottom: 0.5em;
+}
