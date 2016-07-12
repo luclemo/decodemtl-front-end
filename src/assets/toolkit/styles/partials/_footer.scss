@@ -73,3 +73,41 @@
 		margin-right: 1em;
 	}
 }
+
+// ===================
+// Site Credits
+// ===================
+.site-credits {
+	background:$darkgrey;
+	color:darken($midgrey, 20%);
+	font-size: 0.8rem;
+	a {
+		color: inherit;
+		&:after {
+			content: "//";
+			display: inline-block;
+			margin: 0 0.5em;
+		}
+		&:last-child:after {
+			content:"";
+		}
+		&:hover {
+			color: $lightgrey;
+		}
+		&:hover:after {
+			color:darken($midgrey, 20%);
+		}
+	}
+}
+.site-credits-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+.copyright, .terms {
+	flex:auto;
+}
+.copyright {
+}
+.terms {
+	text-align: right;
+}
