@@ -49,7 +49,15 @@
 }
 // footer contact details ------
 .footer-contact-details {
+	list-style: none;
 	margin-bottom: $module-inner-vert-spacing;
+	li {
+		margin-bottom: 0.3em;
+	}
+	.fa-envelope {
+		font-size: 0.8em;
+		margin-right: 0.485714em;
+	}
 }
 // footer nav -----------
 .footer-nav {

@@ -27,6 +27,7 @@
 		<!-- footer-content -->
 		<div class="footer-content">
 			<section class="footer-contact">
+				
 				<!-- footer-optin -->
 				<h4>Join our growing community</h4>
 				<p>Receive info about courses, workshops and events in our growing Montreal tech community.</p>
@@ -35,18 +36,27 @@
 					<input type="email" name="email" placeholder="your email">
 					<input type="submit" class="btn-primary btn-small" name="submit" value="Join">
 				</form><!-- /.footer-optin -->
+				
 				<!-- footer-contact-details -->
-				<div class="footer-contact-details" itemscope itemtype="http://schema.org/ContactPoint">
-					<h4>Reach Out</h4>
-					<span itemscope itemtype="schema.org/PostalAddress"> 
-						<span itemprop="streetAddress">3 Place Ville Marie,</span> 
-						<span itemprop="addressLocality">Montréal,</span>
-						<span itemprop="addressRegion">Québec</span> 
-						<span itemprop="postalCode">H3B 2E3</span> 
-					</span><br> 
-					<span itemprop="telephone"><a href="tel:1-888-511-9155">1-888-511-9155</a></span><br> 
-					<span><a itemprop="email" href="mailto:hello@decodemtl.com">hello@decodemtl.com</a></span> 
-				</div><!-- /.footer-contact-details -->
+				<ul class="footer-contact-details" itemscope itemtype="http://schema.org/ContactPoint">
+					<li><h4>Reach Out</h4></li>
+					<li itemscope itemtype="schema.org/PostalAddress">
+						<a href="https://goo.gl/maps/RmSE1PKEiXH2">
+							<span class="fa fa-map-marker fa-fw" aria-hidden="true"></span> 
+							<span itemprop="streetAddress">3 Place Ville Marie,</span> 
+							<span itemprop="addressLocality">Montréal,</span>
+							<span itemprop="addressRegion">Québec</span> 
+							<span itemprop="postalCode">H3B 2E3</span>
+						</a>
+					</li>  
+					<li>
+						<a itemprop="telephone" href="tel:1-888-511-9155"><span class="fa fa-phone fa-fw" aria-hidden="true"></span> 1-888-511-9155</a>
+					</li>  
+					<li>
+						<a itemprop="email" href="mailto:hello@decodemtl.com"><span class="fa fa-envelope fa-fw" aria-hidden="true"></span> hello@decodemtl.com</a>
+					</li>
+				</ul><!-- /.footer-contact-details -->
+
 				<!-- social-list -->
 				<ul class="social-list">
 					<li class="social-list-item">
