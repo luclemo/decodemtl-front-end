@@ -20,6 +20,7 @@ a {
 	// }
 }
 
+// Button styles ---------------
 .btn-primary {
     @include btn-color();
 }
@@ -31,4 +32,14 @@ a {
 }
 .btn-small {
     @include btn-size(0.9rem, 0.5em);
+}
+
+// Footer links ---------------
+.site-footer {
+	a {
+		color: inherit;
+		&:hover {
+			color: $lightgrey;
+		}
+	}
 }

@@ -12,6 +12,11 @@ ol {
 	list-style-position: inside;
 }
 
+// Accessability --------
+.visually-hidden {
+	@include screen-reader;
+}
+
 // Decode logo ----------
 .decode-logo {
 	.mtl,

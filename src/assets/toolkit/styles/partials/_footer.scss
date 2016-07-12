@@ -24,11 +24,13 @@
 .footer-nav {
 	ul {
 		list-style: none;
-		li a {
-			color: inherit;
-			&:hover {
-				color: $lightgrey;
-			}
-		}
 	}
+}
+// footer social list -----------
+.social-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	width: 25%;
 }
