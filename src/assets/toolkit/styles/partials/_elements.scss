@@ -11,3 +11,25 @@ ol {
 	padding: 0;
 	list-style-position: inside;
 }
+
+// Decode logo ----------
+.decode-logo {
+	.mtl,
+	.petal-special {
+		fill: $red;
+	}
+	.decode,
+	.petal-generic {
+		fill: $black;
+	}
+}
+.decode-logo.reversed {
+	.mtl,
+	.petal-special {
+		fill: $red;
+	}
+	.decode,
+	.petal-generic {
+		fill: $white;
+	}
+}
