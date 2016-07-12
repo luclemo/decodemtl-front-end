@@ -4,10 +4,11 @@
 .site-footer {
 	background:$black;
 	color: $midgrey;
-	padding: $module-padding 0;
+	padding: $module-vert-pd 0;
 	.decode-logo {
 		width: 40%;
 		height: auto;
+		margin-bottom: calc(#{$module-inner-vert-spacing} * 0.5);
 	}
 }
 .footer-content {
@@ -16,9 +17,39 @@
 }
 .footer-contact {
 	flex: 1 1 60%;
+	padding-right: 6em;
 }
 .footer-nav {
 	flex: auto;
+}
+// footer optin ---------
+.footer-optin {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 80%;
+	margin-bottom: $module-inner-vert-spacing;
+	input[type="email"] {
+		flex: 0 0 75%;
+		padding: 0.5em;
+		line-height: 1.3;
+		background:$midgrey;
+		outline: none;
+		&:focus {
+			background:$lightgrey;
+		}
+		&::placeholder {
+			color: $black;
+			opacity: 1;
+		}
+	}
+	input[type="submit"] {
+		flex: 0 0 22%;
+	}
+}
+// footer contact details ------
+.footer-contact-details {
+	margin-bottom: $module-inner-vert-spacing;
 }
 // footer nav -----------
 .footer-nav {
@@ -30,7 +61,7 @@
 .social-list {
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-	width: 25%;
+	li {
+		margin-right: 1em;
+	}
 }
