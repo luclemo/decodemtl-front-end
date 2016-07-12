@@ -20,3 +20,15 @@
 .footer-nav {
 	flex: auto;
 }
+// footer nav -----------
+.footer-nav {
+	ul {
+		list-style: none;
+		li a {
+			color: inherit;
+			&:hover {
+				color: $lightgrey;
+			}
+		}
+	}
+}
