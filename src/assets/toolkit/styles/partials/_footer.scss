@@ -1,0 +1,22 @@
+// ===================
+// Site Footer
+// ===================
+.site-footer {
+	background:$black;
+	color: $midgrey;
+	padding: $module-padding 0;
+	.decode-logo {
+		width: 40%;
+		height: auto;
+	}
+}
+.footer-content {
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer-contact {
+	flex: 1 1 60%;
+}
+.footer-nav {
+	flex: auto;
+}
