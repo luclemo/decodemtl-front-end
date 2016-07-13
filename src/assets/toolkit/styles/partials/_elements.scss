@@ -17,7 +17,7 @@ ol {
 	@include screen-reader;
 }
 
-// Decode logo ----------
+// Decode main logo ----------
 .decode-logo {
 	.mtl,
 	.petal-special {
@@ -36,5 +36,17 @@ ol {
 	.decode,
 	.petal-generic {
 		fill: $white;
+	}
+}
+// Decode badge logo ----------
+.decode-logo-badge {
+	.badge-background {
+		fill:$black;
+	}
+	.badge-petal-generic {
+		fill: $white;
+	}
+	.badge-petal-special {
+		fill: $red;
 	}
 }
