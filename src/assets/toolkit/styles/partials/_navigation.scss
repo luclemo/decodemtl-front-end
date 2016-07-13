@@ -10,7 +10,15 @@
 }
 .home-link {
 	display: flex;
-	flex: 0 0 auto;
+	flex: 0 0 240px;
+	.petals {
+		transform: rotate(0deg);
+		transform-origin: center;
+		transition: transform 0.2s;
+	}
+	&:hover .petals {
+		transform: rotate(180deg);
+	}
 }
 .site-header-nav {
 	align-self: flex-end;
