@@ -1,9 +1,10 @@
 .wrapper {
 	max-width: 980px;
 	margin: 0 auto;
+	padding: 0 1em;
 	
 	@media (min-width: 80em) {
-		// background:green;
 		max-width: 1200px;
+		padding: 0;
 	}
 }
