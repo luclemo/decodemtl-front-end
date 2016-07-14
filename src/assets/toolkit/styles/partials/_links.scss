@@ -2,7 +2,7 @@ a {
 	color: $black;
 	position: relative;
 	text-decoration: none;
-	// transition: all 0.2s;	
+	@include transition-all;
 	// &:before {
  //    position: absolute;
  //    bottom: 0;
@@ -34,7 +34,7 @@ a {
     @include btn-size(0.9rem, 0.5em);
 }
 
-// Footer links ---------------
+
 .site-footer {
 	a {
 		color: inherit;
