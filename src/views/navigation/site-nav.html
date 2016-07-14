@@ -26,11 +26,11 @@
 		</a>
 
 		<nav class="site-header-nav" role="navigation">
-			<ul class="site-header-nav-list" role="menu">
-				<li class="site-header-nav-item"><a href="#">Courses</a></li>
-				<li class="site-header-nav-item"><a href="#">About</a></li>
-				<li class="site-header-nav-item"><a href="#">Schedule a visit</a></li>
-				<li class="site-header-nav-item"><a href="#">fr</a></li>
+			<ul class="site-header-menu" role="menu">
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Schedule a visit</a></li>
+				<li class="lang-switcher"><a href="#">fr</a></li>
 			</ul>
 			<div id="nav-trigger" class="nav-trigger-wrapper">
   			<span class="nav-trigger-icon"></span>
@@ -41,7 +41,7 @@
 	<!-- slideout nav -->
 	<div class="nav-overlay"></div>
 	<div class="nav-container">
-	  <!-- <img class="logo-badge" src="http://dummyimage.com/48x48/CBCBCB" alt="logo" /> -->
+		<!-- logo -->
 	  <a class="mobile-home-link" href="/">
 	  	<svg class="decode-logo-badge" id="decode-logo-badge" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
 	  	  <path class="badge-background" id="badge-background" d="M41.5 83C64.42 83 83 64.42 83 41.5S64.42 0 41.5 0 0 18.58 0 41.5 18.58 83 41.5 83z"/>
@@ -53,14 +53,72 @@
 	  	  </g>
 	  	</svg>
 	  </a>
-	  <nav class="nav-content">
-	    <ul class="nav-menu-list">
-	      <li>Courses</li>
-	      <li>Schedule a visit</li>
-	      <li>About</li>
+	  <nav class="nav-content" role="navigation">
+	    <!-- primary menu -->
+	    <ul class="nav-primary-menu" role="menu">
+	      <li><a href="#">Courses</a></li>
+	      <li><a href="#">Schedule a visit</a></li>
+	      <li><a href="#">About</a></li>
 	    </ul>
-	  </nav>
-	</div>
+	    <!-- cta -->
+	    <div class="nav-cta">
+	    	<a href="#" class="btn-primary btn-small">Apply now</a>
+    	</div>
+    	<!-- secondary menu -->
+    	<ul class="nav-secondary-menu" role="menu">
+    	  <li><a href="#">Alumni</a></li>
+    	  <li><a href="#">Employers</a></li>
+    	  <li><a href="#">Events</a></li>
+    	  <li><a href="#">FAQ</a></li>
+    	  <li><a href="#">Blog</a></li>
+    	  <li><a href="#">Contact</a></li>
+    	</ul><!-- /.secondary-menu -->
+    	<!-- social list -->
+    	<ul class="social-list">
+    		<li class="social-list-item">
+    			<a href="https://www.facebook.com/decodemtl">
+    				<span class="social-icon fa fa-facebook-square" aria-hidden="true"></span>
+    				<span class="visually-hidden">Facebook</span>
+    			</a>
+    		</li>
+    		<li class="social-list-item">
+    			<a href="https://twitter.com/decodemtl">
+    				<span class="social-icon fa fa-twitter-square" aria-hidden="true"></span>
+    				<span class="visually-hidden">Twitter</span>
+    			</a>
+    		</li>
+    		<li class="social-list-item">
+    			<a href="https://www.instagram.com/decodemtl">
+    				<span class="social-icon fa fa-instagram" aria-hidden="true"></span>
+    				<span class="visually-hidden">Instragram</span>
+    			</a>
+    		</li>
+    		<li class="social-list-item">
+    			<a href="https://github.com/DecodeMTL">
+    				<span class="social-icon fa fa-github-square" aria-hidden="true"></span>
+    				<span class="visually-hidden">Github</span>
+    			</a>
+    		</li>
+    	</ul><!-- /.social-list -->
+    	<!-- contact details -->
+    	<ul class="contact-details" itemscope itemtype="http://schema.org/ContactPoint">
+    		<li itemscope itemtype="schema.org/PostalAddress">
+    			<a href="https://goo.gl/maps/RmSE1PKEiXH2"> 
+    				<span itemprop="streetAddress">3 Place Ville Marie,</span><br> 
+    				<span itemprop="addressLocality">Montréal,</span>
+    				<span itemprop="addressRegion">Québec</span> 
+    				<span itemprop="postalCode">H3B 2E3</span>
+    			</a>
+    		</li>  
+    		<li>
+    			<a itemprop="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
+    		</li>  
+    		<li>
+    			<a itemprop="email" href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>
+    		</li>
+    	</ul><!-- /.contact-details -->
+	  </nav><!-- /.nav-content -->
+	</div><!-- /.nav-container -->
 	<!-- /slideout nav -->
 	<h1>YOYOYO</h1>
 </div>
