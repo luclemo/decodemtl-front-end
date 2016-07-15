@@ -4,14 +4,37 @@
 .site-header {
 	margin-top: 3rem;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	position: relative;
-	align-items: baseline;
+	align-items: center;
+	@include breakpoint(phablet) {
+		justify-content: space-between;
+	}
+	.mobile-home-link {
+			display: none;
+			.decode-logo-badge {
+				width: 60px;
+				height: 60px;
+				@include breakpoint(phablet) {
+					width: 48px;
+				}
+			}
+			@include breakpoint(tablet) {
+				display: block;
+				margin-right: auto;
+			}
+			@include breakpoint(phablet) {
+				margin: 0;
+			}
+	}
 }
 .home-link {
 	display: flex;
 	flex: 0 0 240px;
+	margin-right: auto;
+	@include breakpoint(tablet) {
+		display: none;
+	}
 	.petals {
 		transform: rotate(0deg);
 		transform-origin: center;
@@ -21,27 +44,37 @@
 		transform: rotate(180deg);
 	}
 }
+// Header nav --------------
 .site-header-nav {
 	align-self: flex-end;
 	flex: 0 1 50%;
+	margin-right: 8%;
+	@include breakpoint(tablet) {
+		flex-basis: 65%;
+	}
+	@include breakpoint(phablet) {
+		order: -1;
+		flex: 0;
+		margin: 0;
+		li:not(.lang-switcher) {
+			display: none;
+		}
+	}
 }
 .site-header-menu {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	position: relative;
-	margin-right: 15%;
 	li a {
 		font-family: $font-medium;
 		&:hover {
 			color: $red;
 		}
 	}
-	.lang-switcher {
-		text-transform: uppercase;
-	}
 }
-
+.lang-switcher {
+	text-transform: uppercase;
+}
 // ===================
 // Slideout Nav
 // ===================
@@ -63,10 +96,8 @@
 }
 // Nav Trigger --------------------
 .nav-trigger-wrapper {
-	position: absolute;
-	top: 27%;
-	right: 0;
-	height: 26px;
+	position: relative;
+	height: 34px;
 	width: 26px;
 	cursor: pointer;
 	z-index: 30;
@@ -122,7 +153,6 @@
 	position: absolute;
 	width: 19em;
 	top: 0;
-	transform: translateX(23.75em);
 	right: 0;
 	bottom: 0;
 	z-index: 20;
@@ -130,17 +160,23 @@
 	background: $white;
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.13);
 	color: $black;
-}
-// Nav Content -------------------
-.mobile-home-link {
-	position: absolute;
-	top: 3.5em;
-	left: 2.5em;
-	.decode-logo-badge {
-		width: 48px;
-		height: 48px;
+	transform: translateX(23.75em);
+	.mobile-home-link {
+		position: absolute;
+		top: 3.5em;
+		left: 2.5em;
+		.decode-logo-badge {
+			width: 48px;
+			height: 48px;
+		}
+	}
+	@include breakpoint(phablet) {
+		transform: translateX(28.75em);
+		width: 100%;
+		box-shadow: none;
 	}
 }
+// Nav Content -------------------
 .nav-content {
 	ul {
 		list-style-type: none;
