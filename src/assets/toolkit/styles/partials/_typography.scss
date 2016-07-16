@@ -8,7 +8,9 @@
 // 20px = 1rem (base) -- 125%
 // 24px = 1.2rem
 // 28px = 1.4rem
+// 23px = 1.6rem
 // 36px = 1.8rem
+// 40px = 2rem
 // 60px = 3rem
 // 120px = 6rem
 
@@ -26,30 +28,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-p {
-	// width: 80%;
-}
-h1 {
-	font-family: $font_bold;
-	font-size: 6rem;
-	margin-bottom: 0.25em;
-	text-transform: uppercase;
-	font-weight: normal;
-}
+h1,
 h2,
 h3 {
-	font-family: $font_cond_bold;
-	text-transform: uppercase;
+	font-family: $font-bold;
 	font-weight: normal;
+	line-height: 1.2;
+} 
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0.25em;
 }
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 0.3em;
-	font-weight: normal;
 }
 h3 {
-	font-size: 1.8rem;
-	font-weight: normal;
+	font-size: 1.6rem;
 	margin-bottom: 0.5em;
 }
 h4 {
