@@ -12,6 +12,15 @@ ol {
 	list-style-position: inside;
 }
 
+.social-list {
+	list-style: none;
+	display: flex;
+	li a {
+		font-size: 1.8rem;
+		margin-right: 0.6em;
+	}
+}
+
 // Accessability --------
 .visually-hidden {
 	@include screen-reader;
@@ -50,14 +59,12 @@ ol {
 		fill: $red;
 	}
 }
-.decode-logo-badge.reversed {
-	.badge-background {
-		fill:$white;
+// Decode badge logo ----------
+.decode-badge-reversed {
+	.petal-generic {
+		fill: $white;
 	}
-	.badge-petal-generic {
-		fill: $black;
-	}
-	.badge-petal-special {
+	.petal-special {
 		fill: $red;
 	}
 }
