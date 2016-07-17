@@ -1,0 +1,81 @@
+<div class="wrapper">
+	<!-- header -->
+	<header class="site-header">
+		<!-- wide screen logo -->
+		<a class="home-link" href="/" itemprop="url" aria-label="Home">
+			{{> logos.logo-main}}
+		</a>
+		<!-- small screen logo -->
+		<a class="mobile-home-link" href="/"itemprop="url" aria-label="Home">
+			{{> logos.logo-badge}}
+		</a>
+		<!-- .site-header-nav -->
+		<nav class="site-header-nav" role="navigation">
+			<ul class="site-header-menu" role="menu">
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Schedule a visit</a></li>
+				<li class="lang-switcher"><a href="#">fr</a></li>
+			</ul>
+		</nav>
+		<!-- /.site-header-nav -->
+		<div id="nav-trigger" class="nav-trigger-wrapper">
+			<span class="nav-trigger-icon"></span>
+		</div>
+	</header>
+	<!-- /.site-header -->
+	<!-- slideout nav -->
+	<div class="nav-overlay"></div>
+	<div class="nav-container">
+		<!-- inner nav logo -->
+		<a class="mobile-home-link" href="/" aria-label="Home">{{> logos.logo-badge}}</a>
+		<!-- /inner nav logo -->
+		<nav class="nav-content" role="navigation">
+			<!-- primary menu -->
+			<ul class="nav-primary-menu" role="menu">
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Schedule a visit</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<!-- cta -->
+			<div class="nav-cta">
+				<a href="#" class="btn-primary btn-small">Apply now</a>
+			</div>
+			<!-- secondary menu -->
+			<ul class="nav-secondary-menu" role="menu">
+				<li><a href="#">Alumni</a></li>
+				<li><a href="#">Employers</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<!-- /.secondary-menu -->
+			<!-- social list -->
+			{{> social-list}}
+			<!-- /.social-list -->
+			<!-- contact details -->
+			<ul class="contact-details" itemscope itemtype="http://schema.org/ContactPoint">
+				<li itemscope itemtype="schema.org/PostalAddress">
+					<a href="https://goo.gl/maps/RmSE1PKEiXH2">
+						<span itemprop="streetAddress">3 Place Ville Marie,</span>
+						<br>
+						<span itemprop="addressLocality">Montréal,</span>
+						<span itemprop="addressRegion">Québec</span>
+						<span itemprop="postalCode">H3B 2E3</span>
+					</a>
+				</li>
+				<li>
+					<a itemprop="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
+				</li>
+				<li>
+					<a itemprop="email" href="mailto:hello@decodemtl.com">hello@decodemtl.com</a>
+				</li>
+			</ul>
+			<!-- /.contact-details -->
+		</nav>
+		<!-- /.nav-content -->
+	</div>
+	<!-- /.nav-container -->
+</div>
+<!-- /.wrapper -->

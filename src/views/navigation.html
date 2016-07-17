@@ -4,12 +4,8 @@ fabricator: true
 
 <h1 data-f-toggle="labels">Navigation</h1>
 
-<ul>
-{{#each views.navigation.items}}
+{{#each materials.navigation.items}}
 
-	<li>
-		<a href="pages/{{@key}}.html" class="f-item-heading" target="_blank">{{name}}</a>
-	</li>
+{{> f-item this}}
 
 {{/each}}
-</ul>
