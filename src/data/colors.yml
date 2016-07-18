@@ -21,6 +21,9 @@ Secondary:
   Midgrey:
     hex: "#999999"
     rgba: "rgba(153, 153, 153, 1.0)"
+  Hardgrey:
+    hex: "#666666"
+    rgba: "rgba(102, 102, 102, 1.0)"
   Darkgrey:
     hex: "#303030"
     rgba: "rgba(48, 48, 48, 1.0)"
