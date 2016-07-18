@@ -28,9 +28,11 @@ a {
     @include btn-color($grey, $black);
 }
 .btn-large {
+    display: inline-block;
     @include btn-size();
 }
 .btn-small {
+    display: inline-block;
     @include btn-size(0.9rem, 0.5em);
 }
 

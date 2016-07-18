@@ -1,0 +1,9 @@
+// =====================
+// Modules general
+// =====================
+// Two cta buttons 
+.cta-double {
+	.btn-large:not(:last-child) {
+		margin-right: 1em;
+	}
+}
