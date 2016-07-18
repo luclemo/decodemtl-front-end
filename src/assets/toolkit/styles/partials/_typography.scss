@@ -8,7 +8,7 @@
 // 20px = 1rem (base) -- 125%
 // 24px = 1.2rem
 // 28px = 1.4rem
-// 23px = 1.6rem
+// 32px = 1.6rem
 // 36px = 1.8rem
 // 40px = 2rem
 // 60px = 3rem
@@ -52,6 +52,34 @@ h4 {
 	font-weight: normal;
 	font-size: 1.2rem;
 	margin-bottom: 0.5em;
+}
+
+// Body Utility classes ------
+.text-body-large {
+	font-size: 1.4rem;
+}
+.text-body-small {
+	font-size: 0.9rem;
+}
+.text-subtle {
+	color: $hardgrey;
+}
+
+// Module Headers -----------
+.module-title {
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	font-family: $font_cond_bold;
+	.module-title-jumbo {
+		font-family: $font_bold;
+		// line-height: 0.6;
+		margin-top: -0.2em;
+		display: block;
+		font-size: 6rem;
+		color: $red;
+		// background:silver;
+	}
 }
 
 // ===================
