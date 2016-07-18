@@ -2,36 +2,37 @@
 // Site Header
 // ===================
 .site-header {
-	margin-top: 3rem;
+	padding: 2rem 0 3rem 0;
+	@include breakpoint(phablet) {
+		background:$lightgrey;
+		padding: 0;
+	}
+}
+.site-header-wrapper {
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
 	align-items: center;
 	@include breakpoint(phablet) {
 		justify-content: space-between;
-		background:$lightgrey;
-		margin: 0 -2vh;
-		padding: 0 2vh;
-	}
-	@include breakpoint(mobileonly) {
 	}
 	.mobile-home-link {
-			display: none;
-			@include breakpoint(tablet) {
-				display: block;
-				margin-right: auto;
-				font-size: 0;
-			}
+		display: none;
+		@include breakpoint(tablet) {
+			display: block;
+			margin-right: auto;
+			font-size: 0;
+		}
+		@include breakpoint(phablet) {
+			margin: 0;
+		}
+		.decode-logo-badge {
+			width: 60px;
+			height: 60px;
 			@include breakpoint(phablet) {
-				margin: 0;
+				width: 48px;
 			}
-			.decode-logo-badge {
-				width: 60px;
-				height: 60px;
-				@include breakpoint(phablet) {
-					width: 48px;
-				}
-			}
+		}
 	}
 }
 .home-link {
@@ -84,7 +85,11 @@
 // ===================
 // Slideout Nav
 // ===================
-
+// Hide scrollbars when open
+body.nav-container-active {
+	overflow: hidden;
+	// position: fixed;
+}
 // Nav Overlay --------------------
 .nav-overlay {
 	@include overlay;
@@ -156,35 +161,39 @@
 .nav-container {
 	@include transition-all(0.4s);
 	pointer-events: none;
-	position: absolute;
+	position: fixed;
 	width: 19em;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	z-index: 20;
 	height: 100%;
-	overflow: visible;
-	padding: 6em 2.5em 0 2.5em;
+	overflow-y: scroll;
+	padding: 4.6rem 2.5rem 0 2.5rem;
 	background: $white;
 	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.13);
 	color: $black;
 	transform: translateX(23.75em);
-	@include breakpoint(phablet) {
-		transform: translateX(28.75em);
+	@include breakpoint(tablet) {
+		transform: translateX(36.75em);
 		width: 100%;
 		box-shadow: none;
-		padding-top: 3em;
+		padding-top: 5rem;
+	}
+	@include breakpoint(phablet) {
+		padding-top: 3rem;
 	}
 	.mobile-home-link {
 		position: absolute;
-		top: 3.5em;
-		left: 2.5em;
+		top: 2.5rem;
+		left: 2.5rem;
 		.decode-logo-badge {
 			width: 48px;
 			height: 48px;
 		}
 		@include breakpoint(phablet) {
 			top: 15px;
+			left: 2.5rem;
 		}
 	}
 }
