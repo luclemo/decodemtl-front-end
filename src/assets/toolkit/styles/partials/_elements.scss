@@ -22,25 +22,26 @@ ol {
 	}
 }
 
-// petal bullets
-.icon-list {
+// petal icon list
+.petal-icon-list {
 	list-style: none;
-	padding-left: 1.2em;
-	font-size: 1.4rem;
-	line-height: 2;
+	margin-left: 1.7em;
 	li {
+		font-size: 1.4rem;
 		position: relative;
-		&:before {
-		  content:"";
-		  height:100%;
-		  width:0.7em;
-		  margin-left:-1.2em;
-		  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="3.5 7.5 20 20"><path d="M14.74 8.242c4.253-2.727 8.74 2.672 5.146 6.335-1.034 1.053-3.22 1.56-4.993.4-1.49-.968-3.237-.492-4.08.49-1.343 1.566-.792 3.225.025 4.02.874.846 2.367 1.575 4.037.502 2.155-1.387 4.454-.49 5.43.86 3.205 4.434-2.638 9.113-6.282 5.16-1.62-1.757-8.252-8.557-8.252-8.557s7.724-8.172 8.97-9.21" fill="#212121"/></svg>');
+		margin: 0.7em 0;
+		.petal-icon {
 		  position: absolute;
-		  top: 46%;
+		  top: 56%;
 		  transform: translateY(-50%);
-		  background-position:center;
-		  background-repeat:no-repeat;
+		  height:100%;
+		  left: -1.6em;
+		  width: 1.7em;
+		  font-size: 0.8em;
+			&:before {
+			  content:$icon-petal;
+			  font-family: $font_decode;
+			}
 		}
 	}
 }

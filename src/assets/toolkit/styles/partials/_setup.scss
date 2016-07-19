@@ -3,3 +3,12 @@ progress,sub,sup{vertical-align:baseline;}button,hr,input{overflow:visible;}html
 
 // Border-box
 html{box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit;}
+
+// Fontface for svg petal font
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?7uxdc5');
+  src: url('../fonts/icomoon.eot?7uxdc5#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7uxdc5') format('truetype'), url('../fonts/icomoon.woff?7uxdc5') format('woff'), url('../fonts/icomoon.svg?7uxdc5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
