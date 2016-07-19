@@ -1,8 +1,8 @@
 ---
-notes: This oversized list should only be used in modules, not long-form text. Font size is set on <code>ul</code> in order to keep icon proportions.
+notes: This oversized list should only be used in modules, not long-form text such as blog posts. Font size is set on <code>li</code> in order to keep icon proportions.
 ---
-<ul class="icon-list">
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
+<ul class="petal-icon-list">
+  {{#each lists.bootcamp-overview-list}}
+  <li><span class="petal-icon" aria-hidden="true"></span>{{this}}</li>
+  {{/each}}
 </ul>
