@@ -1,0 +1,13 @@
+<section class="module module-course faq-course">
+	<div class="wrapper">
+		<h2 class="module-title">Bootcamp FAQ</h2>
+		<ul class="petal-icon-list accordion-list">
+		  {{#each lists.bootcamp-faq}}
+			  {{#each this}}
+		  <li class="question"><span class="petal-icon" aria-hidden="true"></span>{{question}}</li>
+		  <li class="answer"></span>{{answer}}</li>
+		  {{/each}}
+		  {{/each}}
+		</ul>
+	</div>
+</section>

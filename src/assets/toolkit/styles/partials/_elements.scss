@@ -1,18 +1,21 @@
-// Media -----------
+// ================================
+// Media
+// ================================
 img,
 video,
 svg {
     max-width: 100%;
 }
 
-// Lists ----------
+// ================================
+// Lists
+// ================================
 ul,
 ol {
 	padding: 0;
 	list-style-position: inside;
 }
-
-// Social icons
+// Social icons list ---------
 .social-list {
 	list-style: none;
 	display: flex;
@@ -21,8 +24,7 @@ ol {
 		margin-right: 0.6em;
 	}
 }
-
-// petal icon list
+// petal icon list ------
 .petal-icon-list {
 	list-style: none;
 	margin-left: 1.7em;
@@ -32,7 +34,7 @@ ol {
 		margin: 0.7em 0;
 		.petal-icon {
 		  position: absolute;
-		  top: 56%;
+		  top: 54%;
 		  transform: translateY(-50%);
 		  height:100%;
 		  left: -1.6em;
@@ -41,17 +43,39 @@ ol {
 			&:before {
 			  content:$icon-petal;
 			  font-family: $font_decode;
+			  display: inline-block; // allows rotation
+			  @include transition-all;
 			}
 		}
 	}
 }
-
-// Accessability --------
+// faq list -------------
+.accordion-list {
+  .question {
+    cursor: pointer;
+  }
+  .answer {
+    display: none;
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+  }
+  .rotate:before {
+  transform: rotate(-90deg);
+  }
+}
+// ================================
+// Accessability
+// ================================
+// Helper class--------------------
 .visually-hidden {
 	@include screen-reader;
 }
 
-// Decode main logo ----------
+// ================================
+// Logo
+// ================================
+
+// Decode main logo ---------------
 .decode-logo {
 	.mtl,
 	.petal-special {
@@ -62,6 +86,7 @@ ol {
 		fill: $black;
 	}
 }
+// Decode main logo reversed ------
 .decode-logo.reversed {
 	.mtl,
 	.petal-special {
@@ -72,7 +97,7 @@ ol {
 		fill: $white;
 	}
 }
-// Decode badge logo ----------
+// Decode badge logo --------------
 .decode-logo-badge {
 	.badge-background {
 		fill:$black;
@@ -84,7 +109,7 @@ ol {
 		fill: $red;
 	}
 }
-// Decode badge logo ----------
+// Decode badge logo reversed -----
 .decode-badge-reversed {
 	.petal-generic {
 		fill: $white;

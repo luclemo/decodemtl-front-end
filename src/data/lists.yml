@@ -3,10 +3,30 @@ bootcamp-overview-list:
   - "Intensive project based learning approach"
   - "Career support to get you working ASAP"
 
+lorem-faq:
+  - faq:
+      question: "Aenean lacinia bibendum nulla sed consectetur?"
+      answer: "Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur."
+  - faq:
+      question: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et?"
+      answer: "Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur."
+
 bootcamp-faq:
-  - "Do I need any prior knowledge to attend this course?"
-  - "What are the requirements to take part in this course?"
-  - "What kind of job can I expect? How long will it take?"
-  - "What are the payment deadlines and refund policy?"
-  - "What is the application process?"
-  - "Do I get a certificate upon completion?"
+  - faq:
+      question: "Do I need any prior knowledge to attend this course?"
+      answer: "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  - faq:
+      question: "What are the requirements to take part in this course?"
+      answer: "Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+  - faq:
+      question: "What kind of job can I expect? How long will it take?"
+      answer: "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  - faq:
+      question: "What are the payment deadlines and refund policy?"
+      answer: "Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+  - faq:
+      question: "What is the application process?"
+      answer: "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  - faq:
+      question: "Do I get a certificate upon completion?"
+      answer: "Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
