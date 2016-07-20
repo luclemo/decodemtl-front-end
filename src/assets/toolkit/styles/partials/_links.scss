@@ -19,6 +19,61 @@ a {
 	// }
 }
 
+// Read more links -------------
+.read-more {
+	color: $red;
+  position: relative;
+  padding:0.1em;
+	&:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: $red;
+    content: '';
+    @include transition-all;
+		}
+	&:hover {
+		color: $white;
+		&:before {
+    width: 100%;
+    background: $red;
+		}
+	}
+}
+.link-more {
+	color: $red;
+	position: relative;
+	padding: 0.2em 0.2em 0.2em 0;
+	// padding-right: 0.2em;
+	&:before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 0;
+		height: 100%;
+		background: $red;
+		content: '';
+		@include transition-all;
+	}
+	&:hover {
+		color: $white;
+		padding-left: 0.2em;
+		&:before {
+			width: 100%;
+		}
+	}
+	.fa-caret-right {
+		margin-left: 0.3em;
+		position: relative;
+		top: 0.05em;
+		transition: transform 0.2s;
+	}
+}
+
 // Button styles ---------------
 .btn-primary {
     @include btn-color();
