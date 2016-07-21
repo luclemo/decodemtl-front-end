@@ -1,0 +1,52 @@
+// ========================
+// Tuition & Dates
+// ========================
+.tuition-table {
+	background: transparentize($white, 0.1);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	@include breakpoint(minphablet) {
+		display: block;
+	}
+	// tuition & date row
+	.row {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: 1.2em;
+		flex: auto;
+		@include breakpoint(minphablet) {
+			flex-flow: row nowrap;
+		}
+		&:not(:last-child) {
+			@include breakpoint(minphablet) {
+				border-bottom: 1px solid $lightgrey;
+			}
+			@media (max-width: 30em) {
+				border-bottom: 1px solid $lightgrey;
+
+			}
+		}
+	}
+	// tuition & date cells
+	.cell {
+		padding: 0.3em 0;
+		flex: 1 1 15%;
+		@include breakpoint(minphablet) {
+			&:not(:first-child) {
+				padding-left: 1em;
+			}
+			&:first-child {
+				flex-basis: 30%;
+				text-align: left;
+			}
+			&:last-child {
+				flex: 0 2 10%;
+			}
+		}
+	}
+	.cell-emphasis {
+		font-family: $font_bold;
+	}
+}
