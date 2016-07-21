@@ -4,10 +4,34 @@
 .module {
 	margin-bottom: 6rem;
 }
+// modules with bg images ---------
+.module-bg-img {
+	padding: 3em;
+	.module-title {
+		color: $grey;
+		margin-top: 0;
+	}
+}
 
 // Two cta buttons 
 .cta-double {
 	.btn-large:not(:last-child) {
 		margin-right: 1em;
+	}
+}
+
+// ========================
+// Modules Tuition & Dates
+// ========================
+.tuition-dates {
+	.module-bg-img {
+	background: url('../images/module-bg-students-at-work.jpg') no-repeat center;
+	}
+	.foot-note {
+		text-align: right;
+		color: $grey;
+		@include breakpoint(tablet) {
+			text-align: left;
+		}
 	}
 }

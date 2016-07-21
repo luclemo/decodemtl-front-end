@@ -6,7 +6,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	@include breakpoint(minphablet) {
+	@include breakpoint(mintablet) {
 		display: block;
 	}
 	// tuition & date row
@@ -16,15 +16,15 @@
 		justify-content: space-between;
 		padding: 1.2em;
 		flex: auto;
-		@include breakpoint(minphablet) {
+		@include breakpoint(mintablet) {
 			flex-flow: row nowrap;
 		}
 		&:not(:last-child) {
-			@include breakpoint(minphablet) {
-				border-bottom: 1px solid $lightgrey;
+			@include breakpoint(mintablet) {
+				border-bottom: 1px solid $grey;
 			}
-			@media (max-width: 30em) {
-				border-bottom: 1px solid $lightgrey;
+			@include breakpoint(phablet) {
+				border-bottom: 1px solid $grey;
 
 			}
 		}
@@ -33,7 +33,7 @@
 	.cell {
 		padding: 0.3em 0;
 		flex: 1 1 15%;
-		@include breakpoint(minphablet) {
+		@include breakpoint(mintablet) {
 			&:not(:first-child) {
 				padding-left: 1em;
 			}
