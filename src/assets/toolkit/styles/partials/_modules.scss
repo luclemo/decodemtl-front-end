@@ -4,7 +4,7 @@
 .module {
 	margin-bottom: 6rem;
 }
-// modules with bg images ---------
+// modules with bg images
 .module-bg-img {
 	padding: 3em;
 	.module-title {
@@ -12,7 +12,6 @@
 		margin-top: 0;
 	}
 }
-
 // Two cta buttons 
 .cta-double {
 	.btn-large:not(:last-child) {
@@ -21,7 +20,7 @@
 }
 
 // ========================
-// Modules Tuition & Dates
+// Tuition & Dates Module
 // ========================
 .tuition-dates {
 	.module-bg-img {
@@ -32,6 +31,34 @@
 		color: $grey;
 		@include breakpoint(tablet) {
 			text-align: left;
+		}
+	}
+	// Tuition dates table ---------
+	.multi-column-table {
+		background: transparentize($white, 0.1);
+	}
+	.row {
+		@include breakpoint(mintablet) {
+			padding: 1.2em;
+		}
+		&:not(:last-child) {
+			@include breakpoint(mintablet) {
+				border-color: $grey;
+			}
+			@include breakpoint(phablet) {
+				border-color: $grey;
+			}
+		}
+	}
+	.cell {
+		@include breakpoint(mintablet) {
+			&:first-child {
+				flex-basis: 30%;
+			}
+		}
+		&:last-child,
+		&:first-child {
+			font-family: $font-bold;
 		}
 	}
 }
