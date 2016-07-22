@@ -118,3 +118,31 @@ ol {
 		fill: $red;
 	}
 }
+// ================================
+// Info Blocks
+// ================================
+.info-block {
+	padding: 0.8em;
+	background:$lightgrey;
+	a {
+		color: inherit;
+		border-bottom: 1px solid;
+		&:hover {
+			border-bottom: 2px solid;
+		}
+	}
+}
+.info-block-centered {
+	text-align: center;
+}
+.info-block-red,
+.info-block-blue {
+	color: $white;
+	font-family: $font_medium;
+}
+.info-block-red {
+	background:$red;
+}
+.info-block-blue {
+	background:$blue;
+}
