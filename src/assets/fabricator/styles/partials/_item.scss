@@ -83,30 +83,17 @@
 
 .f-item-notes {
 	font-size: 0.8rem;
-	background:$lightgrey;
-	padding-right: 0.5em;
-	margin-bottom: 2em;
-	// display: inline-block;
 	p {
 		color: grey;
 		width: auto;
-		padding: 1.9em 0.3em 0.3em 0.3em;
-		margin: 0;
-		position: relative;
 			&:before {
 			content: "Notes";
-			background:$grey;
-			font-size: 0.7rem;
-			font-family: $font_medium;
-			position: absolute;
-			top: 0;
-			left: 0;
-			// display: block;
-			// max-width: 6%;
+			background:#f7f7f7;
 			line-height: 0.9;
-			padding: 0.4em;
-			// margin-right: 0.5em;
-			color: $midgrey;
+			padding: 0 0.3em;
+			margin-right: 0.6em;
+			border-radius: 3px;
+			border: 1 ox solid #e4e4e4;
 		}
 	}
 }
