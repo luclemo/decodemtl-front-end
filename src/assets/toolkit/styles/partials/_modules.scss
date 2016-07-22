@@ -7,6 +7,10 @@
 // modules with bg images
 .module-bg-img {
 	padding: 3em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #054851;
 	.module-title {
 		color: $grey;
 		margin-top: 0;
@@ -18,17 +22,23 @@
 		margin-right: 1em;
 	}
 }
+// Module footers
+.module-footer {
+	text-align: center;
+	padding: 1em 0;
+}
 
 // ========================
 // Tuition & Dates Module
 // ========================
 .tuition-dates {
 	.module-bg-img {
-	background: url('../images/module-bg-students-at-work.jpg') no-repeat center;
+	background-image: url('../images/module-bg-students-at-work.jpg');
 	}
 	.foot-note {
 		text-align: right;
 		color: $grey;
+		margin-bottom: 0;
 		@include breakpoint(tablet) {
 			text-align: left;
 		}
@@ -59,6 +69,21 @@
 		&:last-child,
 		&:first-child {
 			font-family: $font-bold;
+		}
+	}
+}
+// ========================
+// Daily Schedule Module
+// ========================
+.course-schedule {
+	color: $grey;
+	.module-bg-img {
+		background-image: url('../images/module-bg-wework-common.jpg');
+	}
+	// Schedule table
+	.two-col-table {
+		.row {
+			border-color: $blue;
 		}
 	}
 }
