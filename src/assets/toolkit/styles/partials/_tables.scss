@@ -50,3 +50,28 @@
 		font-family: $font_bold;
 	}
 }
+// ========================
+// Typical Day
+// ========================
+.two-col-table {
+  .row {
+    border-bottom: 1px solid;
+    padding: 1.5em 0;
+    &:last-child {
+    	border: none;
+    }
+    @include breakpoint(mintablet) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+  .cell-content {
+    @include breakpoint(mintablet) {
+      width: 70%;
+    }
+  }
+  .cell-header {
+    margin-top: 0;
+  }
+}
