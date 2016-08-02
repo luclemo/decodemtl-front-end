@@ -83,17 +83,20 @@
 
 .f-item-notes {
 	font-size: 0.8rem;
+	background:#f4f5ef;
+	line-height: 2;
 	p {
-		color: grey;
+		// color: ;
 		width: auto;
 			&:before {
 			content: "Notes";
-			background:#f7f7f7;
-			line-height: 0.9;
+			background: #e7e8e2;
 			padding: 0 0.3em;
 			margin-right: 0.6em;
-			border-radius: 3px;
-			border: 1 ox solid #e4e4e4;
+			display: inline-block;
+		}
+		code {
+			background:white;
 		}
 	}
 }
