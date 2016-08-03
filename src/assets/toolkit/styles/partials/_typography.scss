@@ -19,6 +19,9 @@
 // ===================
 html {
 	font-size: 125%; // 20px
+	@include breakpoint(mindesktop) {
+		font-size: 138%;
+	}
 }
 body {
   font-family: $font_regular, sans-serif;

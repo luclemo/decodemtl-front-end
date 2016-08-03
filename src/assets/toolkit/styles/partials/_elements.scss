@@ -146,3 +146,32 @@ ol {
 .info-block-blue {
 	background:$blue;
 }
+// ================================
+// Icon Blocks
+// ================================
+.icon-block {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	padding: calc(#{$module-vert-pd} / 2) 0;
+	.icon-block-img {
+		flex: 0 0 100px;
+		margin: 0 60px 0.5em 0;
+		img {
+			width: 100%;
+		}
+	}
+	.icon-block-content {
+		flex: 60%;
+		@include breakpoint(mindesktop) {
+			flex-grow: 0;
+			flex-basis: 70%;
+		}
+		h4 {
+			margin-top: 0;
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
