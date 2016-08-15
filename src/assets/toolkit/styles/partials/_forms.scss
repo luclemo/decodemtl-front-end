@@ -3,7 +3,7 @@ input,
 textarea {
 	border: 0;
 	background:$lightgrey;
-	padding: 0.5em;
+	padding: 1em;
 	margin: 0.5em 0;
 }
 // buttons
@@ -29,6 +29,7 @@ input[type="submit"] {
 		flex: 0 0 75%;
 		background:$midgrey;
 		outline: none;
+		padding: 0.5em;
 		&:focus {
 			background:$lightgrey;
 		}
@@ -39,6 +40,7 @@ input[type="submit"] {
 	}
 	input[type="submit"] {
 		flex: 0 0 22%;
+		padding: 0.5em;
 	}
 }
 // ===================
@@ -55,7 +57,7 @@ input[type="submit"] {
 	}
 	.foot-note {
 		font-family: $font_italic;
-		margin: 1rem 0 0 auto;
+		margin: 1rem 0;
 		a {
 			color: inherit;
 			text-decoration: underline;
@@ -71,6 +73,10 @@ input[type="submit"] {
 			flex: 0 1 calc(50% - 0.5em);
 		}
 		textarea {
+			flex-basis: 100%;
+		}
+		.foot-note {
+			text-align: right;
 			flex-basis: 100%;
 		}
 		input[type="submit"],
