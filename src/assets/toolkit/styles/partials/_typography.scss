@@ -28,6 +28,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: $black;
+  background: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -83,6 +84,12 @@ h4 {
 		color: $red;
 		// background:silver;
 	}
+}
+// Uppercase Headers -----------
+.uc-title {
+	font-family: $font_cond_bold;
+	text-transform: uppercase;
+	margin-top: 0;
 }
 
 // ===================

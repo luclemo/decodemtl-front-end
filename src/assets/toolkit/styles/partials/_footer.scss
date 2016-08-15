@@ -22,29 +22,7 @@
 .footer-nav {
 	flex: auto;
 }
-// footer optin ---------
-.footer-optin {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	max-width: 80%;
-	margin-bottom: $module-inner-vert-spacing;
-	input[type="email"] {
-		flex: 0 0 75%;
-		background:$midgrey;
-		outline: none;
-		&:focus {
-			background:$lightgrey;
-		}
-		&::placeholder {
-			color: $black;
-			opacity: 1;
-		}
-	}
-	input[type="submit"] {
-		flex: 0 0 22%;
-	}
-}
+
 // footer contact details ------
 .footer-contact-details {
 	list-style: none;

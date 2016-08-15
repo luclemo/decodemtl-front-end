@@ -4,6 +4,7 @@ textarea {
 	border: 0;
 	background:$lightgrey;
 	padding: 0.5em;
+	margin: 0.5em 0;
 }
 // buttons
 button,
@@ -12,6 +13,69 @@ input[type="reset"],
 input[type="submit"] {
 	border: 0;
 	@include btn-color();
-	@include btn-size(0.9rem, 0.5em);
 	cursor: pointer;
+}
+
+// ===================
+// Footer Optin Form
+// ===================
+.footer-optin {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 80%;
+	margin-bottom: calc(#{$module-inner-vert-spacing} / 2);
+	input[type="email"] {
+		flex: 0 0 75%;
+		background:$midgrey;
+		outline: none;
+		&:focus {
+			background:$lightgrey;
+		}
+		&::placeholder {
+			color: $black;
+			opacity: 1;
+		}
+	}
+	input[type="submit"] {
+		flex: 0 0 22%;
+	}
+}
+// ===================
+// Contact form
+// ===================
+.contact-form {
+	display: flex;
+	flex-flow: column wrap;
+	textarea {
+		min-height: 10rem;
+	}
+	.optin-checkbox {
+		margin: 1rem 0;
+	}
+	.foot-note {
+		font-family: $font_italic;
+		margin: 1rem 0 0 auto;
+		a {
+			color: inherit;
+			text-decoration: underline;
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+	@include breakpoint(mintablet) {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		input:not([type="submit"]) {
+			flex: 0 1 calc(50% - 0.5em);
+		}
+		textarea {
+			flex-basis: 100%;
+		}
+		input[type="submit"],
+		.optin-checkbox {
+			margin-left: auto;
+		}
+	}
 }

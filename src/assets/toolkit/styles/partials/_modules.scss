@@ -16,6 +16,12 @@
 		margin-top: 0;
 	}
 }
+// Module in white boxes
+.module-boxed {
+	background: #FFF;
+	border: 1px solid $grey;
+	padding: 3em;
+}
 // Two cta buttons 
 .cta-double {
 	.btn-large:not(:last-child) {
