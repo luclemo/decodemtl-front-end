@@ -163,6 +163,32 @@ ol {
 	img {
 		width: 100%;
 	}
+	blockquote {
+		margin: 0;
+		p {
+			font-family: $font_italic;
+		}
+	}
+	.credit {
+		font-size: 0.8em;
+		margin-left: 0.5em;
+		font-family: $font_bold;
+		&::before {
+			content: "—";
+		}
+	}
+	@include breakpoint(minlaptop) {
+		align-items: center;
+	}
+}
+.img-text-pic {
+	flex: 0 0 15%;
+	min-width: 100px;
+	max-width: 200px;
+	margin: 0 60px 0.5em 0;
+	img {
+		border-radius: 50%;
+	}
 }
 .img-text-details {
 	flex: 70%;
@@ -178,18 +204,4 @@ ol {
 		margin: 0 60px 0.5em 0;
 	}
 }
-// Team blocks -----------
-.team-block {
-	.team-pic {
-		flex: 0 0 15%;
-		min-width: 100px;
-		max-width: 200px;
-		margin: 0 60px 0.5em 0;
-		img {
-			border-radius: 50%;
-		}
-	}
-	@include breakpoint(minlaptop) {
-		align-items: center;
-	}
-}
+
