@@ -43,11 +43,10 @@ a {
 		}
 	}
 }
-.link-more {
+.link-more a {
 	color: $red;
 	position: relative;
-	padding: 0.2em 0.2em 0.2em 0;
-	// padding-right: 0.2em;
+	padding: 0.2em 0.2em 0 0;
 	&:before {
 		position: absolute;
 		bottom: 0;
