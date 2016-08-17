@@ -44,7 +44,6 @@ input[type="submit"] {
 	input[type="email"] {
 		background:$midgrey;
 		outline: none;
-		padding: 0.5em;
 		&:focus {
 			background:$lightgrey;
 		}
@@ -55,11 +54,13 @@ input[type="submit"] {
 	}
 	input[type="submit"] {
 		flex: 0 0 22%;
-		padding: 0.5em;
 	}
 	@include breakpoint(minlaptop) {
 		flex-flow: row wrap;
 		justify-content: space-between;
+		input {
+			padding: 0.5em;
+		}
 	}
 	@include breakpoint(mindesktop) {
 		max-width: 80%;
