@@ -150,10 +150,13 @@ ol {
 // Image-text Blocks
 // ================================
 .img-text-container {
+	padding: calc(#{$module-vert-pd} / 2) 0;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: flex-start;
-	padding: calc(#{$module-vert-pd} / 2) 0;
+	&:last-child {
+		padding-bottom: 0;
+	}
 	h4:first-child {
 		margin-top: 0;
 	}
@@ -204,4 +207,3 @@ ol {
 		margin: 0 60px 0.5em 0;
 	}
 }
-
