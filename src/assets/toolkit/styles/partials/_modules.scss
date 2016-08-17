@@ -98,3 +98,67 @@
 		}
 	}
 }
+// ========================
+// Student Project Module
+// ========================
+.student-project {
+	padding: calc(#{$module-vert-pd} / 2) 0;
+	h4 {
+		text-align: center;
+		margin-bottom: $module-vert-pd;
+	}
+	.project-title {
+		font-family: $font_bold;
+	}
+}
+// container for image & details
+.student-project-content {
+	display: flex;
+	flex-flow: column nowrap;
+	@include breakpoint(laptop) {
+		max-width: 500px;
+		margin: auto;
+	}
+	@include breakpoint(minlaptop) {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+// slider image
+.student-project-image {
+	display: flex;
+	align-items: center;
+	max-width: 500px;
+	img {
+		max-width: 100%;
+	}
+}
+// container for slider controls & caption
+.student-project-details {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	flex: 0 1 38%;
+}
+// controls
+.slider-controls {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin: $module-vert-pd 0;
+	padding: 0.5em 0;
+	border-top: 1px solid lighten($darkgrey, 5%);
+	border-bottom: 1px solid lighten($darkgrey, 5%);
+	line-height: 0;
+	@include breakpoint(laptop) {
+		margin: calc(#{$module-vert-pd} / 2) 0;
+	}
+	@include breakpoint(minlaptop) {
+		margin: 0;
+		order: 1;
+	}
+	.slider-current {
+		font-family: $font_cond_bold;
+		font-size: 2rem;
+	}
+}

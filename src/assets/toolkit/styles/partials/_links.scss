@@ -98,3 +98,13 @@ a {
 		}
 	}
 }
+
+// Project Slider -----------
+.slider-previous,
+.slider-next {
+	font-size: 2rem;
+	color: inherit;
+	&:hover {
+		color: $lightgrey;
+	}
+}
