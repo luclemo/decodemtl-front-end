@@ -175,7 +175,7 @@ body.nav-container-active {
 	color: $black;
 	transform: translateX(23.75em);
 	@include breakpoint(tablet) {
-		transform: translateX(36.75em);
+		transform: translateX( calc(36.75em + 2.5rem));
 		width: 100%;
 		box-shadow: none;
 		padding-top: 5rem;
