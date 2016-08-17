@@ -63,10 +63,12 @@
   }
   .cell-content {
     @include breakpoint(mintablet) {
-      width: 70%;
+      flex: 70%;
     }
   }
   .cell-header {
+  	flex: 20%;
+  	padding-right: 1em;
     margin-top: 0;
   }
 }
