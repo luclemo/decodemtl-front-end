@@ -22,6 +22,11 @@
 	border: 1px solid $grey;
 	padding: 3em;
 }
+// Module in dark boxes
+.module-boxed-dark {
+	background: $black;
+	color: $midgrey;
+}
 // Two cta buttons 
 .cta-double {
 	.btn-large:not(:last-child) {
