@@ -17,13 +17,31 @@ input[type="submit"] {
 }
 
 // ===================
-// Footer Optin Form
+// Optin form
+// (forms with email and submit)
 // ===================
-.footer-optin {
+.optin-form {
 	display: flex;
 	flex-flow: column wrap;
+	.foot-note {
+		font-family: $font_italic;
+		margin: 1rem 0;
+	}
+	@include breakpoint(mintablet) {
+		flex-flow: row wrap;
+		justify-content: space-between;
+		input:not([type="submit"]) {
+			flex: 1 1 auto;
+			margin-right: 1em;
+		}
+	}
+}
+
+// ===================
+// Footer Optin Form
+// ===================
+.optin-footer {
 	input[type="email"] {
-		flex: 1 1 auto;
 		background:$midgrey;
 		outline: none;
 		padding: 0.5em;
@@ -87,26 +105,6 @@ input[type="submit"] {
 		input[type="submit"],
 		.optin-checkbox {
 			margin-left: auto;
-		}
-	}
-}
-
-// ===================
-// Optin form
-// ===================
-.optin-form {
-	display: flex;
-	flex-flow: column wrap;
-	.foot-note {
-		font-family: $font_italic;
-		margin: 1rem 0;
-	}
-	@include breakpoint(mintablet) {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		input:not([type="submit"]) {
-			flex: 1 1 auto;
-			margin-right: 1rem;
 		}
 	}
 }
