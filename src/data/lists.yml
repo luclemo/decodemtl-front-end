@@ -30,3 +30,20 @@ bootcamp-faq:
   - faq:
       question: "Do I get a certificate upon completion?"
       answer: "Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+
+career-support:
+  - item:
+      icon: "../../assets/toolkit/images/icons/icon-strategy.svg"
+      alt: "strategy icon"
+      title: "Personalized Approach"
+      text: "Tell us your ultimate goal, and we will work together to create a plan of action."
+  - item:
+      icon: "../../assets/toolkit/images/icons/icon-learn.svg"
+      alt: "learn icon"
+      title: "Learn and Build"
+      text: "Learn job relevant skills, build a portfolio of projects, get resume help, and practice mock interviews."
+  - item:
+      icon: "../../assets/toolkit/images/icons/icon-team.svg"
+      alt: "team icon"
+      title: "Network Placement"
+      text: "Get personalized introductions to hiring companies and attend networking events."

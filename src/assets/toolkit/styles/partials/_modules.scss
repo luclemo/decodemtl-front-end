@@ -162,3 +162,15 @@
 		font-size: 2rem;
 	}
 }
+// ========================
+// Career Support Module
+// ========================
+.career-support {
+	.info-block {
+		display: flex;
+		flex-flow: row wrap;
+		> * {
+			margin: auto;
+		}
+	}
+}

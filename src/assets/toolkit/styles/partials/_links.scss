@@ -108,3 +108,16 @@ a {
 		color: $lightgrey;
 	}
 }
+
+// Career Support Phone CTA --
+.career-support {
+	.phone-link {
+		border: none;
+		font-family: $font_cond_bold;
+		font-size: 2rem;
+		&:hover {
+			border: none;
+			transform: scale(1.1);
+		}
+	}
+}
