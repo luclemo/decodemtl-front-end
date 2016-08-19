@@ -19,10 +19,6 @@ ol {
 .social-list {
 	list-style: none;
 	display: flex;
-	li a {
-		font-size: 1.8rem;
-		margin-right: 0.6em;
-	}
 }
 // petal icon list ------
 .petal-icon-list {
@@ -205,5 +201,19 @@ ol {
 		flex: 0 0 100px;
 		min-width: 100px;
 		margin: 0 60px 0.5em 0;
+	}
+}
+// ================================
+// Foot notes
+// ================================
+.foot-note {
+	font-family: $font_italic;
+	margin: 1rem 0;
+	a {
+		color: inherit;
+		text-decoration: underline;
+		&:hover {
+			color: $black;
+		}
 	}
 }

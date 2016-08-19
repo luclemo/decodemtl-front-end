@@ -23,10 +23,6 @@ input[type="submit"] {
 .optin-form {
 	display: flex;
 	flex-flow: column wrap;
-	.foot-note {
-		font-family: $font_italic;
-		margin: 1rem 0;
-	}
 	@include breakpoint(mintablet) {
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -78,17 +74,6 @@ input[type="submit"] {
 	}
 	.optin-checkbox {
 		margin: 1rem 0;
-	}
-	.foot-note {
-		font-family: $font_italic;
-		margin: 1rem 0;
-		a {
-			color: inherit;
-			text-decoration: underline;
-			&:hover {
-				color: $black;
-			}
-		}
 	}
 	@include breakpoint(mintablet) {
 		flex-flow: row wrap;
