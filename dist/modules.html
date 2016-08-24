@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- Fonts.com fonts -->
+	<script type="text/javascript" src="//fast.fonts.net/jsapi/7adea19c-f46d-4bc4-9b49-417fc6633b72.js"></script>
+	<!-- /Fonts.com fonts -->
+
+	<!-- FontAwesome -->
+	<script src="https://use.fontawesome.com/071daf9e4e.js"></script>
+	<!-- /FontAwesome -->
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+		<!-- fabricator icons -->
+		<svg style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg>
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg>
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">Overview</a>
+				</li>
+		
+				<li>
+					<a href="01-typography.html" class="f-menu__heading">Typography</a>
+					<ul>
+						<li>
+							<a href="01-typography.html#01-body">Body</a>
+						</li>
+						<li>
+							<a href="01-typography.html#02-body-large">Body Large</a>
+						</li>
+						<li>
+							<a href="01-typography.html#03-body-small">Body Small</a>
+						</li>
+						<li>
+							<a href="01-typography.html#04-body-large-subtle">Body Large Subtle</a>
+						</li>
+						<li>
+							<a href="01-typography.html#05-headings-basic">Headings Basic</a>
+						</li>
+						<li>
+							<a href="01-typography.html#06-module-title-jumbo">Module Title Jumbo</a>
+						</li>
+						<li>
+							<a href="01-typography.html#07-module-title">Module Title</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="components.html" class="f-menu__heading">Components</a>
+					<ul>
+						<li>
+							<a href="components.html#01-call-to-action">Call To Action</a>
+						</li>
+						<li>
+							<a href="components.html#form-elements">Form Elements</a>
+						</li>
+						<li>
+							<a href="components.html#image-text-blocks">Image Text Blocks</a>
+						</li>
+						<li>
+							<a href="components.html#info-blocks">Info Blocks</a>
+						</li>
+						<li>
+							<a href="components.html#links">Links</a>
+						</li>
+						<li>
+							<a href="components.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="components.html#logos">Logos</a>
+						</li>
+						<li>
+							<a href="components.html#miscellaneous">Miscellaneous</a>
+						</li>
+						<li>
+							<a href="components.html#module-boxes">Module Boxes</a>
+						</li>
+						<li>
+							<a href="components.html#social-list">Social List</a>
+						</li>
+						<li>
+							<a href="components.html#tables">Tables</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="footers.html" class="f-menu__heading">Footers</a>
+					<ul>
+						<li>
+							<a href="footers.html#01-site-footer">Site Footer</a>
+						</li>
+						<li>
+							<a href="footers.html#02-site-credits">Site Credits</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="modules.html" class="f-menu__heading">Modules</a>
+					<ul>
+						<li>
+							<a href="modules.html#course-career-support">Course Career Support</a>
+						</li>
+						<li>
+							<a href="modules.html#course-curriculum">Course Curriculum</a>
+						</li>
+						<li>
+							<a href="modules.html#course-faq">Course Faq</a>
+						</li>
+						<li>
+							<a href="modules.html#course-hero">Course Hero</a>
+						</li>
+						<li>
+							<a href="modules.html#course-instructor">Course Instructor</a>
+						</li>
+						<li>
+							<a href="modules.html#course-item">Course Item</a>
+						</li>
+						<li>
+							<a href="modules.html#course-overview">Course Overview</a>
+						</li>
+						<li>
+							<a href="modules.html#course-project-slider">Course Project Slider</a>
+						</li>
+						<li>
+							<a href="modules.html#course-schedule">Course Schedule</a>
+						</li>
+						<li>
+							<a href="modules.html#course-testimonial">Course Testimonial</a>
+						</li>
+						<li>
+							<a href="modules.html#course-tuition-dates">Course Tuition Dates</a>
+						</li>
+						<li>
+							<a href="modules.html#employers-cta">Employers Cta</a>
+						</li>
+						<li>
+							<a href="modules.html#form-contact">Form Contact</a>
+						</li>
+						<li>
+							<a href="modules.html#form-optin">Form Optin</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="navigation.html" class="f-menu__heading">Navigation</a>
+					<ul>
+						<li>
+							<a href="navigation.html#01-site-nav">Site Nav</a>
+						</li>
+						<li>
+							<a href="navigation.html#02-secondary-nav">Secondary Nav</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="pages.html" class="f-menu__heading">Pages</a>
+					<ul>
+						<li>
+							<a href="pages/content.html" target="_blank">Content</a>
+						</li>
+						<li>
+							<a href="pages/course-bootcamp.html" target="_blank">Course Bootcamp</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#javascript">Javascript</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container">
+			<div class="f-control-bar">
+				<div class="f-control f-menu-toggle">
+					<svg>
+						<use xlink:href="#f-icon-menu" />
+					</svg>
+				</div>
+			</div>
+
+
+	<main class="main-content">
+	<h1 data-f-toggle="labels">Modules
+	</h1>
+
+
+	<div class="f-item-group" id="course-career-support">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Career Support</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course career-support">
+		<div class="wrapper">
+			<div class="module-boxed">
+				<h2 class="module-title">Career Support</h2>
+				<p>Your path from beginner to employed web developer starts here. Whether you’re looking to jump into a career in tech, or level-up at your current job, our career services team will work with you from day one!</p>
+	
+				<div class="img-text-container icon-block">
+					<div class="icon" aria-hidden="true">
+						<img src="../../assets/toolkit/images/icons/icon-strategy.svg" alt="strategy icon">
+					</div>
+					<div class="img-text-details icon-details">
+						<h4>Personalized Approach</h4>
+						<p>Tell us your ultimate goal, and we will work together to create a plan of action.</p>
+					</div>
+				</div>
+				<!-- ./icon-block -->
+				<div class="img-text-container icon-block">
+					<div class="icon" aria-hidden="true">
+						<img src="../../assets/toolkit/images/icons/icon-learn.svg" alt="learn icon">
+					</div>
+					<div class="img-text-details icon-details">
+						<h4>Learn and Build</h4>
+						<p>Learn job relevant skills, build a portfolio of projects, get resume help, and practice mock interviews.</p>
+					</div>
+				</div>
+				<!-- ./icon-block -->
+				<div class="img-text-container icon-block">
+					<div class="icon" aria-hidden="true">
+						<img src="../../assets/toolkit/images/icons/icon-team.svg" alt="team icon">
+					</div>
+					<div class="img-text-details icon-details">
+						<h4>Network Placement</h4>
+						<p>Get personalized introductions to hiring companies and attend networking events.</p>
+					</div>
+				</div>
+				<!-- ./icon-block -->
+	
+			</div>
+			<!-- /.module-boxed -->
+			<div class="info-block info-block-centered info-block-red" itemscope itemtype="http://schema.org/ContactPoint">
+				<p>Want to know more about your future career options? Give us a call!</p>
+				<a class="phone-link" itemprop="telephone" href="tel:1-888-511-9155">1-888-511-9155</a>
+			</div>
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course career-support&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-boxed&quot;&gt;
+				&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Career Support&lt;/h2&gt;
+				&lt;p&gt;Your path from beginner to employed web developer starts here. Whether you’re looking to jump into a career in tech, or level-up at your current job, our career services team will work with you from day one!&lt;/p&gt;
+	
+				&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+					&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+						&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-strategy.svg&quot; alt&#x3D;&quot;strategy icon&quot;&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+						&lt;h4&gt;Personalized Approach&lt;/h4&gt;
+						&lt;p&gt;Tell us your ultimate goal, and we will work together to create a plan of action.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- ./icon-block --&gt;
+				&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+					&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+						&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-learn.svg&quot; alt&#x3D;&quot;learn icon&quot;&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+						&lt;h4&gt;Learn and Build&lt;/h4&gt;
+						&lt;p&gt;Learn job relevant skills, build a portfolio of projects, get resume help, and practice mock interviews.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- ./icon-block --&gt;
+				&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+					&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+						&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-team.svg&quot; alt&#x3D;&quot;team icon&quot;&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+						&lt;h4&gt;Network Placement&lt;/h4&gt;
+						&lt;p&gt;Get personalized introductions to hiring companies and attend networking events.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- ./icon-block --&gt;
+	
+			&lt;/div&gt;
+			&lt;!-- /.module-boxed --&gt;
+			&lt;div class&#x3D;&quot;info-block info-block-centered info-block-red&quot; itemscope itemtype&#x3D;&quot;http://schema.org/ContactPoint&quot;&gt;
+				&lt;p&gt;Want to know more about your future career options? Give us a call!&lt;/p&gt;
+				&lt;a class&#x3D;&quot;phone-link&quot; itemprop&#x3D;&quot;telephone&quot; href&#x3D;&quot;tel:1-888-511-9155&quot;&gt;1-888-511-9155&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/section&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-curriculum">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Curriculum</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course curriculum-course">
+		<div class="wrapper">
+			<h2 class="module-title">What will you learn?</h2>
+			<div class="img-text-container icon-block">
+				<div class="icon" aria-hidden="true">
+					<img src="../../assets/toolkit/images/icons/icon-api.svg" alt="">
+				</div>
+				<div class="img-text-details icon-details">
+					<h4>Something title</h4>
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.</p>
+				</div>
+			</div>
+			<!-- ./icon-block -->
+			<div class="img-text-container icon-block">
+				<div class="icon" aria-hidden="true">
+					<img src="../../assets/toolkit/images/icons/icon-api.svg" alt="">
+				</div>
+				<div class="img-text-details icon-details">
+					<h4>Something title</h4>
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.</p>
+				</div>
+			</div>
+			<!-- ./icon-block -->
+			<div class="img-text-container icon-block">
+				<div class="icon" aria-hidden="true">
+					<img src="../../assets/toolkit/images/icons/icon-api.svg" alt="">
+				</div>
+				<div class="img-text-details icon-details">
+					<h4>Something title</h4>
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.</p>
+				</div>
+			</div>
+			<!-- ./icon-block -->
+			<div class="img-text-container icon-block">
+				<div class="icon" aria-hidden="true">
+					<img src="../../assets/toolkit/images/icons/icon-api.svg" alt="">
+				</div>
+				<div class="img-text-details icon-details">
+					<h4>Something title</h4>
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.</p>
+				</div>
+			</div>
+			<!-- ./icon-block -->
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course curriculum-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h2 class&#x3D;&quot;module-title&quot;&gt;What will you learn?&lt;/h2&gt;
+			&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+				&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-api.svg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+					&lt;h4&gt;Something title&lt;/h4&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- ./icon-block --&gt;
+			&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+				&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-api.svg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+					&lt;h4&gt;Something title&lt;/h4&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- ./icon-block --&gt;
+			&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+				&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-api.svg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+					&lt;h4&gt;Something title&lt;/h4&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- ./icon-block --&gt;
+			&lt;div class&#x3D;&quot;img-text-container icon-block&quot;&gt;
+				&lt;div class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-api.svg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;img-text-details icon-details&quot;&gt;
+					&lt;h4&gt;Something title&lt;/h4&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- ./icon-block --&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-faq">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Faq</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course faq-course">
+		<div class="wrapper">
+			<h2 class="module-title">Bootcamp FAQ</h2>
+			<ul class="petal-icon-list accordion-list">
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>Do I need any prior knowledge to attend this course?</li>
+				<li class="answer">
+					</span>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</li>
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>What are the requirements to take part in this course?</li>
+				<li class="answer">
+					</span>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</li>
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>What kind of job can I expect? How long will it take?</li>
+				<li class="answer">
+					</span>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</li>
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>What are the payment deadlines and refund policy?</li>
+				<li class="answer">
+					</span>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</li>
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>What is the application process?</li>
+				<li class="answer">
+					</span>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.</li>
+				<li class="question"><span class="petal-icon" aria-hidden="true"></span>Do I get a certificate upon completion?</li>
+				<li class="answer">
+					</span>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</li>
+			</ul>
+			<div class="link-more text-body-small">
+				<a href="#">Read more FAQ's<span class="fa fa-caret-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course faq-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Bootcamp FAQ&lt;/h2&gt;
+			&lt;ul class&#x3D;&quot;petal-icon-list accordion-list&quot;&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;Do I need any prior knowledge to attend this course?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.&lt;/li&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;What are the requirements to take part in this course?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/li&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;What kind of job can I expect? How long will it take?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.&lt;/li&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;What are the payment deadlines and refund policy?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/li&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;What is the application process?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.&lt;/li&gt;
+				&lt;li class&#x3D;&quot;question&quot;&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;Do I get a certificate upon completion?&lt;/li&gt;
+				&lt;li class&#x3D;&quot;answer&quot;&gt;
+					&lt;/span&gt;Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;div class&#x3D;&quot;link-more text-body-small&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;Read more FAQ&#x27;s&lt;span class&#x3D;&quot;fa fa-caret-right&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-hero">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Hero</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<header class="module module-course hero-course">
+		<div class="wrapper">
+			<h1 class="module-title">Web Development<span class="module-title-jumbo">Bootcamp</span></h1>
+			<p class="text-body-large text-subtle">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec arcu, sit amet blandit dolor mollis nec. Donec viverra.</p>
+			<p class="text-body-small text-subtle">Next bootcamp starts: July 4th 2016</p>
+			<div class="cta-double">
+				<a href="#" class="btn-primary btn-large">Apply Now</a>
+				<a href="#" class="btn-secondary btn-large">Syllabus</a>
+			</div>
+		</div>
+	</header>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;header class&#x3D;&quot;module module-course hero-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h1 class&#x3D;&quot;module-title&quot;&gt;Web Development&lt;span class&#x3D;&quot;module-title-jumbo&quot;&gt;Bootcamp&lt;/span&gt;&lt;/h1&gt;
+			&lt;p class&#x3D;&quot;text-body-large text-subtle&quot;&gt;Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec arcu, sit amet blandit dolor mollis nec. Donec viverra.&lt;/p&gt;
+			&lt;p class&#x3D;&quot;text-body-small text-subtle&quot;&gt;Next bootcamp starts: July 4th 2016&lt;/p&gt;
+			&lt;div class&#x3D;&quot;cta-double&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn-primary btn-large&quot;&gt;Apply Now&lt;/a&gt;
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn-secondary btn-large&quot;&gt;Syllabus&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-instructor">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Instructor</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course instructor-course">
+		<div class="wrapper">
+			<h2 class="module-title">Meet Your Instructor</h2>
+			<div class="img-text-container profile-block">
+				<div class="img-text-pic">
+					<img src="../../assets/toolkit/images/profile-team-ziad.jpg" alt="">
+				</div>
+				<div class="img-text-details">
+					<h4>First Last</h4>
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course instructor-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Meet Your Instructor&lt;/h2&gt;
+			&lt;div class&#x3D;&quot;img-text-container profile-block&quot;&gt;
+				&lt;div class&#x3D;&quot;img-text-pic&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/profile-team-ziad.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;img-text-details&quot;&gt;
+					&lt;h4&gt;First Last&lt;/h4&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-item">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Item</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<article class="module course-item">
+		<div class="wrapper">
+			<div class="module-boxed course-item-container">
+				<div class="course-description">
+					<h1 class="module-title">Introduction to<span class="module-title-jumbo">Web Development</span></h1>
+					<p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec arcu, sit amet blandit dolor mollis nec. Donec viverra. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt, quis!</p>
+				</div>
+				<aside class="course-details">
+					<h4 class="course-type">Full Time</h4>
+					<ul class="course-length">
+						<li>8 weeks</li>
+						<li>8-12hrs/day</li>
+						<li>Monday-Friday</li>
+					</ul>
+					<h4>Next Sessions</h4>
+					<ul class="course-sessions">
+						<li>July 4th 2016</li>
+						<li>October 3rd 2016</li>
+					</ul>
+					<a href="#" class="cta btn-primary btn-small">Learn More</a>
+				</aside>
+				<!-- /.course-details -->
+			</div>
+			<!-- /.module-boxed -->
+		</div>
+		<!-- /.wrapper -->
+	</article>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;article class&#x3D;&quot;module course-item&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-boxed course-item-container&quot;&gt;
+				&lt;div class&#x3D;&quot;course-description&quot;&gt;
+					&lt;h1 class&#x3D;&quot;module-title&quot;&gt;Introduction to&lt;span class&#x3D;&quot;module-title-jumbo&quot;&gt;Web Development&lt;/span&gt;&lt;/h1&gt;
+					&lt;p&gt;Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec arcu, sit amet blandit dolor mollis nec. Donec viverra. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt, quis!&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;aside class&#x3D;&quot;course-details&quot;&gt;
+					&lt;h4 class&#x3D;&quot;course-type&quot;&gt;Full Time&lt;/h4&gt;
+					&lt;ul class&#x3D;&quot;course-length&quot;&gt;
+						&lt;li&gt;8 weeks&lt;/li&gt;
+						&lt;li&gt;8-12hrs/day&lt;/li&gt;
+						&lt;li&gt;Monday-Friday&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;h4&gt;Next Sessions&lt;/h4&gt;
+					&lt;ul class&#x3D;&quot;course-sessions&quot;&gt;
+						&lt;li&gt;July 4th 2016&lt;/li&gt;
+						&lt;li&gt;October 3rd 2016&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;cta btn-primary btn-small&quot;&gt;Learn More&lt;/a&gt;
+				&lt;/aside&gt;
+				&lt;!-- /.course-details --&gt;
+			&lt;/div&gt;
+			&lt;!-- /.module-boxed --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/article&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-overview">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Overview</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course overview-course">
+		<div class="wrapper">
+			<h2 class="module-title">Overview</h2>
+			<ul class="petal-icon-list">
+				<li><span class="petal-icon" aria-hidden="true"></span>450+ hours over 8 weeks</li>
+				<li><span class="petal-icon" aria-hidden="true"></span>Intensive project based learning approach</li>
+				<li><span class="petal-icon" aria-hidden="true"></span>Career support to get you working ASAP</li>
+			</ul>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course overview-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Overview&lt;/h2&gt;
+			&lt;ul class&#x3D;&quot;petal-icon-list&quot;&gt;
+				&lt;li&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;450+ hours over 8 weeks&lt;/li&gt;
+				&lt;li&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;Intensive project based learning approach&lt;/li&gt;
+				&lt;li&gt;&lt;span class&#x3D;&quot;petal-icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;Career support to get you working ASAP&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-project-slider">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Project Slider</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course student-project module-boxed-dark">
+		<div class="wrapper">
+			<h4>Gain the skills to build projects like these!</h4>
+			<figure class="student-project-content">
+				<div class="student-project-image">
+					<img src="../../assets/toolkit/images/project.png" alt="">
+				</div>
+				<!-- /.student-project-caption -->
+				<div class="student-project-details">
+					<div class="slider-controls">
+						<a class="slider-previous" href="#"><i class="fa fa-chevron-circle-left" aria-hidden="true" title="Previous Project"></i><span class="sr-only">Previous Project</span></a>
+						<div class="slider-current">01</div>
+						<a class="slider-next" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true" title="Next Project"></i><span class="sr-only">Next Project</span></a>
+					</div>
+					<!-- /.slider-controls -->
+					<figcaption class="student-project-caption">
+						<p class="project-title">Project Title</p>
+						<p class="text-body-small">Project description… pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.</p>
+					</figcaption>
+					<!-- /.student-project-caption -->
+				</div>
+				<!-- /.student-project-details -->
+			</figure>
+			<!-- /.student-project-content -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course student-project module-boxed-dark&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;h4&gt;Gain the skills to build projects like these!&lt;/h4&gt;
+			&lt;figure class&#x3D;&quot;student-project-content&quot;&gt;
+				&lt;div class&#x3D;&quot;student-project-image&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/project.png&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;!-- /.student-project-caption --&gt;
+				&lt;div class&#x3D;&quot;student-project-details&quot;&gt;
+					&lt;div class&#x3D;&quot;slider-controls&quot;&gt;
+						&lt;a class&#x3D;&quot;slider-previous&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-chevron-circle-left&quot; aria-hidden&#x3D;&quot;true&quot; title&#x3D;&quot;Previous Project&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Previous Project&lt;/span&gt;&lt;/a&gt;
+						&lt;div class&#x3D;&quot;slider-current&quot;&gt;01&lt;/div&gt;
+						&lt;a class&#x3D;&quot;slider-next&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-chevron-circle-right&quot; aria-hidden&#x3D;&quot;true&quot; title&#x3D;&quot;Next Project&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Next Project&lt;/span&gt;&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;!-- /.slider-controls --&gt;
+					&lt;figcaption class&#x3D;&quot;student-project-caption&quot;&gt;
+						&lt;p class&#x3D;&quot;project-title&quot;&gt;Project Title&lt;/p&gt;
+						&lt;p class&#x3D;&quot;text-body-small&quot;&gt;Project description… pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.&lt;/p&gt;
+					&lt;/figcaption&gt;
+					&lt;!-- /.student-project-caption --&gt;
+				&lt;/div&gt;
+				&lt;!-- /.student-project-details --&gt;
+			&lt;/figure&gt;
+			&lt;!-- /.student-project-content --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/section&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-schedule">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Schedule</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course course-schedule">
+		<div class="wrapper">
+			<div class="module-bg-img">
+				<h2 class="module-title">Typical Day</h2>
+				<p>By focusing as much as possible on project based learning, lecture time is kept to a minimum. You can expect the average day to unfold as follows:</p>
+				<!-- .two-col-table -->
+				<div class="two-col-table">
+					<div class="row">
+						<h4 class="cell cell-header">10am — Class</h4>
+						<div class="cell cell-content">Teacher guided lectures, live coding, and demos. Take a seat and yu absorb some knowledge!</div>
+					</div>
+					<div class="row">
+						<h4 class="cell cell-header">10am — Class</h4>
+						<div class="cell cell-content">Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!</div>
+					</div>
+					<div class="row">
+						<h4 class="cell cell-header">10am — Class</h4>
+						<div class="cell cell-content">Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!</div>
+					</div>
+					<div class="row">
+						<h4 class="cell cell-header">10am — Class</h4>
+						<div class="cell cell-content">Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!</div>
+					</div>
+				</div>
+				<!-- /.two-col-table -->
+			</div>
+			<div class="info-block info-block-blue info-block-centered">
+				Read more about our <a href="#">workspace</a> and <a href="#">student housing options</a>
+			</div>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course course-schedule&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-bg-img&quot;&gt;
+				&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Typical Day&lt;/h2&gt;
+				&lt;p&gt;By focusing as much as possible on project based learning, lecture time is kept to a minimum. You can expect the average day to unfold as follows:&lt;/p&gt;
+				&lt;!-- .two-col-table --&gt;
+				&lt;div class&#x3D;&quot;two-col-table&quot;&gt;
+					&lt;div class&#x3D;&quot;row&quot;&gt;
+						&lt;h4 class&#x3D;&quot;cell cell-header&quot;&gt;10am — Class&lt;/h4&gt;
+						&lt;div class&#x3D;&quot;cell cell-content&quot;&gt;Teacher guided lectures, live coding, and demos. Take a seat and yu absorb some knowledge!&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;row&quot;&gt;
+						&lt;h4 class&#x3D;&quot;cell cell-header&quot;&gt;10am — Class&lt;/h4&gt;
+						&lt;div class&#x3D;&quot;cell cell-content&quot;&gt;Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;row&quot;&gt;
+						&lt;h4 class&#x3D;&quot;cell cell-header&quot;&gt;10am — Class&lt;/h4&gt;
+						&lt;div class&#x3D;&quot;cell cell-content&quot;&gt;Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;row&quot;&gt;
+						&lt;h4 class&#x3D;&quot;cell cell-header&quot;&gt;10am — Class&lt;/h4&gt;
+						&lt;div class&#x3D;&quot;cell cell-content&quot;&gt;Teacher guided lectures, live coding, and demos. Take a seat and absorb some knowledge!&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- /.two-col-table --&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;info-block info-block-blue info-block-centered&quot;&gt;
+				Read more about our &lt;a href&#x3D;&quot;#&quot;&gt;workspace&lt;/a&gt; and &lt;a href&#x3D;&quot;#&quot;&gt;student housing options&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-testimonial">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Testimonial</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course testimonial-course">
+		<div class="wrapper">
+			<div class="img-text-container profile-block">
+				<div class="img-text-pic">
+					<img src="../../assets/toolkit/images/profile-team-ziad.jpg" alt="">
+				</div>
+				<blockquote class="img-text-details">
+					<p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.<span class="credit">Student Name</span></p>
+					<div class="link-more">
+						<a class="text-body-small" href="#">Meet our alumni<span class="fa fa-caret-right" aria-hidden="true"></span></a>
+					</div>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course testimonial-course&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;img-text-container profile-block&quot;&gt;
+				&lt;div class&#x3D;&quot;img-text-pic&quot;&gt;
+					&lt;img src&#x3D;&quot;../../assets/toolkit/images/profile-team-ziad.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;/div&gt;
+				&lt;blockquote class&#x3D;&quot;img-text-details&quot;&gt;
+					&lt;p&gt;Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque.&lt;span class&#x3D;&quot;credit&quot;&gt;Student Name&lt;/span&gt;&lt;/p&gt;
+					&lt;div class&#x3D;&quot;link-more&quot;&gt;
+						&lt;a class&#x3D;&quot;text-body-small&quot; href&#x3D;&quot;#&quot;&gt;Meet our alumni&lt;span class&#x3D;&quot;fa fa-caret-right&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/blockquote&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="course-tuition-dates">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Course Tuition Dates</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module module-course tuition-dates">
+		<div class="wrapper module-bg-img">
+			<h2 class="module-title">Tuition & Dates</h2>
+			<div class="multi-column-table">
+				<div class="row">
+					<div class="cell">July 4th—Aug 26th</div>
+					<div class="cell">Mon—Fri</div>
+					<div class="cell">10am—6pm</div>
+					<div class="cell">$5,995</div>
+				</div>
+				<div class="row">
+					<div class="cell">Sept 18t—Nov 26th</div>
+					<div class="cell">Mon—Fri</div>
+					<div class="cell">10am—12pm</div>
+					<div class="cell">$5,995</div>
+				</div>
+			</div>
+			<p class="foot-note text-body-small">We accept students on a rolling basis. Classes always fill up so don't wait to apply.</p>
+		</div>
+	</section>
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module module-course tuition-dates&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper module-bg-img&quot;&gt;
+			&lt;h2 class&#x3D;&quot;module-title&quot;&gt;Tuition &amp; Dates&lt;/h2&gt;
+			&lt;div class&#x3D;&quot;multi-column-table&quot;&gt;
+				&lt;div class&#x3D;&quot;row&quot;&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;July 4th—Aug 26th&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;Mon—Fri&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;10am—6pm&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;$5,995&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;row&quot;&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;Sept 18t—Nov 26th&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;Mon—Fri&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;10am—12pm&lt;/div&gt;
+					&lt;div class&#x3D;&quot;cell&quot;&gt;$5,995&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;p class&#x3D;&quot;foot-note text-body-small&quot;&gt;We accept students on a rolling basis. Classes always fill up so don&#x27;t wait to apply.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="employers-cta">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Employers Cta</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module employer-cta-module">
+		<div class="wrapper">
+			<div class="module-boxed">
+				<p>Graduates from our full-stack curriculum are ready for careers as junior web developers</p>
+	
+				<div class="skills-container">
+					<div class="skill">
+						<div class="skill-title">
+							<span class="icon" aria-hidden="true"><img src="../../assets/toolkit/images/icons/icon-api.svg" alt="backend icon"></span>
+							<h4>Back&#8209;end</h4>
+						</div>
+						<p>HTML5, CSS3, JavaScript, jQuery, React</p>
+					</div>
+					<!-- /.skill -->
+					<div class="skill">
+						<div class="skill-title">
+							<span class="icon" aria-hidden="true"><img src="../../assets/toolkit/images/icons/icon-design.svg" alt="frontend icon"></span>
+							<h4>Front&#8209;end</h4>
+						</div>
+						<p>MYSQL, Node.js, Express.js, REST API’s</p>
+					</div>
+					<!-- /.skill -->
+					<div class="skill">
+						<div class="skill-title">
+							<span class="icon" aria-hidden="true"><img src="../../assets/toolkit/images/icons/icon-tools.svg" alt="tooling icon"></span>
+							<h4>Tooling</h4>
+						</div>
+						<p>Git & Github, Terminal, Webpack</p>
+					</div>
+					<!-- /.skill -->
+				</div>
+				<!-- /.skills-container -->
+	
+				<p class="text-body-large">Join our growing network of hiring partners!</p>
+				<p>Reach out and let us introduce you to top technical talent from our pool of graduates…</p>
+				<a class="btn-primary btn-large" href="#">Introduce me</a>
+				<p class="text-body-large">or call us toll free : <a class="phone-link" itemprop="telephone" href="tel:1-888-511-9155">1-888-511-9155</a></p>
+			</div>
+			<!-- /.module-boxed -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module employer-cta-module&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-boxed&quot;&gt;
+				&lt;p&gt;Graduates from our full-stack curriculum are ready for careers as junior web developers&lt;/p&gt;
+	
+				&lt;div class&#x3D;&quot;skills-container&quot;&gt;
+					&lt;div class&#x3D;&quot;skill&quot;&gt;
+						&lt;div class&#x3D;&quot;skill-title&quot;&gt;
+							&lt;span class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-api.svg&quot; alt&#x3D;&quot;backend icon&quot;&gt;&lt;/span&gt;
+							&lt;h4&gt;Back&amp;#8209;end&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;p&gt;HTML5, CSS3, JavaScript, jQuery, React&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;!-- /.skill --&gt;
+					&lt;div class&#x3D;&quot;skill&quot;&gt;
+						&lt;div class&#x3D;&quot;skill-title&quot;&gt;
+							&lt;span class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-design.svg&quot; alt&#x3D;&quot;frontend icon&quot;&gt;&lt;/span&gt;
+							&lt;h4&gt;Front&amp;#8209;end&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;p&gt;MYSQL, Node.js, Express.js, REST API’s&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;!-- /.skill --&gt;
+					&lt;div class&#x3D;&quot;skill&quot;&gt;
+						&lt;div class&#x3D;&quot;skill-title&quot;&gt;
+							&lt;span class&#x3D;&quot;icon&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;img src&#x3D;&quot;../../assets/toolkit/images/icons/icon-tools.svg&quot; alt&#x3D;&quot;tooling icon&quot;&gt;&lt;/span&gt;
+							&lt;h4&gt;Tooling&lt;/h4&gt;
+						&lt;/div&gt;
+						&lt;p&gt;Git &amp; Github, Terminal, Webpack&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;!-- /.skill --&gt;
+				&lt;/div&gt;
+				&lt;!-- /.skills-container --&gt;
+	
+				&lt;p class&#x3D;&quot;text-body-large&quot;&gt;Join our growing network of hiring partners!&lt;/p&gt;
+				&lt;p&gt;Reach out and let us introduce you to top technical talent from our pool of graduates…&lt;/p&gt;
+				&lt;a class&#x3D;&quot;btn-primary btn-large&quot; href&#x3D;&quot;#&quot;&gt;Introduce me&lt;/a&gt;
+				&lt;p class&#x3D;&quot;text-body-large&quot;&gt;or call us toll free : &lt;a class&#x3D;&quot;phone-link&quot; itemprop&#x3D;&quot;telephone&quot; href&#x3D;&quot;tel:1-888-511-9155&quot;&gt;1-888-511-9155&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;!-- /.module-boxed --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/section&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="form-contact">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Form Contact</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module">
+		<div class="wrapper">
+			<div class="module-boxed">
+				<h3 class="uc-title">What can we do for you?</h3>
+				<form class="contact-form" action="" method="post">
+					<label for="first-name" class="visually-hidden">First Name</label>
+					<input type="text" name="first-name" id="first-name" placeholder="First Name" />
+	
+					<label for="last-name" class="visually-hidden">Last Name</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name" />
+	
+					<label for="tel" class="visually-hidden">Your Phone (optional)</label>
+					<input type="tel" name="tel" id="tel" placeholder="Your Phone (optional)" />
+	
+					<label for="email" class="visually-hidden">Email</label>
+					<input type="email" name="email" placeholder="Your email">
+	
+					<label for="message" class="visually-hidden">Your message</label>
+					<textarea name="message" id="message" placeholder="Your message"></textarea>
+	
+					<div class="optin-checkbox">
+						<input type="checkbox" name="list-optin" id="list-optin" value="yes" />
+						<label for="list-optin">Send me info about courses, workshops and events in our growing Montreal tech community.</label>
+					</div>
+	
+					<input class="btn-large" type="submit" name="submit" value="Submit">
+	
+					<div class="foot-note text-body-small text-subtle">
+						By providing us with your email, you agree to the terms of our <a href=#>Privacy Policy</a> and <a href="#">Terms of Service</a>.
+					</div>
+				</form>
+				<!-- /.contact-form -->
+			</div>
+			<!-- /.module-boxed -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-boxed&quot;&gt;
+				&lt;h3 class&#x3D;&quot;uc-title&quot;&gt;What can we do for you?&lt;/h3&gt;
+				&lt;form class&#x3D;&quot;contact-form&quot; action&#x3D;&quot;&quot; method&#x3D;&quot;post&quot;&gt;
+					&lt;label for&#x3D;&quot;first-name&quot; class&#x3D;&quot;visually-hidden&quot;&gt;First Name&lt;/label&gt;
+					&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;first-name&quot; id&#x3D;&quot;first-name&quot; placeholder&#x3D;&quot;First Name&quot; /&gt;
+	
+					&lt;label for&#x3D;&quot;last-name&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Last Name&lt;/label&gt;
+					&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;last-name&quot; id&#x3D;&quot;last-name&quot; placeholder&#x3D;&quot;Last Name&quot; /&gt;
+	
+					&lt;label for&#x3D;&quot;tel&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Your Phone (optional)&lt;/label&gt;
+					&lt;input type&#x3D;&quot;tel&quot; name&#x3D;&quot;tel&quot; id&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;Your Phone (optional)&quot; /&gt;
+	
+					&lt;label for&#x3D;&quot;email&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Email&lt;/label&gt;
+					&lt;input type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Your email&quot;&gt;
+	
+					&lt;label for&#x3D;&quot;message&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Your message&lt;/label&gt;
+					&lt;textarea name&#x3D;&quot;message&quot; id&#x3D;&quot;message&quot; placeholder&#x3D;&quot;Your message&quot;&gt;&lt;/textarea&gt;
+	
+					&lt;div class&#x3D;&quot;optin-checkbox&quot;&gt;
+						&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;list-optin&quot; id&#x3D;&quot;list-optin&quot; value&#x3D;&quot;yes&quot; /&gt;
+						&lt;label for&#x3D;&quot;list-optin&quot;&gt;Send me info about courses, workshops and events in our growing Montreal tech community.&lt;/label&gt;
+					&lt;/div&gt;
+	
+					&lt;input class&#x3D;&quot;btn-large&quot; type&#x3D;&quot;submit&quot; name&#x3D;&quot;submit&quot; value&#x3D;&quot;Submit&quot;&gt;
+	
+					&lt;div class&#x3D;&quot;foot-note text-body-small text-subtle&quot;&gt;
+						By providing us with your email, you agree to the terms of our &lt;a href&#x3D;#&gt;Privacy Policy&lt;/a&gt; and &lt;a href&#x3D;&quot;#&quot;&gt;Terms of Service&lt;/a&gt;.
+					&lt;/div&gt;
+				&lt;/form&gt;
+				&lt;!-- /.contact-form --&gt;
+			&lt;/div&gt;
+			&lt;!-- /.module-boxed --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/section&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+
+	<div class="f-item-group" id="form-optin">
+	
+		<div class="f-item-heading-group" data-f-toggle="labels">
+			<h2 class="f-item-heading">Form Optin</h2>
+			<div class="f-item-controls">
+				<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</span>
+			</div>
+		</div><div class="f-item-preview">
+		<section class="module">
+		<div class="wrapper">
+			<div class="module-boxed">
+				<p class="text-body-large">Get Instant access to our prep course material</p>
+				<p>Discover the content our applicants must complete for admission, or start learning on your own!</p>
+				<form class="optin-form" action="" method="post">
+					<label for="email" class="visually-hidden">Email</label>
+					<input type="email" name="email" placeholder="Your email">
+	
+					<input class="btn-large" type="submit" name="submit" value="Submit">
+	
+					<div class="foot-note text-body-small text-subtle">
+						By providing us with your email, you agree to the terms of our <a href=#>Privacy Policy</a> and <a href="#">Terms of Service</a>.
+					</div>
+				</form>
+				<!-- /.optin-form -->
+			</div>
+			<!-- /.module-boxed -->
+		</div>
+		<!-- /.wrapper -->
+	</section>
+	<!-- /.module -->
+	</div>
+	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;section class&#x3D;&quot;module&quot;&gt;
+		&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+			&lt;div class&#x3D;&quot;module-boxed&quot;&gt;
+				&lt;p class&#x3D;&quot;text-body-large&quot;&gt;Get Instant access to our prep course material&lt;/p&gt;
+				&lt;p&gt;Discover the content our applicants must complete for admission, or start learning on your own!&lt;/p&gt;
+				&lt;form class&#x3D;&quot;optin-form&quot; action&#x3D;&quot;&quot; method&#x3D;&quot;post&quot;&gt;
+					&lt;label for&#x3D;&quot;email&quot; class&#x3D;&quot;visually-hidden&quot;&gt;Email&lt;/label&gt;
+					&lt;input type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Your email&quot;&gt;
+	
+					&lt;input class&#x3D;&quot;btn-large&quot; type&#x3D;&quot;submit&quot; name&#x3D;&quot;submit&quot; value&#x3D;&quot;Submit&quot;&gt;
+	
+					&lt;div class&#x3D;&quot;foot-note text-body-small text-subtle&quot;&gt;
+						By providing us with your email, you agree to the terms of our &lt;a href&#x3D;#&gt;Privacy Policy&lt;/a&gt; and &lt;a href&#x3D;&quot;#&quot;&gt;Terms of Service&lt;/a&gt;.
+					&lt;/div&gt;
+				&lt;/form&gt;
+				&lt;!-- /.optin-form --&gt;
+			&lt;/div&gt;
+			&lt;!-- /.module-boxed --&gt;
+		&lt;/div&gt;
+		&lt;!-- /.wrapper --&gt;
+	&lt;/section&gt;
+	&lt;!-- /.module --&gt;</code></pre>
+	</div>
+	
+	
+	</div>
+
+</main>
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- /jquery -->
+	
+	<!-- toolkit scripts -->
+	<script src="/assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+		</div>
+	<script src="/assets/fabricator/scripts/f.js"></script>
+
+
+</body>
+</html>
