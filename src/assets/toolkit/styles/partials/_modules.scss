@@ -197,7 +197,6 @@
 	}
 }
 .skill {
-	// background:pink;
 	padding: 1em 0;
 	flex: 0 0 calc(30% - 1em);
 }
@@ -215,5 +214,62 @@
 	}
 	h4 {
 		margin: 0;
+	}
+}
+// ========================
+// Course item module
+// ========================
+.course-item {
+	.module-title {
+		font-size: 1.8rem;
+		letter-spacing: 0.04em;
+		margin-bottom: 1em;
+	}
+	.module-title-jumbo {
+		font-size: 2.5rem;
+		margin-top: 0;
+		line-height: 0.9;
+	}
+}
+.course-item-container {
+	padding: 0;
+	@include breakpoint(minphablet) {
+		display: flex;
+	}
+}
+.course-description {
+	padding: 2em;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.course-details {
+	font-size: 0.9rem;
+	text-align: center;
+	background:$lightgrey;
+	flex: 1 0 25%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.course-details-block {
+		flex: 1 auto;
+		@include breakpoint(minphablet) {
+			flex: 100%;
+		}
+	}
+	h4 {
+		font-size: inherit;
+		margin: 0;
+		padding: 0.2em;
+		color: $midgrey;
+		background:$grey;
+	}
+	ul {
+		color: $hardgrey;
+		list-style: none;
+	}
+	.btn-primary {
+		width: 100%;
+		align-self: flex-end;
 	}
 }
