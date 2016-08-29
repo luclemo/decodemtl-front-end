@@ -4,7 +4,7 @@
 
 # DecodeMTL StyleGuide
 
-This is living styleguide of front-end code for the DecodeMTL website.
+This is living styleguide for the DecodeMTL website.
 
 
 ## Getting started
