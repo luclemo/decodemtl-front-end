@@ -9,7 +9,7 @@ This is living styleguide of front-end code for the DecodeMTL website.
 
 ## Getting started
 
-Clone or the repo then run:
+Clone or download the repo then run:
 
 ```
 $ npm install
@@ -20,4 +20,4 @@ Project will run locally on port `3000`
 
 ## Credits
 
-Created using the excellent [Fabricator](http://fbrctr.github.io/) by [Luke Askew](http://twitter.com/lukeaskew).
+Created using the excellent [Fabricator](http://fbrctr.github.io/) by [Luke Askew](http://twitter.com/lukeaskew)
