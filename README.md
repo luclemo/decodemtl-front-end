@@ -20,4 +20,4 @@ Project will run locally on port `3000`
 
 ## Credits
 
-Created using the excellent [Fabricator](http://fbrctr.github.io/) by [Luke Askew](http://twitter.com/lukeaskew).
+Created using the excellent [Fabricator](http://fbrctr.github.io/) by [Luke Askew](http://twitter.com/lukeaskew)
