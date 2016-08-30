@@ -27,6 +27,11 @@
 	background: $black;
 	color: $midgrey;
 }
+// Module in light grey boxes
+.module-boxed-medium {
+	background: $lightgrey;
+	color: $midgrey;
+}
 // Two cta buttons 
 .cta-double {
 	.btn-large:not(:last-child) {
@@ -184,7 +189,7 @@
 }
 .skills-container {
 	text-align: left;
-	background:$lightgrey;
+	color: inherit;
 	margin: $module-vert-pd -3em;
 	padding: 1em 3em;
 	display: flex;
@@ -246,7 +251,6 @@
 .course-details {
 	font-size: 0.9rem;
 	text-align: center;
-	background:$lightgrey;
 	flex: 1 0 25%;
 	display: flex;
 	flex-flow: row wrap;
@@ -261,7 +265,6 @@
 		font-size: inherit;
 		margin: 0;
 		padding: 0.2em;
-		color: $midgrey;
 		background:$grey;
 	}
 	ul {
