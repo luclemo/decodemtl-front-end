@@ -47,3 +47,14 @@ career-support:
       alt: "team icon"
       title: "Network Placement"
       text: "Get personalized introductions to hiring companies and attend networking events."
+
+events:
+  - item:
+      event-date: "2016.08.22"
+      event-name: "Event name and short description lorem ipsum dolor sit amet consectetur adipisicing elit."
+  - item:
+      event-date: "2016.08.22"
+      event-name: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reprehenderit provident vero deserunt illum, laboriosam nulla, maxime ad voluptatibus velit!"
+  - item:
+      event-date: "2016.08.22"
+      event-name: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, porro!"

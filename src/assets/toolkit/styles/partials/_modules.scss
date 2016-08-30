@@ -273,3 +273,39 @@
 		align-self: flex-end;
 	}
 }
+// ========================
+// Events Module
+// ========================
+.events-list {
+	margin: $module-vert-pd 0 calc(#{$module-vert-pd} / 2) 0;
+	list-style: none;
+	li {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		border-bottom: 1px solid $grey;
+		padding: 1em 0 1.1em 0;
+	}
+	.event-date {
+		margin-right: 40px;
+		font-family: $font_bold;
+		color: $midgrey;
+	}
+	.event-name {
+		flex: 0 0 80%;
+		@media screen and (min-width: 37.5em) and (max-width: 60em){
+			flex: 0 0 90%;
+		}
+	}
+	.event-url a {
+		display: flex;
+		font-family: $font_bold;
+		color: $midgrey;
+		&::before {
+			content: none;
+		}
+		&:hover {
+			color: $red;
+		}
+	}
+}

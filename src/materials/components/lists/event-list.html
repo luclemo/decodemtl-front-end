@@ -1,0 +1,16 @@
+<ul class="events-list">
+	{{#each lists.events}}
+		{{#each this}}
+	<li class="text-body-small" itemscope itemtype="http://schema.org/Event">
+		<div class="event-date" itemprop="startDate">{{event-date}}</div>
+		<div class="event-name" itemprop="name">{{event-name}}</div>
+		<div class="event-url">
+			<a class="text-body-large" href="#" itemprop="url">
+				<span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
+				<span class="visually-hidden">Event URL</span>
+			</a>
+		</div>
+	</li>
+		{{/each}}
+	{{/each}}
+</ul>
