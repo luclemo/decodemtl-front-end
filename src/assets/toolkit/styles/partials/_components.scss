@@ -13,7 +13,17 @@ svg {
 ul,
 ol {
 	padding: 0;
-	list-style-position: inside;
+}
+
+// Generic list style for body-copy
+.body-copy-list {
+	margin: 2em 0;
+	font-size: 0.9rem;
+	li {
+		margin-left: 2.5em;
+		margin-bottom: 0.8em;
+		list-style-position: initial;
+	}
 }
 // Social icons list ---------
 .social-list {
