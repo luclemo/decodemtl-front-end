@@ -12,7 +12,7 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: -10;
     width: 100%;
     height: 1px;
     background: $black;
@@ -32,11 +32,12 @@ a {
 .link-more a {
 	color: $red;
 	position: relative;
+	z-index: 0;
 	&::before {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		z-index: -1;
+		z-index: -10;
 		width: 0;
 		height: 100%;
 		background: $red;
@@ -110,6 +111,9 @@ a {
 .slider-next {
 	font-size: 2rem;
 	color: inherit;
+	&:before {
+		content: 'none';
+	}
 	&:hover {
 		color: $lightgrey;
 	}
