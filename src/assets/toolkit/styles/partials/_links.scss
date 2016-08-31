@@ -102,7 +102,7 @@ a {
 	font-size: 1.8rem;
 	margin-right: 0.6em;
 	&::before {
-		position: static;
+		content: none;
 	}
 }
 // Project Slider -----------
@@ -122,7 +122,7 @@ a {
 		font-family: $font_cond_bold;
 		font-size: 2rem;
 		&:before {
-			position: static;
+			content: none;
 		}
 		&:hover {
 			border: none;
