@@ -312,3 +312,38 @@
 		}
 	}
 }
+// ========================
+// Partner Logos Module
+// ========================
+.partner-logos-module {
+	padding: calc(#{$module-vert-pd} / 2) 0;
+	margin-bottom: 0;
+	h4 {
+		text-align: center;
+		color: $black;
+	}
+	.link-more {
+		text-align: center;
+	}
+}
+.partner-logos-container {
+	margin: $module-vert-pd 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.partner-logo {
+	margin: 1rem auto;
+	height: 2.25rem;
+	width: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include breakpoint(mintablet) {
+		width: 11.4rem;
+	}
+	img {
+		max-width: 80%;
+		max-height: 100% ;
+	}
+}

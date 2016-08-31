@@ -1,0 +1,15 @@
+<section class="module partner-logos-module module-boxed-medium">
+	<div class="wrapper">
+		<h4>Our grads work with these fine folks</h4>
+		<div class="partner-logos-container">
+			{{#each partnerLogos}}
+				{{#each this}}
+			<div class="partner-logo">
+				<img src="{{src}}" alt="{{alt}}">
+			</div>
+				{{/each}}
+				{{/each}}
+		</div><!-- /.partner-logo-container -->
+		{{> links.read-more-block}}
+	</div><!-- /.wrapper -->
+</section><!-- /.partner-logos-module -->
