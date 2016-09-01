@@ -1,14 +1,17 @@
+---
+notes: This nav should only be used on individual course pages. It remains hidden until user scrolls past the apply CTA. It disappears again when the user scrolls up past that point again.
+---
 <nav class="secondary-nav">
 	<div class="wrapper secondary-nav-container">
 		<!-- Menu -->
 		<ul class="secondary-nav-list" role="menu">
-			<li><a href="#">item one</a></li>
-			<li><a href="#">item two</a></li>
-			<li><a href="#">item three</a></li>
-			<li><a href="#">item four</a></li>
-			<li><a href="#">item five</a></li>
-			<li><a href="#">item six</a></li>
-			<li><a href="#">item seven</a></li>
+			<li><a href="#">Overview</a></li>
+			<li><a href="#">Tuition & Dates</a></li>
+			<li><a href="#">Curriculum</a></li>
+			<li><a class="current" href="#">Typical Day</a></li>
+			<li><a href="#">Instructor</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">FAQ</a></li>
 		</ul>
 		<!-- CTA -->
 		<ul class="secondary-nav-cta">
@@ -16,5 +19,5 @@
 			<li>{{> call-to-action.secondary-small}}</li>
 		</ul>
 	</div>
-</nav>
+</nav><!-- /.secondary-nav -->
 
