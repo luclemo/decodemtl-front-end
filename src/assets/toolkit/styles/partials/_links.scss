@@ -134,3 +134,17 @@ a {
 		}
 	}
 }
+
+// Foot-notes ---------------
+.foot-note {
+	a {
+		color: inherit;
+		text-decoration: underline;
+		&:hover {
+			color: $black;
+		}
+		&::before {
+			content: none;
+		}
+	}
+}
