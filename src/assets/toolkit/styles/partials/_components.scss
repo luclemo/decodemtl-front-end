@@ -6,6 +6,21 @@ video,
 svg {
     max-width: 100%;
 }
+// Makes embedded iframes responsive!
+.video-container {
+  height: 0;
+  padding-bottom: 56.25%; //16:9 ratio => (9 ÷ 16) * 100
+  position: relative;
+  width: 100%;
+	margin: 0 auto;
+	iframe {
+	  height: 100%;
+	  left: 0;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	}
+}
 
 // ================================
 // Utility
@@ -238,18 +253,40 @@ ol {
 }
 // Close button ------------
 .close-btn {
-  background: $grey;
   border-radius: 50%;
   width: 1.5rem;
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+  cursor: pointer;
 	svg {
 	  display: block;
 	  padding: 5%;
 	}
 }
 .close-x path {
-  stroke: $hardgrey;
+  stroke: $midgrey;
   fill: transparent;
   stroke-linecap: round;
   stroke-width: 5;
+}
+// ================================
+// Modals
+// ================================
+.modal {
+	display: none;
+	@include overlay;
+	background:transparentize($lightgrey, 0.1);
+	z-index: 50;
+	padding: 10vh 10vw;
+	.close-btn {
+		position: absolute;
+		top:5vh;
+		right:5vw;
+		z-index: 60;
+	}
+}
+.modal-content {
+	position: relative;
+}
+.modal-dark {
+	background:transparentize(#000, 0.1);
+	color: $grey;
 }

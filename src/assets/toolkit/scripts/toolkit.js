@@ -52,3 +52,15 @@ $(document).ready( function() {
        icon.toggleClass('rotate');
    });
 });
+// ================================
+// Modal Open & Close
+// ================================
+$(document).ready( function() {
+	$(".clickme").on("click", function(e) {
+	    e.preventDefault(),
+	    $(".modal").fadeIn()
+	}),
+	$(".close-btn").on("click", function() {
+	    $(this).parent().fadeOut()
+	});
+});
