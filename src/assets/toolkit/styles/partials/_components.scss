@@ -76,7 +76,15 @@ ol {
 .visually-hidden {
 	@include screen-reader;
 }
-
+// ================================
+// Animations
+// ================================
+.fade-in {
+	@include fade-in-animation;
+}
+.fade-out {
+	@include fade-out-animation;
+}
 // ================================
 // Logos
 // ================================
