@@ -229,9 +229,27 @@ ol {
 	}
 }
 // ================================
-// Foot notes
+// Miscellaneous
 // ================================
+// Footnote --------------
 .foot-note {
 	font-family: $font_italic;
 	margin: 1rem 0;
+}
+// Close button ------------
+.close-btn {
+  background: $grey;
+  border-radius: 50%;
+  width: 1.5rem;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+	svg {
+	  display: block;
+	  padding: 5%;
+	}
+}
+.close-x path {
+  stroke: $hardgrey;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 5;
 }
