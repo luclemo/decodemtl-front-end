@@ -86,6 +86,7 @@ strong {
 		display: block;
 		font-size: 6rem;
 		color: $red;
+		@include word-wrap;
 	}
 }
 // Uppercase Headers -----------
