@@ -273,6 +273,9 @@ ol {
 // ================================
 // Modals
 // ================================
+.clickme {
+	cursor: pointer;
+}
 .modal {
 	display: none;
 	@include overlay;
@@ -292,4 +295,30 @@ ol {
 .modal-dark {
 	background:transparentize(#000, 0.1);
 	color: $grey;
+}
+// ================================
+// Videos
+// ================================
+// Video Trigger -------------
+.video-trigger {
+	overflow: hidden;
+	position: relative;
+}
+.video-clip-img {
+	width: 100%;
+	display: block;
+}
+// Video Controls ------------
+.video-controls {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.video-controls-play {
+	fill: $white;
+}
+.video-controls-background {
+	fill: $midgrey;
+	opacity: 0.8;
 }
