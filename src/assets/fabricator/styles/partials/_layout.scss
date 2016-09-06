@@ -51,7 +51,11 @@ body {
 	font-size: 0.9rem;
 }
 
-.f-container .modal {
+#modals .modal {
 	position: relative;
 	display: block;
 }
+#miscellaneous .video-controls {
+	position: static;
+	transform: none;
+	}
