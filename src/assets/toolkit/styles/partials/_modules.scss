@@ -370,3 +370,13 @@
 		max-width: 22.4rem;
 	}
 }
+// ========================
+// Evolving Module
+// ========================
+.evolving-module {
+	.one-half-content:not(:last-child) {
+		@include breakpoint(tablet) {
+			margin-bottom: calc(#{$module-vert-pd} / 2);
+		}
+	}
+} 
