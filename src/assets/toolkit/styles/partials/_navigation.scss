@@ -269,6 +269,9 @@ body.nav-container-active {
 		list-style: none;
 		margin: 0;
 	}
+	@include breakpoint(tablet) {
+		display: none;
+	}
 }
 .secondary-nav-container {
 	display: flex;
