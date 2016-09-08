@@ -77,17 +77,6 @@ strong {
 // Module Headers -----------
 .module-title {
 	@include module-title-style();
-	// text-transform: uppercase;
-	// letter-spacing: 0.025em;
-	// font-family: $font_cond_bold;
-	.module-title-jumbo {
-		font-family: $font_bold;
-		margin-top: -0.2em;
-		display: block;
-		font-size: 6rem;
-		color: $red;
-		@include word-wrap;
-	}
 }
 .module-title-medium {
 	@include module-title-style(1.6rem);
@@ -95,11 +84,13 @@ strong {
 .module-title-small {
 	@include module-title-style(1.2rem);
 }
-// Uppercase Headers -----------
-.uc-title {
-	font-family: $font_cond_bold;
-	text-transform: uppercase;
-	margin-top: 0;
+.module-title-jumbo {
+	font-family: $font_bold;
+	margin-top: -0.2em;
+	display: block;
+	font-size: 2em;
+	color: $red;
+	@include word-wrap;
 }
 
 // ===================
