@@ -4,6 +4,9 @@
 .module {
 	margin-bottom: 6rem;
 }
+.module-full-width {
+	padding: $module-vert-pd 0;
+}
 // modules with bg images
 .module-bg-img {
 	padding: 3em;
@@ -16,11 +19,15 @@
 		margin-top: 0;
 	}
 }
-// Module in white boxes
+// Module in white boxes & border
 .module-boxed {
 	background: #FFF;
 	border: 1px solid $grey;
 	padding: 3em;
+}
+// Module in white boxes
+.module-boxed-light {
+	background: #FFF;
 }
 // Module in dark boxes
 .module-boxed-dark {
@@ -101,6 +108,7 @@
 		}
 	}
 }
+
 // ========================
 // Student Project Module
 // ========================
@@ -379,4 +387,13 @@
 			margin-bottom: calc(#{$module-vert-pd} / 2);
 		}
 	}
-} 
+}
+// ========================
+// Working Space Module
+// ======================== 
+.working-space-module {
+	text-align: center;
+	.module-title-medium {
+		margin-top: 0;
+	}
+}
