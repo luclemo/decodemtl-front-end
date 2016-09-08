@@ -331,3 +331,41 @@ ol {
 	fill: $midgrey;
 	opacity: 0.8;
 }
+// ========================
+// Carousel
+// ========================
+.carousel {
+	margin-left: 0;
+	margin-right: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.carousel-box {
+	width: calc(44em - 6rem);
+}
+.carousel-img {
+	display: none;
+	img {
+		width: 100%;
+		display: block;
+	}
+	&.visible {
+		display: block;
+	}
+}
+.carousel-control {
+	cursor: pointer;
+	display: flex;
+}
+.carousel-next,
+.carousel-previous {
+	color: $midgrey;
+	font-size: 3rem;
+	padding: 0 0.2em;
+	@include transition-all;
+	&:hover {
+		color: $black;
+	}
+}
