@@ -14,30 +14,18 @@
 }
 
 // ========================
-// Columns
+// Columns & Rows
 // ========================
+// All rows ---------------
 .row-container {
 	padding: calc(#{$module-vert-pd} / 2) 0;
-}
-.row-container h1:first-of-type,
-.row-container h2:first-of-type,
-.row-container h3:first-of-type,
-.row-container h4:first-of-type {
-	margin-top: 0;
-}
-// alternate col position when stacking
-.alternating:nth-of-type(even) .one-third-content {
-	order: -1;
-}
-
-// Two-third Columns -------
-.row-two-third-container {
 	@include breakpoint(mintablet) {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
 }
+// Two-third Columns -------
 .two-third-content {
 	@include breakpoint(mintablet) {
 		width: calc(70% - 1rem);
@@ -47,4 +35,29 @@
 	@include breakpoint(mintablet) {
 		width: calc(30% - 1rem);
 	}
+}
+// One-half Columns -------
+.one-half-container {
+	@include breakpoint(mintablet) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+.one-half-content {
+	@include breakpoint(mintablet) {
+		width: calc(50% - 1rem);
+	}
+}
+// alternate col position ---
+.alternating:nth-of-type(even) .one-third-content,
+.alternating:nth-of-type(even) .one-half-content:nth-child(2) {
+	order: -1;
+}
+// Spacing for headers ------
+.row-container h1:first-of-type,
+.row-container h2:first-of-type,
+.row-container h3:first-of-type,
+.row-container h4:first-of-type {
+	margin-top: 0;
 }
