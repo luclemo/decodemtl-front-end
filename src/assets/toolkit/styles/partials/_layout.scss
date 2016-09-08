@@ -19,6 +19,12 @@
 .row-container {
 	padding: calc(#{$module-vert-pd} / 2) 0;
 }
+.row-container h1:first-of-type,
+.row-container h2:first-of-type,
+.row-container h3:first-of-type,
+.row-container h4:first-of-type {
+	margin-top: 0;
+}
 // alternate col position when stacking
 .alternating:nth-of-type(even) .one-third-content {
 	order: -1;
