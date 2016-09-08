@@ -202,9 +202,6 @@ ol {
 	p:last-child {
 		margin-bottom: 0;
 	}
-	img {
-		width: 100%;
-	}
 	blockquote {
 		margin: 0;
 		p {
@@ -244,6 +241,9 @@ ol {
 		flex: 0 0 100px;
 		min-width: 100px;
 		margin: 0 60px 0.5em 0;
+		img {
+			width: 100%;
+		}
 	}
 }
 // ================================
@@ -269,6 +269,15 @@ ol {
   fill: transparent;
   stroke-linecap: round;
   stroke-width: 5;
+}
+// CTA Widget
+.cta-widget {
+	background:$lightgrey;
+	text-align: center;
+	padding: 1rem 0.5rem;
+	.cta {
+		margin: 1rem auto;
+	}
 }
 // ================================
 // Modals
