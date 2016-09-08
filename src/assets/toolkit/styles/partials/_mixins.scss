@@ -84,6 +84,15 @@
   100% { opacity: 0; }
 }
 
+// Typography
+// -------------------------
+@mixin module-title-style($fz:3rem) {
+  font-size: $fz;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-family: $font_cond_bold;
+}
+
 // Media Queries
 // -------------------------
  @mixin breakpoint($point) {
