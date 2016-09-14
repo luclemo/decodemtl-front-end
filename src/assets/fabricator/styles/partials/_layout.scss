@@ -59,3 +59,10 @@ body {
 	position: static;
 	transform: none;
 	}
+.fb-link {
+	color: $red;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
