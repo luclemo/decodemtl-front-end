@@ -96,6 +96,9 @@
 // Media Queries
 // -------------------------
  @mixin breakpoint($point) {
+   @if $point == jumbo {
+     @media (min-width: 87.5em) { @content ; } // 1400px +
+  }
    @if $point == mindesktop {
      @media (min-width: 80em) { @content ; } // 1280px +
   }
