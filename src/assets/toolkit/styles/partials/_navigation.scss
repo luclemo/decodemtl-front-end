@@ -284,7 +284,9 @@ body.nav-container-active {
 	align-items: center;
 	li {
 		flex: 1 auto;
-		cursor: pointer;
+		a {
+			cursor: pointer;
+		}
 	}
 }
 .secondary-nav-cta {
@@ -298,7 +300,6 @@ body.nav-container-active {
 	justify-content: space-between;
 	li a {
 		font-size: 0.8rem;
-		cursor: pointer;
 		&:hover {
 			color: $red;
 		}
