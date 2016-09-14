@@ -73,6 +73,13 @@ strong {
 .text-subtle {
 	color: $hardgrey;
 }
+// reduce line length --------
+.text-measure {
+	max-width: 40em;
+}
+.text-body-large.text-measure {
+	max-width: 30em;
+}
 
 // Module Headers -----------
 .module-title {
