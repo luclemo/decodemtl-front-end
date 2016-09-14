@@ -297,6 +297,7 @@ body.nav-container-active {
 	justify-content: space-between;
 	li a {
 		font-size: 0.8rem;
+		cursor: pointer;
 		&:hover {
 			color: $red;
 		}
