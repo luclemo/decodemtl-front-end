@@ -1,10 +1,36 @@
 // input defaults
 input,
+select,
+fieldset,
 textarea {
 	border: 0;
 	background:$lightgrey;
 	padding: 1em;
 	margin: 0.5em 0;
+	border-radius: 0;
+}
+// select
+select {
+	appearance: none;
+	outline: none;
+	display: block;
+	background: url("../../../assets/toolkit/images/select-chevron.svg") 95% 48% no-repeat $lightgrey;
+	padding-right: 2.8em;
+	border: none;
+	color: #6F6F6F;
+}
+// radio & checkbox
+fieldset {
+	border: none;
+	color: $hardgrey
+}
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 0.3em;
+}
+input[type="radio"] {
+	position: relative;
+  top: -0.05em;
 }
 // buttons
 button,
@@ -14,6 +40,10 @@ input[type="submit"] {
 	border: 0;
 	@include btn-color();
 	cursor: pointer;
+}
+input[type="radio"]:checked + label {
+	color: $black;
+	font-family: $font_bold;
 }
 
 // ===================

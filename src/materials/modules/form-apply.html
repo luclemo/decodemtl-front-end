@@ -1,0 +1,88 @@
+<section class="module module-application">
+	<div class="wrapper">
+		<div class="module-boxed">
+			<h3 class="module-title-medium">Please fill out this application for</h3>
+			<p>Someone will Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, magni!</p>
+			<form class="application-form" action="" method="post">
+				<label for="first-name" class="visually-hidden">First Name</label>
+				<input type="text" name="first-name" id="first-name" placeholder="First Name"/><!-- /.first-name -->
+				
+				<label for="last-name" class="visually-hidden">Last Name</label>
+				<input type="text" name="last-name" id="last-name" placeholder="Last Name"/><!-- /.last-name -->
+				
+				<label for="tel" class="visually-hidden">Your Phone (optional)</label>
+				<input type="tel" name="tel" id="tel" placeholder="Your Phone (optional)"/><!-- /.phone -->
+				
+				<label for="email" class="visually-hidden">Email</label>
+				<input type="email" name="email" placeholder="Your email"><!-- /email -->
+
+				<label for="linkedin" class="visually-hidden">LinkedIn URL</label>
+				<input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/><!-- /.last-name -->
+
+
+				<fieldset class="course-selection">
+					<p>Which course are you applying for:</p>
+					<div>
+						<input type="radio" name="course" id="immersive" />
+						<label for="immersive">Web development immersive (full-time)</label>
+					</div>
+					<div>
+						<input type="radio" name="course" id="html-css" />
+						<label for="html-css">Intro to HTML/CSS (part-time)</label>
+					</div>
+					<div>
+						<input type="radio" name="course" id="javascript" />
+						<label for="javascript">Intro to JavaScript (part-time)</label>
+					</div>
+				</fieldset><!-- /.course-selection -->
+
+				<label for="tech-background" class="visually-hidden">What is your current technical knowledge</label>
+				<select name="tech-background" id="tech-background">
+					<option value="">--What is your current technical knowledge--</option>
+					<option value="starter">Just getting started</option>
+					<option value="dabbler">Dabbled with a few tutorials</option>
+					<option value="builder">Built an app or website</option>
+					<option value="programmer">Understand OO programming</option>
+					<option value="pro">Professional Developer</option>
+				</select><!-- /.technical dropdown -->
+
+				<fieldset class="hopes">
+					<p>What do you hope to achieve after the program?</p>
+					<div>
+						<input type="checkbox" name="hope" id="new-job" />
+						<label for="new-job">Get a job as a developer</label>
+					</div>
+					<div>
+						<input type="checkbox" name="hope" id="old-job" />
+						<label for="old-job">Return to a previous job/company</label>
+					</div>
+					<div>
+						<input type="checkbox" name="hope" id="start-company" />
+						<label for="start-company">Start a company</label>
+					</div>
+					<div>
+						<input type="checkbox" name="hope" id="learn" />
+						<label for="learn">Go back to school / continue learning</label>
+					</div>
+					<div>
+						<input type="checkbox" name="hope" id="other" />
+						<label for="other">Other</label>
+					</div>
+				</fieldset><!-- /.hopes -->
+
+				<label for="message" class="visually-hidden">Is there anything else you want to let us know?</label>
+				<textarea name="message" id="message" placeholder="Is there anything else you want to let us know?"></textarea>
+
+				<div class="optin-checkbox">
+					<input type="checkbox" name="list-optin" id="list-optin" value="yes" />
+					<label for="list-optin">Send me info about courses, workshops and events in our growing Montreal tech community.</label>
+				</div>
+
+				<input class="btn-large" type="submit" name="submit" value="Submit">
+				
+				{{> miscellaneous.foot-note}}
+			
+			</form> <!-- /.contact-form -->
+		</div><!-- /.module-boxed -->
+	</div><!-- /.wrapper -->
+</section><!-- /.module -->
