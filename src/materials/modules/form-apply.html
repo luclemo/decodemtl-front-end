@@ -1,86 +1,113 @@
-<section class="module module-application">
+<section class="module">
 	<div class="wrapper">
 		<div class="module-boxed">
-			<h3 class="module-title-medium">Please fill out this application for</h3>
-			<p>Someone will Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, magni!</p>
+			
 			<form class="application-form" action="" method="post">
-				<label for="first-name" class="visually-hidden">First Name</label>
-				<input type="text" name="first-name" id="first-name" placeholder="First Name"/><!-- /.first-name -->
+				<!-- ======== contact details ======== -->
+				<section class="contact-details-section">
+					<h3 class="module-title-medium">Contact Details</h3>
+					<div class="required">
+						<label for="first-name" class="visually-hidden">First Name</label>
+						<input type="text" name="first-name" id="first-name" placeholder="First Name" aria-required=true/>
+					</div><!-- /first-name -->
+					
+					<div class="required">
+						<label for="last-name" class="visually-hidden">Last Name</label>
+						<input type="text" name="last-name" id="last-name" placeholder="Last Name" aria-required=true/>
+					</div><!-- /last-name -->
+					
+					<div class="required">
+						<label for="tel" class="visually-hidden">Your Phone</label>
+						<input type="tel" name="tel" id="tel" placeholder="Your Phone" aria-required=true aria-required=true/>
+					</div><!-- /phone -->
+					
+					<div class="required">
+						<label for="email" class="visually-hidden">Email</label>
+						<input type="email" name="email" placeholder="Your email" aria-required=true>
+					</div><!-- /email -->
+
+					<label for="linkedin" class="visually-hidden">LinkedIn URL</label>
+					<input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/><!-- /linkedin -->
+				</section><!-- /.contact-details-section -->
 				
-				<label for="last-name" class="visually-hidden">Last Name</label>
-				<input type="text" name="last-name" id="last-name" placeholder="Last Name"/><!-- /.last-name -->
+				<!-- ======== course selection ======== -->
+				<section class="course-selection-section">
+					<h3 class="module-title-medium">Course Selection</h3>
+					<label for="course-selection">Which course are you applying for:<span class="required">*</span></label>
+					<fieldset class="course-selection" aria-required=true>
+						<div>
+							<input type="radio" name="course" id="immersive" />
+							<label for="immersive">Web development immersive (full-time)</label>
+						</div>
+						<div>
+							<input type="radio" name="course" id="html-css" />
+							<label for="html-css">Intro to HTML/CSS (part-time)</label>
+						</div>
+						<div>
+							<input type="radio" name="course" id="javascript" />
+							<label for="javascript">Intro to JavaScript (part-time)</label>
+						</div>
+					</fieldset><!-- /.course-selection -->
+				</section><!-- /.course-selection-section -->
 				
-				<label for="tel" class="visually-hidden">Your Phone (optional)</label>
-				<input type="tel" name="tel" id="tel" placeholder="Your Phone (optional)"/><!-- /.phone -->
+				<!-- ======== technical knowledge ======== -->
+				<section class="tech-background-section">
+					<h3 class="module-title-medium">Technical Knowledge</h3>
+					<label for="tech-background">What is your current level of technical knowledge:<span class="required">*</span></label>
+					<select name="tech-background" id="tech-background" aria-required=true>
+						<option value="">-- select --</option>
+						<option value="starter">Just getting started</option>
+						<option value="dabbler">Dabbled with a few tutorials</option>
+						<option value="builder">Built an app or website</option>
+						<option value="programmer">Understand OO programming</option>
+						<option value="pro">Professional Developer</option>
+					</select><!-- /.technical dropdown -->
+				</section><!-- /.tech-background-section -->
 				
-				<label for="email" class="visually-hidden">Email</label>
-				<input type="email" name="email" placeholder="Your email"><!-- /email -->
-
-				<label for="linkedin" class="visually-hidden">LinkedIn URL</label>
-				<input type="text" name="linkedin" id="linkedin" placeholder="LinkedIn URL"/><!-- /.last-name -->
-
-
-				<fieldset class="course-selection">
-					<p>Which course are you applying for:</p>
-					<div>
-						<input type="radio" name="course" id="immersive" />
-						<label for="immersive">Web development immersive (full-time)</label>
-					</div>
-					<div>
-						<input type="radio" name="course" id="html-css" />
-						<label for="html-css">Intro to HTML/CSS (part-time)</label>
-					</div>
-					<div>
-						<input type="radio" name="course" id="javascript" />
-						<label for="javascript">Intro to JavaScript (part-time)</label>
-					</div>
-				</fieldset><!-- /.course-selection -->
-
-				<label for="tech-background" class="visually-hidden">What is your current technical knowledge</label>
-				<select name="tech-background" id="tech-background">
-					<option value="">--What is your current technical knowledge--</option>
-					<option value="starter">Just getting started</option>
-					<option value="dabbler">Dabbled with a few tutorials</option>
-					<option value="builder">Built an app or website</option>
-					<option value="programmer">Understand OO programming</option>
-					<option value="pro">Professional Developer</option>
-				</select><!-- /.technical dropdown -->
-
-				<fieldset class="hopes">
-					<p>What do you hope to achieve after the program?</p>
-					<div>
-						<input type="checkbox" name="hope" id="new-job" />
-						<label for="new-job">Get a job as a developer</label>
-					</div>
-					<div>
-						<input type="checkbox" name="hope" id="old-job" />
-						<label for="old-job">Return to a previous job/company</label>
-					</div>
-					<div>
-						<input type="checkbox" name="hope" id="start-company" />
-						<label for="start-company">Start a company</label>
-					</div>
-					<div>
-						<input type="checkbox" name="hope" id="learn" />
-						<label for="learn">Go back to school / continue learning</label>
-					</div>
-					<div>
-						<input type="checkbox" name="hope" id="other" />
-						<label for="other">Other</label>
-					</div>
-				</fieldset><!-- /.hopes -->
-
-				<label for="message" class="visually-hidden">Is there anything else you want to let us know?</label>
-				<textarea name="message" id="message" placeholder="Is there anything else you want to let us know?"></textarea>
-
-				<div class="optin-checkbox">
-					<input type="checkbox" name="list-optin" id="list-optin" value="yes" />
-					<label for="list-optin">Send me info about courses, workshops and events in our growing Montreal tech community.</label>
-				</div>
-
-				<input class="btn-large" type="submit" name="submit" value="Submit">
+				<!-- ======== Goals ======== -->
+				<section class="goals-section">
+					<h3 class="module-title-medium">Goals</h3>
+					<label for="hopes">What do you hope to achieve after the program?</label>
+					<fieldset class="hopes">
+						<div>
+							<input type="checkbox" name="hope" id="new-job" />
+							<label for="new-job">Get a job as a developer</label>
+						</div>
+						<div>
+							<input type="checkbox" name="hope" id="old-job" />
+							<label for="old-job">Return to a previous job/company</label>
+						</div>
+						<div>
+							<input type="checkbox" name="hope" id="start-company" />
+							<label for="start-company">Start a company</label>
+						</div>
+						<div>
+							<input type="checkbox" name="hope" id="learn" />
+							<label for="learn">Go back to school / continue learning</label>
+						</div>
+						<div>
+							<input type="checkbox" name="hope" id="other" />
+							<label for="other">Other</label>
+						</div>
+					</fieldset><!-- /.hopes -->
+				</section><!-- /.goals-section -->
 				
-				{{> miscellaneous.foot-note}}
+				<!-- ======== About yourself ======== -->
+				<section class="about-section">
+					<h3 class="module-title-medium">About Yourself</h3>
+					<label for="message">Is there anything else you would like to share with us?</label>
+					<textarea name="message" id="message" placeholder="Anything goes…"></textarea>
+				</section><!-- /.about-section -->
+				
+				<!-- ======== submit ======== -->
+				<section class="submit-section">
+					<div class="optin-checkbox">
+						<input type="checkbox" name="list-optin" id="list-optin" value="yes" />
+						<label for="list-optin">Send me info about courses, workshops and events in our growing Montreal tech community.</label>
+					</div>
+					<input class="btn-large" type="submit" name="submit" value="Submit">
+					{{> miscellaneous.foot-note}}
+				</section><!-- /.submit-section -->
 			
 			</form> <!-- /.contact-form -->
 		</div><!-- /.module-boxed -->

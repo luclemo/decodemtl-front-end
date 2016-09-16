@@ -8,6 +8,19 @@ textarea {
 	padding: 1em;
 	margin: 0.5em 0;
 	border-radius: 0;
+	max-width: 100%;
+}
+// textarea
+textarea {
+	width: 100%;
+	min-height: 10rem;
+}
+// focus
+input:focus,
+textarea:focus {
+	outline-color: $blue;
+	border: none;
+	background: $white;
 }
 // select
 select {
@@ -22,7 +35,7 @@ select {
 // radio & checkbox
 fieldset {
 	border: none;
-	color: $hardgrey
+	color: $hardgrey;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -31,6 +44,26 @@ input[type="radio"] {
 input[type="radio"] {
 	position: relative;
   top: -0.05em;
+}
+// required fields
+div.required::before,
+span.required {
+	color: $red;
+	line-height: 0;
+	font-family: inherit;
+	font-size: 1.9rem;
+}
+div.required {
+	position: relative;
+	&::before {
+		position: absolute;
+		top: 45%;
+		right: 3%;
+		content: '*';
+	}
+}
+span.required {
+	margin-left: 0.2em;
 }
 // buttons
 button,
@@ -41,7 +74,8 @@ input[type="submit"] {
 	@include btn-color();
 	cursor: pointer;
 }
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
 	color: $black;
 	font-family: $font_bold;
 }
@@ -94,33 +128,42 @@ input[type="radio"]:checked + label {
 }
 
 // ===================
-// Contact form
+// Forms general
 // ===================
-.contact-form {
-	display: flex;
-	flex-flow: column wrap;
-	textarea {
-		min-height: 10rem;
+form {
+	.contact-details-section {
+		input {
+			width: 100%;
+		}
+		@include breakpoint(mintablet) {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			div, input {
+				flex: 0 1 calc(50% - 0.5em);
+			}
+		}
 	}
-	.optin-checkbox {
-		margin: 1rem 0;
+	.submit-section {
+		.optin-checkbox {
+			margin: 1rem 0;
+		}
+	}
+	.module-title-medium {
+		width: 100%;
+	}
+}
+
+// ===================
+// Application form
+// ===================
+.application-form {
+	select {
+		width: 60%;
 	}
 	@include breakpoint(mintablet) {
-		flex-flow: row wrap;
-		justify-content: space-between;
-		input:not([type="submit"]) {
-			flex: 0 1 calc(50% - 0.5em);
-		}
-		textarea {
-			flex-basis: 100%;
-		}
-		.foot-note {
-			text-align: right;
-			flex-basis: 100%;
-		}
-		input[type="submit"],
-		.optin-checkbox {
-			margin-left: auto;
+		section:not(.contact-details-section):not(.submit-section) {
+			max-width: 80%;
 		}
 	}
 }
