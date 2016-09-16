@@ -1,4 +1,6 @@
-// input defaults
+// ======================
+// Defaults
+// ======================
 input,
 select,
 fieldset,
@@ -10,19 +12,19 @@ textarea {
 	border-radius: 0;
 	max-width: 100%;
 }
-// textarea
+// textarea -------------
 textarea {
 	width: 100%;
 	min-height: 10rem;
 }
-// focus
+// focus ----------------
 input:focus,
 textarea:focus {
 	outline-color: $blue;
 	border: none;
 	background: $white;
 }
-// select
+// select ---------------
 select {
 	appearance: none;
 	outline: none;
@@ -32,7 +34,7 @@ select {
 	border: none;
 	color: #6F6F6F;
 }
-// radio & checkbox
+// radio & checkbox -----
 fieldset {
 	border: none;
 	color: $hardgrey;
@@ -45,7 +47,7 @@ input[type="radio"] {
 	position: relative;
   top: -0.05em;
 }
-// required fields
+// required fields ------
 div.required::before,
 span.required {
 	color: $red;
@@ -65,7 +67,7 @@ div.required {
 span.required {
 	margin-left: 0.2em;
 }
-// buttons
+// buttons --------------
 button,
 input[type="button"],
 input[type="reset"],
@@ -82,7 +84,6 @@ input[type="checkbox"]:checked + label {
 
 // ===================
 // Optin form
-// (forms with email and submit)
 // ===================
 .optin-form {
 	display: flex;
