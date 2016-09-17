@@ -43,9 +43,10 @@ input[type="checkbox"],
 input[type="radio"] {
 	margin-right: 0.3em;
 }
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
 	position: relative;
-  top: -0.05em;
+  top: -0.06em;
 }
 // required fields ------
 div.required::before,
@@ -79,7 +80,7 @@ input[type="submit"] {
 input[type="radio"]:checked + label,
 input[type="checkbox"]:checked + label {
 	color: $black;
-	font-family: $font_bold;
+	font-family: $font_medium;
 }
 
 // ===================
@@ -160,7 +161,10 @@ form {
 // ===================
 .application-form {
 	select {
-		width: 60%;
+		width: 100%;
+		@include breakpoint(mintablet) {
+			width: 60%;
+		}
 	}
 	@include breakpoint(mintablet) {
 		section:not(.contact-details-section):not(.submit-section) {
