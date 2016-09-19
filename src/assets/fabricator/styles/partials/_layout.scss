@@ -55,6 +55,9 @@ body {
 	position: relative;
 	display: block;
 }
+#modals .modal-dark {
+	color: $grey;
+}
 #miscellaneous .video-controls {
 	position: static;
 	transform: none;
