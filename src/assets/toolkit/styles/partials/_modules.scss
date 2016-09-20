@@ -402,6 +402,12 @@
 			margin-bottom: calc(#{$module-vert-pd} / 2);
 		}
 	}
+	.cta-widget {
+		@include breakpoint(mintablet) {
+			max-width: 426px;
+			margin: auto;
+		}
+	}
 }
 // ========================
 // Working Space Module
