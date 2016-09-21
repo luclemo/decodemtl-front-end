@@ -1,0 +1,39 @@
+<!-- site-nav -->
+{{> site-nav}}
+<main class="main-content" role="main">
+	<header>
+		<div class="wrapper">
+			<h1 class="module-title"><span class="module-title-jumbo">Apply</span></h1>
+			<p class="text-body-large text-subtle text-measure">Please fill out this application form. A short line about what they can expect as next steps and all that.</p>
+			</div><!-- /.wrapper -->
+	</header>
+	{{> form-apply}}
+
+	<!-- ========= Success message ========= -->
+	<div class="modal modal-light" style="display: initial;">
+		{{> miscellaneous.close-button}}
+		<div class="modal-content">
+			<section class="module">
+				<div class="wrapper">
+					<div class="module-boxed message-container message-container-success">
+						<i class="fa fa-check-circle-o message-icon" aria-hidden="true"></i>
+						<p class="text-body-large message message-success">Thank-you for whatever!</p>
+						<p>Optional additional message…</p>
+					</div><!-- /.message-container -->
+				</div><!-- /.wrapper -->
+			</section><!-- /.module -->
+			<section class="module">
+				<div class="wrapper">
+					<div class="module-boxed message-container message-container-error">
+						<i class="fa fa-exclamation-circle message-icon" aria-hidden="true"></i>
+						<p class="text-body-large message message-error">Uh-oh somehting bad happened.</p>
+						<p>Optional additional message…</p>
+					</div><!-- /.message-container -->
+				</div><!-- /.wrapper -->
+			</section><!-- /.module -->
+		</div>
+	</div><!-- /.modal -->
+
+</main>
+{{> site-footer}}
+{{> site-credits}}
