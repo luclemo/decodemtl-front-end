@@ -1,25 +1,25 @@
 ---
-notes: This is an example of a form inside a modal. 
+notes: This form goes inside a modal. 
 ---
 <section class="module">
-<div class="modal">
-	{{> miscellaneous.close-button}}
-	<div class="modal-content">
-		<div class="wrapper">
-				<div class="module-boxed">
-					<p class="text-body-large">Schedule a visit on your terms!</p>
-					<p>You will receive a link to pick a date and time of that works for you.</p>
-					<form class="optin-form" action="" method="post">
-						<label for="email" class="visually-hidden">Email</label>
-						<input type="email" name="email" placeholder="Your email">
+	<div class="wrapper">
+		<div class="module-boxed">
+			<p class="text-body-large">Schedule a visit on your terms!</p>
+			<p>You will receive a link to pick a date and time of that works for you.</p>
+			<form class="optin-form" action="" method="post">
+				<label for="email" class="visually-hidden">Email</label>
+				<input type="email" name="email" placeholder="Your email">
 
-						<input class="btn-large" type="submit" name="submit" value="Submit">
-						
-						{{> miscellaneous.foot-note}}
-					
-					</form> <!-- /.optin-form -->
-				</div><!-- /.module-boxed -->
-			</div><!-- /.wrapper -->
-	</div>
-</div><!-- /.modal -->
+				<input class="btn-large" type="submit" name="submit" value="Submit">
+
+				<div class="optin-checkbox">
+					<input type="checkbox" name="list-optin" id="list-optin" value="yes" />
+					<label for="list-optin">Send me info about courses, workshops and events in our growing Montreal tech community.</label>
+				</div>
+				
+				{{> miscellaneous.foot-note}}
+			
+			</form> <!-- /.optin-form -->
+		</div><!-- /.module-boxed -->
+	</div><!-- /.wrapper -->
 </section>
