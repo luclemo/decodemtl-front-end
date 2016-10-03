@@ -83,16 +83,22 @@
 	.cell {
 		@include breakpoint(mintablet) {
 			&:first-child {
-				flex-basis: 30%;
+				flex-basis: 25%;
 			}
 		}
 		&:last-child,
 		&:first-child {
 			font-family: $font-bold;
 		}
+		&:last-child {
+			flex: 1 1 10%;
+		}
 	}
 	.full {
 		color: $midgrey;
+	}
+	.fa {
+		color: $red;
 	}
 }
 // ========================
