@@ -365,10 +365,10 @@
 	margin: $module-vert-pd 0;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 .partner-logo {
-	margin: 1rem auto;
+	margin: 1rem 0;
 	height: 2.25rem;
 	width: 8rem;
 	display: flex;
