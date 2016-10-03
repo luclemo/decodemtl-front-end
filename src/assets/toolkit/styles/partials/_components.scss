@@ -349,7 +349,8 @@ ol {
 	justify-content: space-between;
 }
 .carousel-box {
-	width: calc(44em - 6rem);
+	max-width: calc(44em - 6rem);
+	flex: 1 1 45%;
 }
 .carousel-img {
 	display: none;
