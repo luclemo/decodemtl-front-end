@@ -2,7 +2,10 @@
 // Modules general
 // =====================
 .module {
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
+	@include breakpoint(jumbo) {
+		margin-bottom: 6rem;
+	}
 }
 .module-full-width {
 	padding: $module-vert-pd 0;
