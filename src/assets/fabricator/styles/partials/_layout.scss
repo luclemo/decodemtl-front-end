@@ -81,3 +81,8 @@ body {
 .f-item-preview .tuition-dates .module-bg-img {
 	background-image: url('../../../assets/toolkit/images/module-bg-students-at-work.jpg');
 }
+.f-item-preview .loader-container {
+	position: relative;
+	padding: 0;
+	justify-content: flex-start;
+}

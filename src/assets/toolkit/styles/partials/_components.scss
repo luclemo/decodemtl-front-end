@@ -175,9 +175,19 @@ ol {
 // Loader
 // ================================
 .loader-container {
+	background: $white;
+	@include overlay;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	z-index: 70;
+	padding-top: 6em;
+	@include breakpoint (mintablet) {
+		padding-top: 8em;
+	}
 	.decode-badge-reversed {
-	  width: 6em;
-	  height: 6em;
+	  width: 5em;
+	  height: 5em;
 	}
 	.petal {
 	  animation: blink 0.5s step-end infinite alternate;
