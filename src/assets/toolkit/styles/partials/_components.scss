@@ -172,6 +172,27 @@ ol {
 	}
 }
 // ================================
+// Loader
+// ================================
+.loader-container {
+	.decode-badge-reversed {
+	  width: 6em;
+	  height: 6em;
+	}
+	.petal {
+	  animation: blink 0.5s step-end infinite alternate;
+	}
+	.petal-bottom {
+	  animation-delay: 0.125s;
+	}
+	.petal-left {
+	  animation-delay: 0.25s;
+	}
+	.petal-top {
+	  animation-delay: 0.375s;
+	}
+}
+// ================================
 // Info Blocks
 // ================================
 .info-block {
