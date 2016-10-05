@@ -351,6 +351,7 @@ ol {
 .carousel-box {
 	max-width: calc(44em - 6rem);
 	flex: 1 1 45%;
+	// flex-basis: initial;
 }
 .carousel-img {
 	display: none;
