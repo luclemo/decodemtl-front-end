@@ -18,9 +18,12 @@
 // Global
 // ===================
 html {
-	font-size: 125%; // 20px
+	font-size: 100%; // 16px
+	@include breakpoint(minphablet) {
+		font-size: 125%; // 20px
+	}
 	@include breakpoint(mindesktop) {
-		font-size: 138%;
+		font-size: 138%; // 22px
 	}
 }
 body {
