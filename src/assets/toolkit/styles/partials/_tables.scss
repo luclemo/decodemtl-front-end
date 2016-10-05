@@ -29,7 +29,8 @@
 	}
 	.cell {
 		padding: 0.3em 0;
-		flex: 1 1 15%;
+		flex-grow: 1;
+		flex-shrink: 1;
 		&:nth-of-type(odd) {
 		}
 		&:nth-of-type(even) {
@@ -82,5 +83,7 @@
 .table-footnote {
 	font-size: 0.8rem;
 	width: 100%;
-	text-align: right;
+	@include breakpoint(minphablet) {
+		text-align: right;
+	}
 }
