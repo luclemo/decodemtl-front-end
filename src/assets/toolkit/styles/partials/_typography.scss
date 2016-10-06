@@ -99,7 +99,7 @@ blockquote {
 
 // Module Headers -----------
 .module-title {
-	@include module-title-style();
+	@include module-title-style()
 	@include breakpoint(phablet) {
 		font-size: 2.25rem;
 	}
