@@ -358,8 +358,8 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
-		flex: 0 1 60%;
 		@include breakpoint(mintablet) {
+			flex: 0 1 60%;
 			margin-left: auto;
 		}
 	}
