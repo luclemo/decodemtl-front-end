@@ -111,7 +111,6 @@ blockquote {
 }
 .module-title-jumbo {
 	font-family: $font_bold;
-	margin-top: -0.2em;
 	display: block;
 	color: $red;
 	@include word-wrap;
