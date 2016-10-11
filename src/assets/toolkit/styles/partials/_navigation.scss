@@ -39,6 +39,7 @@
 .home-link {
 	display: flex;
 	flex: 0 0 240px;
+	max-width: 240px; //Firefox
 	margin-right: auto;
 	@include breakpoint(tablet) {
 		display: none;
