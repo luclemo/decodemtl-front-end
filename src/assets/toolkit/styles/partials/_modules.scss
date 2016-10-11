@@ -459,3 +459,29 @@
 		margin-top: 0;
 	}
 }
+// ========================
+// 404
+// ======================== 
+.four-title {
+	color: $red;
+	font-size: 8rem;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	font-family: $font_cond_bold;
+	margin:0;
+	transition: font-size 0.2s ease;
+	@include breakpoint(minphablet) {
+		font-size: 16rem;
+		margin:  0;
+	}
+	@include breakpoint(mintablet) {
+		font-size: 20rem;
+	}
+}
+.four-message {
+	margin-top: 0;
+	code {
+		color: $red;
+	}
+}
