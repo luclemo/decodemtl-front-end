@@ -46,7 +46,7 @@
 	}
 	.petals {
 		transform: rotate(0deg);
-		transform-origin: center;
+		transform-origin: 32px 32px; //Firefox won't take center keyword
 		transition: transform 0.2s;
 	}
 	&:hover .petals {
