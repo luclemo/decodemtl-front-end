@@ -198,6 +198,14 @@ body.nav-container-active {
 			left: 2.5rem;
 		}
 	}
+	@media (min-width: 100em) {
+		width: 29em;
+		transform: translateX(29.75em);
+	}
+	@media (min-width: 118.75em) {
+		width: 39em;
+		transform: translateX(39.75em);
+	}
 }
 // Nav Content -------------------
 .nav-content {
