@@ -22,12 +22,12 @@ textarea {
 input:focus,
 textarea:focus {
 	outline-color: $blue;
-	border: none;
+	border: 1px solid $blue ;
 	background: $white;
 }
 input:-moz-focusring,
 textarea:-moz-focusring {
-	outline: 2px solid $blue; // firefox
+	outline: 1px solid $blue; // firefox
 }
 // select ---------------
 select {
