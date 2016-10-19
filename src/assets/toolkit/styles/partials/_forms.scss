@@ -11,6 +11,7 @@ textarea {
 	margin: 0.5em 0;
 	border-radius: 0;
 	max-width: 100%;
+	box-shadow: none; // remove firefox default on required
 }
 // textarea -------------
 textarea {
@@ -23,6 +24,10 @@ textarea:focus {
 	outline-color: $blue;
 	border: none;
 	background: $white;
+}
+input:-moz-focusring,
+textarea:-moz-focusring {
+	outline: 2px solid $blue; // firefox
 }
 // select ---------------
 select {
@@ -42,11 +47,9 @@ fieldset {
 input[type="checkbox"],
 input[type="radio"] {
 	margin-right: 0.3em;
-}
-input[type="radio"],
-input[type="checkbox"] {
 	position: relative;
   top: -0.06em;
+  outline: none;
 }
 // required fields ------
 div.required::before,
