@@ -20,7 +20,7 @@ const webpack = require('webpack');
 const config = {
   dev: gutil.env.dev,
   styles: {
-    browsers: 'last 1 version',
+    browsers: 'last 3 versions',
     fabricator: {
       src: 'src/assets/fabricator/styles/fabricator.scss',
       dest: 'dist/assets/fabricator/styles',
@@ -84,7 +84,7 @@ gulp.task('styles:fabricator', () => {
     errorHandler: notify.onError("Error: <%= error.message %>")
   }))
   .pipe(sass().on('error', sass.logError))
-  .pipe(prefix('last 2 version'))
+  .pipe(prefix('last 3 versions'))
   .pipe(gulpif(!config.dev, csso()))
   .pipe(rename('f.css'))
   .pipe(sourcemaps.write())
@@ -101,7 +101,7 @@ gulp.task('styles:toolkit', () => {
   .pipe(sass({
     includePaths: './node_modules',
   }).on('error', sass.logError))
-  .pipe(prefix('last 2 version'))
+  .pipe(prefix('last 3 versions'))
   .pipe(gulpif(!config.dev, csso()))
   .pipe(gulpif(config.dev, sourcemaps.write()))
   .pipe(gulp.dest(config.styles.toolkit.dest))
