@@ -47,6 +47,9 @@
 .module-boxed-medium {
 	background: $lightgrey;
 }
+.module-boxed .row-container {
+	padding: 0;
+}
 // Two cta buttons 
 .cta-single {
 	@include breakpoint(laptop) {
@@ -115,6 +118,14 @@
 	}
 	.fa {
 		color: $red;
+	}
+	.one-third-content {
+		@include breakpoint(tablet) {
+			margin-bottom: $module-vert-pd / 2;
+		}
+	}
+	.two-third-content p:last-child {
+		margin: 0;
 	}
 }
 // ========================
