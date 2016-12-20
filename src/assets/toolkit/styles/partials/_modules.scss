@@ -47,7 +47,7 @@
 .module-boxed-medium {
 	background: $lightgrey;
 }
-.module-boxed .row-container {
+.module-boxed .row-container:only-of-type {
 	padding: 0;
 }
 // Two cta buttons 
