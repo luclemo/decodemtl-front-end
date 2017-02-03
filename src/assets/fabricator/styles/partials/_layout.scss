@@ -65,8 +65,10 @@ body {
 .fb-link {
 	color: $red;
 	text-decoration: none;
+	border: none;
 	&:hover {
 		text-decoration: underline;
+		background:none;
 	}
 }
 .f-item-preview > .module-bg-img {

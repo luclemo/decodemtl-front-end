@@ -58,6 +58,7 @@
 	a {
 		color: inherit;
 		transition: none;
+		border: none;
 		&:not(:last-child):after {
 			content: "//";
 			display: inline-block;
@@ -65,6 +66,7 @@
 		}
 		&:hover {
 			color: $lightgrey;
+			background:none;
 		}
 		&:hover:after {
 			color:darken($midgrey, 20%);

@@ -340,9 +340,7 @@
 		display: flex;
 		flex-flow: column;
 		padding: 1em 0.5em 1.1em 0.5em;
-		&::before {
-			content: none;
-		}
+		border-bottom: none;
 		&:hover {
 			background:$lightgrey;
 			.event-arrow {

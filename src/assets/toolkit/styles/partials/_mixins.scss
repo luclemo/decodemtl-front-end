@@ -43,6 +43,7 @@
 	color: $col;
   background: $bg;
   border: 0;
+  border-bottom: none;
   @include transition-all;
   &:hover,
   &:active {
