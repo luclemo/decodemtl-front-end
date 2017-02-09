@@ -1,6 +1,6 @@
+// Blog page title -------------
 .blog-page-header {
 	.module-title {
-		// font-size: 3.6em;
 		margin-bottom: 1em;
 	}
 
@@ -9,8 +9,9 @@
 	}
 }
 
+// Single post ----------------
 .entry-header {
-	margin-bottom: $module-vert-pd;
+	margin-bottom: 2rem;
 }
 
 .entry-title {
@@ -19,11 +20,34 @@
 
 .entry-meta {
 	color: $midgrey;
-	display: flex;
-	justify-content: space-between;
+
+	@include breakpoint(mintablet) {
+		display: flex;
+		flex-flow: row wrap;
+	}
 
 	a {
 		border: none;
+	}
+}
+
+.entry-author,
+.entry-categories {
+	display: block;
+}
+
+.entry-categories {
+	@include breakpoint(mintablet) {
+		margin-left: auto;
+		padding-left: 3%;
+	}
+}
+
+.featured-image {
+	margin: 0;
+
+	img {
+		display: block;
 	}
 }
 
@@ -44,21 +68,53 @@
 	border-top: none;
 }
 
+// Featured content module ------------
+.featured-module .wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.featured-module-title {
+	margin-top: 0;
+	width: 100%;
+}
+
 .featured-entry {
 	background: #fff;
 	border: 1px solid $grey;
-	// padding: 1em;
+	margin: 2em 0;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column nowrap;
 
-	.featured-entry-title {
-		margin-top: 0;
+	@media (min-width: 58.75em) {
+		flex: 0 0 31%;
+		margin: 0;
 	}
 
-	.entry-header {
-		margin-bottom: 0.2em;
-		padding: 1em;
+	.featured-image {
+		margin-top: auto;
 	}
+}
 
-	.entry-featured-image {
-		display: block;
+.featured-entry-header {
+	margin-bottom: 0.2em;
+	padding: 1em;
+
+	@media (max-width: 58.75em) {
+		font-size: 1.3em;
 	}
+}
+
+.featured-entry-title {
+	margin-top: 0;
+
+	@media (max-width: 58.75em) {
+		font-size: 1.1em;
+	}
+}
+
+.featured-entry-meta {
+	font-size: 0.8em;
 }
