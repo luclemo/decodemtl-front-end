@@ -1,0 +1,15 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels">Blog</h1>
+
+<ul>
+{{#each views.blog.items}}
+
+	<li>
+		<a href="blog/{{@key}}.html" class="f-item-heading" target="_blank">{{name}}</a>
+	</li>
+
+{{/each}}
+</ul>
