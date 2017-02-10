@@ -54,9 +54,18 @@
 	img {
 		display: block;
 	}
+
+	a {
+		border: none;
+		background: $black;
+
+		&:hover img {
+			opacity: 0.8;
+		}
+	}
 }
 
-.entry blockquote {
+.entry-content blockquote {
 	font-size: 1.3em;
 	border-left: 3px solid $grey;
 	padding-left: 1em;
