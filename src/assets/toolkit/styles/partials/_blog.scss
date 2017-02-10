@@ -2,6 +2,14 @@
 .blog-page-header {
 	.module-title {
 		margin-bottom: 1em;
+
+		a {
+			border: none;
+
+			&:hover {
+				background: none;
+			}
+		}
 	}
 
 	.stand-out {
