@@ -9,6 +9,11 @@
 	}
 }
 
+// General Layout -------------
+.post-module ~ .blog-pagination-container {
+	margin-top: -$module-vert-pd;
+}
+
 // Single post ----------------
 .entry-header {
 	margin-bottom: 2rem;
@@ -117,4 +122,39 @@
 
 .featured-entry-meta {
 	font-size: 0.8em;
+}
+
+// Pagination --------------------
+.blog-pagination-container .wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: $module-vert-pd;
+}
+
+[class*="pagination-btn"] {
+	flex: 0 1 10%;
+	min-width: 86px;
+	text-align: center;
+}
+
+.pagination-page-list {
+	list-style: none;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 20%;
+
+	li a {
+		border: none;
+
+		&:hover {
+			background: none;
+			color: $red;
+		}
+	}
+
+	li .pagination-active {
+		color: $red;
+	}
 }
