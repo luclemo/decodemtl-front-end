@@ -156,3 +156,16 @@ a {
 		}
 	}
 }
+
+// ========================
+// Blog
+// ========================
+.featured-entry-title a,
+.entry-meta a {
+	border: none;
+
+	&:hover {
+		color: $red;
+		background: none;
+	}
+}
