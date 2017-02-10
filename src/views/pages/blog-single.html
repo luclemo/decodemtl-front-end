@@ -1,70 +1,18 @@
-<!-- site-nav -->
-{{> site-nav}}
+---
+layout: blog-layout
+---
 
-<!-- Page header -->
-{{> blog-page-header}}
-
-
-<main class="main-content" role="main">
-	<div class="wrapper">
-		<div class="module">
-			<!-- ========= POST =========-->
-			<article class="entry module-boxed" itemscope="" itemtype="http://schema.org/CreativeWork">
-				{{> post-header}}
-				{{> post-featured-image}}
-				<div class="entry-content" itemprop="text">
-					<p>This is some example content…</p>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget <a href="#">lacinia odio sem</a> nec elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-					<h3>Vivamus sagittis lacus vel augue laoreet rutrum.</h3>
-
-					<blockquote><p>Example of blockquote style.</p></blockquote>
-
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel.</p>
-				</div><!-- .entry-content -->
-			</article><!-- /.entry -->
-			<!-- ========= AUTHOR =========-->
-			{{> author-box}}
-		</div><!-- /.module -->
-	</div><!-- /.wrapper -->
-	<!-- ========= FEATURED CONTENT =========-->
-	<section class="module featured-module">
-		<div class="wrapper">
-			<h3 class="module-title featured-module-title">You might also like</h3>
-			<article class="entry featured-entry" itemscope="" itemtype="http://schema.org/CreativeWork">
-				<header class="featured-entry-header">
-					<a href="#"><h4 class="featured-entry-title" itemprop="headline">Etiam porta sem malesuada magna mollis euismod.</h4></a>
-					<div class="entry-meta featured-entry-meta">
-						<span class="entry-author">By <a href="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">John Smith</a> on <time class="entry-date" itemprop="datePublished" datetime="">01/22/17</time></span>
-					</div><!-- /.entry-meta -->
-				</header><!-- /.featured-entry-header -->
-				<figure class="featured-image">
-					<img src="https://unsplash.it/1200/300?image=945" alt="">
-				</figure>
-			</article><!-- .featured-entry -->
-			<article class="entry featured-entry" itemscope="" itemtype="http://schema.org/CreativeWork">
-				<header class="featured-entry-header">
-					<a href="#"><h4 class="featured-entry-title" itemprop="headline">Etiam porta sem malesuada magna mollis euismod.</h4></a>
-					<div class="entry-meta featured-entry-meta">
-						<span class="entry-author">By <a href="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">John Smith</a> on <time class="entry-date" itemprop="datePublished" datetime="">01/22/17</time></span>
-					</div><!-- /.entry-meta -->
-				</header><!-- /.featured-entry-header -->
-			</article><!-- .featured-entry -->
-			<article class="entry featured-entry" itemscope="" itemtype="http://schema.org/CreativeWork">
-				<header class="featured-entry-header">
-					<a href="#"><h4 class="featured-entry-title" itemprop="headline">Etiam porta sem malesuada magna mollis euismod.</h4></a>
-					<div class="entry-meta featured-entry-meta">
-						<span class="entry-author">By <a href="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">John Smith</a> on <time class="entry-date" itemprop="datePublished" datetime="">01/22/17</time></span>
-					</div><!-- /.entry-meta -->
-				</header><!-- /.featured-entry-header -->
-				<figure class="featured-image">
-					<img src="https://unsplash.it/1200/300?image=945" alt="">
-				</figure>
-			</article><!-- .featured-entry -->
-		</div><!-- /.wrapper -->
-	</section><!-- /.featured-module -->
-
-
-</main>
-{{> site-footer}}
-{{> site-credits}}
+<div class="wrapper">
+	<div class="module">
+		<!-- ========= POST =========-->
+		<article class="entry module-boxed" itemscope="" itemtype="http://schema.org/CreativeWork">
+			{{> post-header}}
+			{{> post-featured-image}}
+			{{> post-content}}
+		</article><!-- /.entry -->
+		<!-- ========= AUTHOR =========-->
+		{{> author-box}}
+	</div><!-- /.module -->
+</div><!-- /.wrapper -->
+<!-- ========= FEATURED CONTENT =========-->
+{{> featured-module}}
