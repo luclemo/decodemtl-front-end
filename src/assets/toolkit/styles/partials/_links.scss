@@ -149,10 +149,11 @@ a {
 		border: none;
 		font-family: $font_cond_bold;
 		font-size: 2rem;
+		
 		&:hover {
 			border: none;
 			transform: scale(1.1);
-			background:none;
+			background: none;
 		}
 	}
 }
@@ -162,11 +163,23 @@ a {
 // ========================
 .entry-title a,
 .featured-entry-title a,
-.entry-meta a {
+.entry-meta a,
+.author-links a {
 	border: none;
 
 	&:hover {
 		color: $red;
 		background: none;
+	}
+}
+
+.author-links a {
+	&:not(:first-child)::before {
+		content: '//';
+		margin: 0 15px;
+	}
+
+	&:hover::before {
+		color: $black;
 	}
 }
