@@ -1,0 +1,9 @@
+// Course tuition & dates 
+// Temp fix for icon size
+.tuition-dates .one-third-content img {
+	display: block;
+	width: 180px;
+	@include breakpoint(tablet) {
+		max-width: 140px;
+	}
+}
