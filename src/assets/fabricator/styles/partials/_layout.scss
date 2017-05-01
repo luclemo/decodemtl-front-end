@@ -51,14 +51,15 @@ body {
 	font-size: 0.9rem;
 }
 
-#modals .modal {
+.f-item-group .modal {
 	position: relative;
 	display: block;
+	z-index: initial;
 }
-#modals .modal-dark {
+.f-item-group .modal-dark {
 	color: $grey;
 }
-#miscellaneous .video-controls {
+.f-item-group .video-controls {
 	position: static;
 	transform: none;
 	}
@@ -70,6 +71,13 @@ body {
 		text-decoration: underline;
 		background:none;
 	}
+}
+.f-item-group .secondary-nav {
+	position: initial;
+	z-index: initial;
+}
+.f-item-group .modal .close-btn {
+	position: absolute;
 }
 .f-item-preview > .module-bg-img {
 	background-image: url('../../../assets/toolkit/images/module-bg-students-at-work.jpg');

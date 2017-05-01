@@ -19,6 +19,7 @@ a {
 .site-header-menu li a,
 .nav-primary-menu li a,
 .nav-secondary-menu li a,
+.secondary-nav-list li a,
 .slideout-contact-details li a {
 	border: none;
 	&:hover {
@@ -129,6 +130,18 @@ a {
 	border-bottom: none;
 	&:hover {
 		background:none;
+	}
+}
+// Contact details list ------
+.contact-details-list li a {
+	color: inherit;
+	border: none;
+	&:hover {
+		color: $red;
+		background: none;
+	}
+	&::before {
+	content: none;
 	}
 }
 // Project Slider -----------

@@ -97,14 +97,8 @@ ol {
 }
 .contact-details-list {
 	list-style: none;
-		li {
-			padding: 0.2em 0;
-			a:hover {
-				color: $red;
-			}
-			a::before {
-			content: none;
-		}
+	li {
+		padding: 0.2em 0;
 	}
 }
 
