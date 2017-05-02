@@ -78,7 +78,24 @@ a {
 		transition: transform 0.2s;
 	}
 }
-
+// Read more inside info blocks -------------
+.info-block-blue .link-more a,
+.info-block-red .link-more a {
+	color: inherit;
+	&::before {
+		background: $white;
+	}
+	&:hover {
+		background: $white;
+		border-color: $white;
+	}
+}
+.info-block-blue .link-more a:hover {
+		color: $blue;
+}
+.info-block-red .link-more a:hover {
+		color: $red;
+}
 // Foot-notes ---------------
 .foot-note {
 	a {
