@@ -279,10 +279,12 @@ ol {
 }
 // Profile block slim -----------
 .profile-block-slim {
-	text-align: center;
+	// text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
 	.profile-block-slim-pic {
 		max-width: 80px;
-		margin: auto;
 		img {
 			border-radius: 50%;
 			filter: grayscale(100%) contrast(110%);
@@ -291,6 +293,7 @@ ol {
 	.profile-block-slim-details {
 		display: flex;
 		flex-flow: column nowrap;
+		text-align: center;
 	}
 	.profile-block-slim-logo {
 		display: flex;

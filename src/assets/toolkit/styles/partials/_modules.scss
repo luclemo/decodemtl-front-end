@@ -508,7 +508,10 @@
 		}
 	}
 	.profile-block-slim {
-		margin: 0 0.5em;
+		margin: 1em;
+		@include breakpoint(minphablet) {
+			margin: 0.5em;
+		}
 	}
 	.module-boxed {
 		border-bottom: none;
