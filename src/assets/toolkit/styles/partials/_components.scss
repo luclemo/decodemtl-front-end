@@ -279,7 +279,6 @@ ol {
 }
 // Profile block slim -----------
 .profile-block-slim {
-	// text-align: center;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -301,6 +300,31 @@ ol {
 		justify-content: center;
 		margin-top: 0.5em;
 		max-width: 160px;
+	}
+}
+
+// Profile block full -----------
+.profile-block-full {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	.profile-block-full-pic {
+		max-width: 140px;
+		img {
+			border-radius: 50%;
+		}
+	}
+	.profile-block-full-details {
+		display: flex;
+		flex-flow: column nowrap;
+		text-align: center;
+		h4 {
+			margin-top: 0.8em;
+		}
+	}
+	.profile-block-full-story {
+		text-align: center;
+		font-family: $font_italic;
 	}
 }
 
