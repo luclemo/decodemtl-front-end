@@ -309,9 +309,11 @@ ol {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	pointer-events: none; // prevent click on mobile
 	@include breakpoint(minlaptop) {
 		flex-flow: row nowrap;
 		justify-content: space-between;
+		pointer-events: initial;
 		// flip order of profile block
 		&:nth-child(even) {
 			flex-direction: row-reverse;
@@ -330,6 +332,7 @@ ol {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		border: none;
 		@include breakpoint(minlaptop) {
 			background: $lightgrey;
 			border: 1px solid $lightgrey;
@@ -361,10 +364,21 @@ ol {
 	// Read more link
 	.link-more.hide-on-large-screen {
 		@include hide-on-large-screen;
+		pointer-events: initial;
 	}
 	.link-more.show-on-large-screen {
 		@include show-on-large-screen;
 		margin-top: 1em;
+	}
+	.faux-link {
+		color: $red;
+		border-bottom: 1px solid;
+		@include transition-all;
+		.fa-caret-right {
+			margin-left: 0.3em;
+			position: relative;
+			top: 0.05em;
+		}
 	}
 }
 .alumni-profile-pic {
@@ -412,6 +426,9 @@ ol {
 	.triangle-line-bottom-right,
 	.triangle-line-top-right {
 		stroke: $red;
+	}
+	.faux-link {
+		border: none;
 	}
 }
 
