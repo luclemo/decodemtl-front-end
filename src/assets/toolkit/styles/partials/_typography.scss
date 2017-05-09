@@ -22,7 +22,7 @@ html {
 	@include breakpoint(minphablet) {
 		font-size: 125%; // 20px
 	}
-	@include breakpoint(mindesktop) {
+	@include breakpoint(jumbo) {
 		font-size: 138%; // 22px
 	}
 }

@@ -315,6 +315,9 @@ ol {
 		// flip order of profile block
 		&:nth-child(even) {
 			flex-direction: row-reverse;
+			.flex-container {
+				padding-left: 2em;
+			}
 			.triangle {
 				left: -35px;
 				transform: rotate(180deg);
@@ -330,7 +333,7 @@ ol {
 		@include breakpoint(minlaptop) {
 			background: $lightgrey;
 			border: 1px solid $lightgrey;
-			padding: 1em 2em;
+			padding: 1em;
 			width: calc(50% - 35px); // accounts for triangle
 			flex-direction: row;
 			position: relative;
@@ -392,6 +395,7 @@ ol {
 .alumni-profile-excerpt {
 	text-align: center;
 	font-family: $font_italic;
+	max-width: 32em;
 	@include breakpoint(minlaptop) {
 		text-align: left;
 		width: calc(50% - 34px); // accounts for triangle
