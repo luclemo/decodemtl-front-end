@@ -310,6 +310,15 @@ ol {
 	align-items: center;
 	@include breakpoint(minlaptop) {
 		flex-flow: row nowrap;
+		justify-content: space-between;
+		// flip order of profile block
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+			.triangle {
+				left: -33px;
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	// grey box
@@ -320,7 +329,7 @@ ol {
 		@include breakpoint(minlaptop) {
 			background: $lightgrey;
 			padding: 1em 2em;
-			width: 50%;
+			width: calc(50% - 35px); // accounts for triangle
 			flex-direction: row;
 			position: relative;
 		}
@@ -331,7 +340,7 @@ ol {
 		@include show-on-large-screen;
 		@include breakpoint(minlaptop) {
 			position: absolute;
-			right: -33px			
+			right: -33px;		
 		}
 	}
 	.triangle-bg {
@@ -377,8 +386,7 @@ ol {
 	font-family: $font_italic;
 	@include breakpoint(minlaptop) {
 		text-align: left;
-		width: 50%;
-		padding-left: 3em;
+		width: calc(50% - 34px); // accounts for triangle
 	}
 }
 
