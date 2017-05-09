@@ -37,7 +37,7 @@
 }
 
 @mixin show-on-large-screen {
-  @include breakpoint(laptop) {
+  @media (max-width: 63.9375em) {
     display: none;
   }
 }
