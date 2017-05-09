@@ -525,7 +525,7 @@
 .alumni-module-full {
 	.profile-block-full {
 		& ~ .profile-block-full {
-			margin-top: 2em;
+			margin-top: $module-vert-pd;
 		}
 		&:not(:last-child) .link-more.hide-on-large-screen {
 				margin-bottom: 2em;

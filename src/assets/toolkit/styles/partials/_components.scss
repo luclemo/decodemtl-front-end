@@ -302,8 +302,9 @@ ol {
 		max-width: 160px;
 	}
 }
-
-// Profile block full -----------
+// ================================
+// Alumni profile components
+// ================================
 .profile-block-full {
 	display: flex;
 	flex-flow: column nowrap;
@@ -315,7 +316,7 @@ ol {
 		&:nth-child(even) {
 			flex-direction: row-reverse;
 			.triangle {
-				left: -33px;
+				left: -35px;
 				transform: rotate(180deg);
 			}
 		}
@@ -328,27 +329,35 @@ ol {
 		align-items: center;
 		@include breakpoint(minlaptop) {
 			background: $lightgrey;
+			border: 1px solid $lightgrey;
 			padding: 1em 2em;
 			width: calc(50% - 35px); // accounts for triangle
 			flex-direction: row;
 			position: relative;
+			@include transition-all;
+			transition-delay: 0.2s;
 		}
 	}
-	
 	// profile block arrow
 	.triangle {
 		@include show-on-large-screen;
 		@include breakpoint(minlaptop) {
 			position: absolute;
-			right: -33px;		
+			right: -35px;
+			top: calc(50% - 25px);	
 		}
 	}
 	.triangle-bg {
 		fill: $lightgrey;
+		@include transition-all;
+		transition-delay: 0.2s;
 	}
-	.triangle-lines {
+	.triangle-lines > * {
 		stroke: $lightgrey;
+		@include transition-all;
+		transition-delay: 0.2s;
 	}
+	
 	
 	// Read more link
 	.link-more.hide-on-large-screen {
@@ -387,6 +396,22 @@ ol {
 	@include breakpoint(minlaptop) {
 		text-align: left;
 		width: calc(50% - 34px); // accounts for triangle
+	}
+}
+
+// Hover styles
+.profile-block-full-with-story .flex-container:hover {
+	background: $white;
+	border: 1px solid $red;
+	.triangle-bg {
+		fill: $white;
+	}
+	.triangle-line-left {
+		stroke: $white;
+	}
+	.triangle-line-bottom-right,
+	.triangle-line-top-right {
+		stroke: $red;
 	}
 }
 
