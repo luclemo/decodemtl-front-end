@@ -338,7 +338,6 @@ ol {
 			flex-direction: row;
 			position: relative;
 			@include transition-all;
-			transition-delay: 0.2s;
 		}
 	}
 	// profile block arrow
@@ -353,12 +352,10 @@ ol {
 	.triangle-bg {
 		fill: $lightgrey;
 		@include transition-all;
-		transition-delay: 0.2s;
 	}
 	.triangle-lines > * {
 		stroke: $lightgrey;
 		@include transition-all;
-		transition-delay: 0.2s;
 	}
 	
 	// Read more link
