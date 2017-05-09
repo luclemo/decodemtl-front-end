@@ -36,6 +36,18 @@
   word-break: break-word;
 }
 
+@mixin show-on-large-screen {
+  @include breakpoint(laptop) {
+    display: none;
+  }
+}
+
+@mixin hide-on-large-screen {
+  @include breakpoint(minlaptop) {
+    display: none;
+  }
+}
+
 // Buttons and CTA
 // -------------------------
 

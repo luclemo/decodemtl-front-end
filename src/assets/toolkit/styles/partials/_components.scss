@@ -308,23 +308,77 @@ ol {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	.profile-block-full-pic {
-		max-width: 140px;
-		img {
-			border-radius: 50%;
-		}
+	@include breakpoint(minlaptop) {
+		flex-flow: row nowrap;
 	}
-	.profile-block-full-details {
+
+	// grey box
+	.flex-container {
 		display: flex;
-		flex-flow: column nowrap;
-		text-align: center;
-		h4 {
-			margin-top: 0.8em;
+		flex-direction: column;
+		align-items: center;
+		@include breakpoint(minlaptop) {
+			background: $lightgrey;
+			padding: 1em 2em;
+			width: 50%;
+			flex-direction: row;
+			position: relative;
 		}
 	}
-	.profile-block-full-story {
-		text-align: center;
-		font-family: $font_italic;
+	
+	// profile block arrow
+	.triangle {
+		@include show-on-large-screen;
+		@include breakpoint(minlaptop) {
+			position: absolute;
+			right: -33px			
+		}
+	}
+	.triangle-bg {
+		fill: $lightgrey;
+	}
+	.triangle-lines {
+		stroke: $lightgrey;
+	}
+	
+	// Read more link
+	.link-more.hide-on-large-screen {
+		@include hide-on-large-screen;
+	}
+	.link-more.show-on-large-screen {
+		@include show-on-large-screen;
+		margin-top: 1em;
+	}
+}
+.profile-block-full-pic {
+	max-width: 140px;
+	img {
+		border-radius: 50%;
+	}
+}
+.profile-block-full-details {
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+	@include breakpoint(minlaptop) {
+		text-align: left;
+		margin-left: 3em;
+	}
+}
+.profile-block-full-name {
+	margin-top: 0.8em;
+	@include breakpoint(minlaptop) {
+		font-size: 1.1rem;
+		margin-top: 0;
+	}
+}	
+.profile-block-full-excerpt {
+	text-align: center;
+	font-family: $font_italic;
+	@include breakpoint(minlaptop) {
+		text-align: left;
+		width: 50%;
+		padding-left: 3em;
 	}
 }
 

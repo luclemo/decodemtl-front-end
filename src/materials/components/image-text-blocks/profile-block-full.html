@@ -2,16 +2,31 @@
 notes: picture should have 1:1 ratio (square). Ideally no smaller than 300px wide to ensure sharpness on retina. The link is optional.
 ---
 <div class="profile-block-full">
-	<div class="profile-block-full-pic">
-		<img src="../../assets/toolkit/images/profile-team-ziad.jpg" alt="">
+	<div class="flex-container">
+		<svg class="triangle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="51" viewBox="-0.521 0.479 35 51">
+		  <path class="triangle-bg" d="M34 26L0 51V1z"/>
+		  <g class="triangle-lines" stroke-width="1" stroke-linecap="round">
+		    <path class="left" d="M0 51V1"/>
+		    <path class="bottom-right" d="M34 26L0 51"/>
+		    <path class="top-right" d="M0 1l34 25"/>
+		  </g>
+		</svg>
+		<div class="profile-block-full-pic">
+			<img src="../../assets/toolkit/images/profile-team-ziad.jpg" alt="">
+		</div>
+		<div class="profile-block-full-details">
+			<h4 class="profile-block-full-name">Student Name</h4>
+			<span class="text-subtle">Front-end Developer</span>
+			<span class="">Salesforce</span>
+			<div class="link-more text-body-small show-on-large-screen">
+				<a href="#">Read the story<span class="fa fa-caret-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
 	</div>
-	<div class="profile-block-full-details">
-		<h4 class="text-body-large">Student Name</h4>
-		<span class="text-subtle">Front-end Developer</span>
-		<span class="">Salesforce</span>
-	</div>
-	<div class="profile-block-full-story">
+	<div class="profile-block-full-excerpt">
 		<p>Katrina was bold enough to take the Bootcamp at DecodeMTL. It paid off — she scored a position as a Frontend Developer.</p>
 	</div>
-	{{> links.read-more-block}}
+	<div class="link-more text-body-small hide-on-large-screen">
+		<a href="#">Read the story<span class="fa fa-caret-right" aria-hidden="true"></span></a>
+	</div>
 </div><!-- /.profile-block-full -->

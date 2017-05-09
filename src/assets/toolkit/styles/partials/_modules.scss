@@ -517,3 +517,18 @@
 		border-bottom: none;
 	}
 }
+
+// ========================
+// Alumni full module
+// ======================== 
+
+.alumni-module-full {
+	.profile-block-full {
+		& ~ .profile-block-full {
+			margin-top: 2em;
+		}
+		&:not(:last-child) .link-more.hide-on-large-screen {
+				margin-bottom: 2em;
+		}
+	}
+}
