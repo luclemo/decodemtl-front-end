@@ -305,7 +305,7 @@ ol {
 // ================================
 // Alumni profile components
 // ================================
-.profile-block-full {
+.alumni-profile {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
@@ -358,7 +358,6 @@ ol {
 		transition-delay: 0.2s;
 	}
 	
-	
 	// Read more link
 	.link-more.hide-on-large-screen {
 		@include hide-on-large-screen;
@@ -368,13 +367,13 @@ ol {
 		margin-top: 1em;
 	}
 }
-.profile-block-full-pic {
+.alumni-profile-pic {
 	max-width: 140px;
 	img {
 		border-radius: 50%;
 	}
 }
-.profile-block-full-details {
+.alumni-profile-details {
 	display: flex;
 	flex-flow: column nowrap;
 	text-align: center;
@@ -383,14 +382,14 @@ ol {
 		margin-left: 3em;
 	}
 }
-.profile-block-full-name {
+.alumni-profile-name {
 	margin-top: 0.8em;
 	@include breakpoint(minlaptop) {
 		font-size: 1.1rem;
 		margin-top: 0;
 	}
 }	
-.profile-block-full-excerpt {
+.alumni-profile-excerpt {
 	text-align: center;
 	font-family: $font_italic;
 	@include breakpoint(minlaptop) {
@@ -399,8 +398,8 @@ ol {
 	}
 }
 
-// Hover styles
-.profile-block-full-with-story .flex-container:hover {
+// Alumni profile over styles
+.alumni-profile-with-story .flex-container:hover {
 	background: $white;
 	border: 1px solid $red;
 	.triangle-bg {

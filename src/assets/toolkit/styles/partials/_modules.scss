@@ -523,8 +523,8 @@
 // ======================== 
 
 .alumni-module-full {
-	.profile-block-full {
-		& ~ .profile-block-full {
+	.alumni-profile {
+		& ~ .alumni-profile {
 			margin-top: $module-vert-pd;
 		}
 		&:not(:last-child) .link-more.hide-on-large-screen {
