@@ -418,6 +418,36 @@
 	}
 }
 // ========================
+// Press Logos Module
+// ========================
+.press-logos-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 0 1em;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	@include breakpoint(minphablet) {
+		justify-content: space-around;
+	}
+}
+.press-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4em;
+	height: 2.5em;
+	margin: 1rem 0;
+	opacity: 0.4;
+	@include breakpoint(minphablet) {
+		width: 4.8em;
+	}
+	img {
+		max-height: 100%;
+		max-width: 90%;
+	}
+}
+// ========================
 // Home Hero Module
 // ========================
 .hero-content {

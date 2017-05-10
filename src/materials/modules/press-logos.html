@@ -1,0 +1,17 @@
+---
+notes: Images should be black and white SVG or PNG (ideally at least 200px wide).  Opacity will be handled automatically.
+---
+
+<section class="module press-logos-module">
+	<div class="wrapper">
+			<div class="press-logos-container">
+				{{#each pressLogos}}
+					{{#each this}}
+				<div class="press-logo">
+					<img src="{{src}}" alt="{{alt}}">
+				</div>
+					{{/each}}
+					{{/each}}
+			</div><!-- /.press-logo-container -->
+	</div><!-- /.wrapper -->
+</section><!-- /.press-logos-module -->

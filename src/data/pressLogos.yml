@@ -1,0 +1,12 @@
+- LesAffaires:
+    src: "../../assets/toolkit/images/press-logos/partner-logo-logo_site_lesaffaires.png"
+    alt: "Les Affaires"
+- LaPresse:
+    src: "../../assets/toolkit/images/press-logos/partner-logo-La_Presse_newspaper.png"
+    alt: "La Press"
+- Techvibes:
+    src: "../../assets/toolkit/images/press-logos/partner-logo-techvibes.png"
+    alt: "Techvibes"
+- Metro:
+    src: "../../assets/toolkit/images/press-logos/partner-logo-Metro_International_logo.png"
+    alt: "Metro"
