@@ -562,3 +562,20 @@
 		}
 	}
 }
+
+// ========================
+// Curriculumn module
+// ======================== 
+.curriculum-course {
+	.row-container {
+		align-items: center;
+	}
+	.two-third-content {
+		// width: calc(60% - 1em);
+		flex-basis: calc(60% - 1em);
+	}
+	.one-third-content {
+		flex-basis: calc(35% - 1em);
+		max-width: 50%;
+	}
+}
