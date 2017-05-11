@@ -31,6 +31,9 @@ svg {
 .visible {
 	display: block;
 }
+.img-rounded img {
+	border-radius: 50%;
+}
 
 // ================================
 // Lists
@@ -256,9 +259,6 @@ ol {
 	min-width: 100px;
 	max-width: 200px;
 	margin: 0 60px 0.5em 0;
-	img {
-		border-radius: 50%;
-	}
 }
 .img-text-details {
 	flex: 70%;
@@ -285,7 +285,6 @@ ol {
 	.profile-block-slim-pic {
 		max-width: 80px;
 		img {
-			border-radius: 50%;
 			filter: grayscale(100%) contrast(110%);
 		}
 	}
@@ -383,9 +382,6 @@ ol {
 }
 .alumni-profile-pic {
 	max-width: 140px;
-	img {
-		border-radius: 50%;
-	}
 }
 .alumni-profile-details {
 	display: flex;
