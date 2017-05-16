@@ -575,10 +575,9 @@
 	}
 	.one-third-content {
 		flex-basis: calc(35% - 1em);
-		max-width: 50%;
 		margin: auto;
-		@include breakpoint(mintablet) {
-			margin: initial;
+		@include breakpoint(minphablet) {
+			max-width: 50%;
 		}
 	}
 	.link-more {
