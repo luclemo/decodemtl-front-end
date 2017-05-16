@@ -33,20 +33,30 @@ bootcamp-faq:
 
 career-support:
   - item:
+      icon: "../../assets/toolkit/images/icons/icon-resume.svg"
+      alt: "resume icon"
+      title: "Putting your best self forward"
+      text: "With our help, you will perfect your resume, linkedin profile & online presence."
+  - item:
+      icon: "../../assets/toolkit/images/icons/icon-running.svg"
+      alt: "running icon"
+      title: "Job hunting starts now"
+      text: "Kickoff your job hunt at our hiring event on the final day of your bootcamp."
+  - item:
+      icon: "../../assets/toolkit/images/icons/icon-interview.svg"
+      alt: "interview icon"
+      title: "Never fear interviews again"
+      text: "Master your interview skills with our free 1-1 practice sessions."
+  - item:
       icon: "../../assets/toolkit/images/icons/icon-strategy.svg"
       alt: "strategy icon"
-      title: "Personalized Approach"
-      text: "Tell us your ultimate goal, and we will work together to create a plan of action."
+      title: "Structured support"
+      text: "Set up a plan of attack with your advisor, and stay on track with weekly check-ins."
   - item:
-      icon: "../../assets/toolkit/images/icons/icon-learn.svg"
-      alt: "learn icon"
-      title: "Learn and Build"
-      text: "Learn job relevant skills, build a portfolio of projects, get resume help, and practice mock interviews."
-  - item:
-      icon: "../../assets/toolkit/images/icons/icon-team.svg"
-      alt: "team icon"
-      title: "Network Placement"
-      text: "Get personalized introductions to hiring companies and attend networking events."
+      icon: "../../assets/toolkit/images/icons/icon-launch.svg"
+      alt: "launch icon"
+      title: "Enjoy your new job!"
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ut? 🎉"
 
 events:
   - item:
