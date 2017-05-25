@@ -524,27 +524,36 @@
 		color: $red;
 	}
 }
-// ========================
-// Alumni slim module
-// ======================== 
-.alumni-module-slim {
+// =============================
+// Alumni slim + teacher modules
+// =============================
+.alumni-module-slim,
+.teachers-module {
 	.flex-container {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin: $module-vert-pd -0.5em 0 -0.5em;
+	}
+}
+.alumni-module-slim .module-boxed {
+	border-bottom: none;
+}
+.alumni-module-slim .flex-container {
 		@include breakpoint(phablet) {
 			justify-content: center;
 		}
-	}
-	.profile-block-slim {
-		margin: 1em;
-		@include breakpoint(minphablet) {
-			margin: 0.5em;
+}
+.teachers-module .flex-container {
+		@media (max-width: 30em) {
+			justify-content: center;
 		}
-	}
-	.module-boxed {
-		border-bottom: none;
+}
+.module .profile-block-slim,
+.module .profile-block-large {
+	margin: 1em;
+	@include breakpoint(minphablet) {
+		margin: 0.5em;
 	}
 }
 

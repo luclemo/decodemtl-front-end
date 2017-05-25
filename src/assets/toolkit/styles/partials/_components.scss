@@ -279,29 +279,37 @@ ol {
 		}
 	}
 }
-// Profile block slim -----------
-.profile-block-slim {
+// Profile blocks -----------
+.profile-block-slim,
+.profile-block-large {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	.profile-block-slim-pic {
-		max-width: 80px;
-		img {
-			filter: grayscale(100%) contrast(110%);
-		}
+}
+.profile-block-slim-pic {
+	max-width: 80px;
+	img {
+		filter: grayscale(100%) contrast(110%);
 	}
-	.profile-block-slim-details {
-		display: flex;
-		flex-flow: column nowrap;
-		text-align: center;
-	}
-	.profile-block-slim-logo {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 0.5em;
-		max-width: 160px;
-	}
+}
+.profile-block-large-pic {
+	max-width: 140px;
+}
+.profile-block-slim-details,
+.profile-block-large-details {
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: center;
+}
+.profile-block-large-details h4 {
+	margin: 0;
+}
+.profile-block-slim-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.5em;
+	max-width: 160px;
 }
 // ================================
 // Alumni profile components
