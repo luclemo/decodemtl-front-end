@@ -44,7 +44,9 @@ ol {
 }
 
 // Generic list style for body-copy
-.body-copy-list {
+.body-copy-list,
+.entry-content ul,
+.entry-content ol {
 	margin: 2em 0;
 	font-size: 0.9rem;
 	li {
