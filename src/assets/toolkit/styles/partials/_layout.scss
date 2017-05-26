@@ -48,3 +48,28 @@
 .alternating:nth-of-type(even) .one-half-content:nth-child(2) {
 	order: -1;
 }
+
+// ========================
+// Split view
+// ========================
+.split-view {
+	@include breakpoint(minlaptop) {
+		display: flex;
+		flex-flow: row nowrap;
+		padding: 0;
+	}
+}
+.split-view-one {
+	@include breakpoint(minlaptop) {
+		flex: 1 60%;
+		padding-right: 3em;
+	}
+}
+.split-view-two {
+		padding: 3em;
+	@include breakpoint(minlaptop) {
+		flex: 1 40%;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
