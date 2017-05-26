@@ -629,3 +629,35 @@
 		// max-width: 25%;
 	}
 }
+
+// ========================
+// Schedule a call
+// ======================== 
+.schedule-call {
+	text-align: center;
+	.img-rounded {
+		max-width: 100px;
+		margin: auto;
+	}
+	.split-view {
+		@include breakpoint(minlaptop) {
+			padding: 0;
+		}
+	}
+	.split-view-one {
+		@include breakpoint(minlaptop) {
+			flex: 1 60%;
+			padding: 3em;
+		}
+	}
+	.split-view-two {
+		padding: 0;
+		@include breakpoint(minlaptop) {
+			align-items: center;
+			justify-content: center;			
+		}
+		@include breakpoint(laptop) {
+			background:none;
+		}
+	}
+}
