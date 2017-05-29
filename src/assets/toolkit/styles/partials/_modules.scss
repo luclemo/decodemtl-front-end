@@ -105,16 +105,13 @@
 				flex-basis: 25%;
 			}
 		}
-		&:last-child,
-		&:first-child {
-			font-family: $font-bold;
+		&:first-child,
+		&:last-child {
+			font-family: $font_bold;
 		}
 		&:last-child {
 			flex: 1 1 10%;
 		}
-	}
-	.full {
-		color: $midgrey;
 	}
 	.fa-bolt {
 		color: $red;

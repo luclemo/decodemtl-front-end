@@ -26,6 +26,10 @@
 				border-bottom: 1px solid;
 			}
 		}
+		&-disabled {
+			color: $midgrey;
+			text-decoration: line-through;
+		}
 	}
 	.cell {
 		padding: 0.3em 0;
