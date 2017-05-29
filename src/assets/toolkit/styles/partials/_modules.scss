@@ -116,7 +116,7 @@
 	.full {
 		color: $midgrey;
 	}
-	.fa {
+	.fa-bolt {
 		color: $red;
 	}
 	.one-third-content {
@@ -658,6 +658,20 @@
 		}
 		@include breakpoint(laptop) {
 			background:none;
+		}
+	}
+}
+
+// ========================
+// Coursera module
+// ======================== 
+.coursera-module {
+	.img-text-pic a {
+		border: none;
+		display: block;
+		&:hover {
+			background: none;
+			transform: rotate(-15deg);
 		}
 	}
 }
