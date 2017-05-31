@@ -1,0 +1,27 @@
+---
+notes: In order to display multiple projects, just add a new `.project-item` list item. The cta is optional. If not needed, simply omit the `.project-link` div.
+---
+<section class="module module-projects">
+	<div class="wrapper">
+		<ul class="project-list">
+		{{#each lists.projects-module}}
+			{{#each this}}
+			<li class="project-item">
+				<figure class="flex-container">
+					<img class="project-img" src="{{project-image-url}}" alt="">
+					<figcaption class="project-caption">
+						<h4>{{project-title}}</h4>
+						<p class="text-body-small">{{project-description}}</p>
+						<h5>Team:</h5>
+						<p class="text-body-small">{{project-team}}</p>
+						{{#if project-cta}}
+						<div class="project-link"><a href="#" class="btn-primary btn-small">{{project-cta}}</a></div>
+						{{/if}}
+					</figcaption>
+				</figure>
+			</li><!-- /.project-item -->
+			{{/each}}
+		{{/each}}
+		</ul><!-- /.project-list -->
+	</div><!-- /.wrapper -->
+</section><!-- /.module-projects -->

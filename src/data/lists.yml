@@ -71,3 +71,11 @@ events:
       event-date: "2016.08.22"
       event-name: "Another event"
       event-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, porro!"
+
+projects-module:
+  - project-item:
+      project-image-url: "https://unsplash.it/900/560?image=0"
+      project-title: "Project title"
+      project-description: "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha."
+      project-team: "Name one, Name two, Name three"
+      project-cta: "Read more about this project"
