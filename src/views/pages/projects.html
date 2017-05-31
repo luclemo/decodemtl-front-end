@@ -1,5 +1,6 @@
 ---
 layout: decode
+title: projects
 ---
 <header class="module module-course hero-projects">
 	<div class="wrapper">
@@ -14,16 +15,16 @@ layout: decode
 		<ul class="project-list">
 		{{#each lists.projects-page}}
 			{{#each this}}
-			<li class="project-item">
+			<li itemscope itemtype="http://schema.org/CreativeWork" class="project-item">
 				<figure class="flex-container">
-					<img class="project-img" src="{{project-image-url}}" alt="">
+					<img itemprop="image" class="project-img" src="{{project-image-url}}" alt="">
 					<figcaption class="project-caption">
-						<h4>{{project-title}}</h4>
-						<p class="text-body-small">{{project-description}}</p>
+						<h4 itemprop="name">{{project-title}}</h4>
+						<p itemprop="description" class="text-body-small">{{project-description}}</p>
 						<h5>Team:</h5>
-						<p class="text-body-small">{{project-team}}</p>
+						<p itemprop="author" class="text-body-small">{{project-team}}</p>
 						{{#if project-cta}}
-						<div class="project-link"><a href="#" class="btn-primary btn-small">{{project-cta}}</a></div>
+						<div class="project-link"><a itemprop="url" href="#" class="btn-primary btn-small">{{project-cta}}</a></div>
 						{{/if}}
 					</figcaption>
 				</figure>
