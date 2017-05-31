@@ -698,6 +698,7 @@
 		margin: 7em 0
 	}
 	.flex-container {
+		margin: 0;
 		@media (min-width: 735px) {
 			display: flex;
 			justify-content: space-between;

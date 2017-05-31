@@ -1,0 +1,41 @@
+---
+layout: decode
+---
+<header class="module module-course hero-projects">
+	<div class="wrapper">
+		<h1 class="module-title">Student<span class="module-title-jumbo">Projects</span></h1>
+		<p class="text-body-large text-subtle text-measure">In the final stage of our program, students team up to plan and build real-world applications.</p>
+	</div>
+</header>
+
+<!-- Projects module -->
+<section class="module module-projects">
+	<div class="wrapper">
+		<ul class="project-list">
+		{{#each lists.projects-page}}
+			{{#each this}}
+			<li class="project-item">
+				<figure class="flex-container">
+					<img class="project-img" src="{{project-image-url}}" alt="">
+					<figcaption class="project-caption">
+						<h4>{{project-title}}</h4>
+						<p class="text-body-small">{{project-description}}</p>
+						<h5>Team:</h5>
+						<p class="text-body-small">{{project-team}}</p>
+						{{#if project-cta}}
+						<div class="project-link"><a href="#" class="btn-primary btn-small">{{project-cta}}</a></div>
+						{{/if}}
+					</figcaption>
+				</figure>
+			</li><!-- /.project-item -->
+			{{/each}}
+		{{/each}}
+		</ul><!-- /.project-list -->
+	</div><!-- /.wrapper -->
+</section><!-- /.module-projects -->
+
+<!-- Schedule a call module -->
+{{> schedule-call}}
+
+<!-- partner logos module -->
+{{> partner-logos}}

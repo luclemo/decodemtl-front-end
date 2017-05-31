@@ -79,3 +79,23 @@ projects-module:
       project-description: "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha."
       project-team: "Name one, Name two, Name three"
       project-cta: "Read more about this project"
+
+projects-page:
+  - project-item:
+      project-image-url: "https://images.unsplash.com/photo-1486475554424-2fa50cd59f18?dpr=1&auto=format&fit=crop&w=900&h=560&q=80&cs=tinysrgb&crop=&bg="
+      project-title: "Project title"
+      project-description: "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha."
+      project-team: "Catherine Sanchez, Austin Simmons, Cody Holloway"
+      project-cta: ""
+  - project-item:
+      project-image-url: "https://images.unsplash.com/photo-1474426112664-8f4248139c49?dpr=1&auto=format&fit=crop&w=900&h=560&q=80&cs=tinysrgb&crop=&bg="
+      project-title: "Some longer project title"
+      project-description: "Hella narwhal Cosby sweater McSweeney's, salvia kitsch before they sold out High Life. Umami tattooed sriracha."
+      project-team: "Catherine Sanchez, Austin Simmons, Cody Holloway"
+      project-cta: "Read more about this project"
+  - project-item:
+      project-image-url: "https://unsplash.it/900/560?image=96"
+      project-title: "Short title"
+      project-description: "Some longer text, consectetur adipisicing elit. At, dolor. Amet expedita officia repellat? Aperiam, at quas eveniet illum amet. Ipsam illo accusamus minus, eaque magni dignissimos adipisci tempora dolorem eos, temporibus libero voluptatem."
+      project-team: "Catherine Sanchez, Austin Simmons, Cody Holloway"
+      project-cta: ""
