@@ -2,17 +2,9 @@
 layout: blog-layout
 ---
 
-<div class="module post-module">
-	<div class="wrapper">
-		<!-- ========= POST =========-->
-		<article class="entry module-boxed" itemscope="" itemtype="http://schema.org/CreativeWork">
-			{{> post-header}}
-			{{> post-featured-image}}
-			{{> post-content}}
-		</article><!-- /.entry -->
-		<!-- ========= AUTHOR =========-->
-		{{> author-box}}
-	</div><!-- /.wrapper -->
-</div><!-- /.module -->
+<!-- ========= POST =========-->
+{{> single-post-module}}
+<!-- ========= AUTHOR =========-->
+{{> author-box}}
 <!-- ========= FEATURED CONTENT =========-->
 {{> featured-module}}

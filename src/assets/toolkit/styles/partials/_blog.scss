@@ -22,9 +22,25 @@
 	margin-top: -$module-vert-pd;
 }
 
-// Single post ----------------
+.featured-image {
+	margin: 0;
+
+	img {
+		display: block;
+	}
+
+	a {
+		border: none;
+		background: $black;
+
+		&:hover img {
+			opacity: 0.8;
+		}
+	}
+}
+
 .entry-header {
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .entry-title {
@@ -56,39 +72,43 @@
 	}
 }
 
-.featured-image {
-	margin: 0;
+.entry-content {
+	blockquote {
+		font-size: 1.3em;
+		border-left: 3px solid $grey;
+		padding-left: 1em;
+		margin: 2em 0;
+		color: $hardgrey;
 
-	img {
-		display: block;
-	}
-
-	a {
-		border: none;
-		background: $black;
-
-		&:hover img {
-			opacity: 0.8;
+		@include breakpoint(mintablet) {
+			border-width: 5px;
+			margin: 2em;
 		}
 	}
-}
-
-.entry-content blockquote {
-	font-size: 1.3em;
-	border-left: 3px solid $grey;
-	padding-left: 1em;
-	margin: 2em 0;
-	color: $hardgrey;
-
-	@include breakpoint(mintablet) {
-		border-width: 5px;
-		margin: 2em;
+	img {
+		max-height: 30em;
+	  margin: 4rem auto;
+	  display: block;
 	}
 }
 
-// Author box module ------------
-.entry + .author-box .module-boxed {
-	border-top: none;
+// Single post ----------------
+.post-module-single {
+	.entry {
+		@include breakpoint(minlaptop) {
+			padding: 3em 6em;
+		}
+	}
+	& + .author-box .module-boxed {
+		border-top: none;
+		margin-top: -4rem;
+		@include breakpoint(jumbo) {
+			margin-top: -6rem;
+		}
+	}
+	.featured-image {
+		margin-bottom: 3rem;
+	}
 }
 
 // Featured content module ------------

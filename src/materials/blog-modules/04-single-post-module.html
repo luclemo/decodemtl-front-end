@@ -1,9 +1,11 @@
 ---
 notes: Single post combines post header, post featured images, post content.
 ---
-
-<article class="entry module-boxed" itemscope="" itemtype="http://schema.org/CreativeWork">
-	{{> post-header}}
-	{{> post-featured-image}}
-	{{> post-content}}
-</article><!-- /.entry -->
+<div class="module post-module post-module-single">
+	<div class="wrapper">
+		<article class="entry module-boxed" itemscope="" itemtype="http://schema.org/CreativeWork">
+			{{> post-header}}
+			{{> post-content}}
+		</article><!-- /.entry -->
+	</div><!-- /.wrapper -->
+</div><!-- /.module -->
