@@ -113,6 +113,9 @@ blockquote {
 		font-size: 2.05rem;
 	}
 }
+.module-boxed .module-title:first-of-type {
+	margin-top: 0.2em;
+}
 .module-title-medium,
 .entry-title-medium {
 	@include module-title-style(1.6rem);
@@ -131,8 +134,11 @@ blockquote {
 		font-size: 2em;
 	}
 }
-.module-boxed .module-title:first-of-type {
+html[lang="fr"] .module-title-jumbo {
 	margin-top: 0.2em;
+	@media (max-width: 1023px) {
+		font-size: 11vw;
+	}
 }
 // Spacing for headers in row layouts ------
 .row-container h1:first-of-type,
